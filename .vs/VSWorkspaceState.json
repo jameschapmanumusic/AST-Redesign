@@ -1,0 +1,13 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\dist",
+    "\\node_modules\\bootstrap",
+    "\\node_modules\\bootstrap\\dist",
+    "\\node_modules\\bootstrap\\scss",
+    "\\node_modules\\bootstrap\\scss\\mixins",
+    "\\scss"
+  ],
+  "SelectedNode": "\\scss\\_custom-variables.scss",
+  "PreviewInSolutionExplorer": false
+}

@@ -1,0 +1,67 @@
+﻿/*!
+ * Material Design for Bootstrap 4
+ * Version: MDB Free 4.5.3
+ *
+ *
+ * Copyright: Material Design for Bootstrap
+ * https://mdbootstrap.com/
+ *
+ * Read the license: https://mdbootstrap.com/license/
+ *
+ *
+ * Documentation: https://mdbootstrap.com/
+ *
+ * Getting started: https://mdbootstrap.com/getting-started/
+ *
+ * Tutorials: https://mdbootstrap.com/bootstrap-tutorial/
+ *
+ * Templates: https://mdbootstrap.com/templates/
+ *
+ * Support: https://mdbootstrap.com/support/
+ *
+ * Contact: office@mdbootstrap.com
+ *
+ * Atribution: Animate CSS, Twitter Bootstrap, Materialize CSS, Normalize CSS, Waves JS, WOW JS, Toastr, Chart.js , Hammer.js
+ *
+ */
+
+@charset "UTF-8";
+
+// Bootstrap
+@import "core/bootstrap/functions";
+@import "core/bootstrap/variables";
+
+// CORE
+@import "core/mixins";
+// Your custom variables
+@import "custom-variables";
+@import "core/colors";
+@import "core/variables";
+@import "core/global";
+@import "core/helpers";
+@import "core/typography";
+@import "core/masks";
+//@import "core/waves";
+@import "core/images-data";
+
+// Extras
+/*@import "extras/animations-basic";
+@import "extras/animations-extended";
+@import "extras/buttons";
+@import "extras/cards";
+@import "extras/dropdowns";
+@import "extras/input-group";
+@import "extras/navbars";
+@import "extras/pagination";
+@import "extras/badges";
+@import "extras/modals";
+@import "extras/carousels";
+@import "extras/forms";
+@import "extras/msc";
+@import "extras/footers";
+@import "extras/list-group";
+@import "extras/tables";
+@import "extras/depreciated";*/
+
+// Your custom styles
+@import "custom-styles";
