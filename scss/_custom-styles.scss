@@ -233,6 +233,11 @@ ul {
         background-color:           $white;
     }
 }
+.fixed {
+	position:fixed;
+	top:45px;
+	z-index:99999;
+}
 
 // ------------------------ END Tables ------------------------
 
@@ -242,13 +247,15 @@ ul {
 .paging {
     position:                       absolute;
     top:                            -33px;
+    left:                           0;
+    right:                          0;
     width:                          100%;
     min-width:                      850px;
     .pagination {
         margin:                     0 40px 0 0;
         position:                   absolute;
         top:                        -6px;
-        right:                      40px;
+        right:                      0;
         .active {
             .page-link {
                 background:         $stuhub-light-blue!important;

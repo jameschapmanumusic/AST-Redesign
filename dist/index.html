@@ -31,152 +31,150 @@
 
         <div class="container-fluid">
             <!-- Start Page Sub-Header -->
-            <header class="page-sub-header">
+        <header class="page-sub-header">
 
-                <!-- Site Top Level Navigation -->
-                <ul class="nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Assets</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Jobs</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">Artists</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Projects</a>
-                    </li>
-                </ul>
+            <!-- Site Top Level Navigation -->
+            <ul class="nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Assets</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Jobs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Artists</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Projects</a>
+                </li>
+            </ul>
 
-                <!-- Contextual Search -->
-                <section class="h1-with-search">
-                    <h1>Artists</h1>
-                    <input class="search-input" placeholder="Filter By Keyword" type="text" />
-                </section>
+            <!-- Contextual Search -->
+            <section class="h1-with-search">
+                <h1>Artists</h1>
+                <input class="search-input" placeholder="Filter By Keyword" type="text" />
+            </section>
 
-                <!-- Filters wizard -->
-                <section class="filters">
-                    <div class="multi-select">
-                        <ul>
-                            <li class="multi-select-header">
-                                <span>Verification Company/Studio</span>
-                                <span class="count">2</span>
-                            </li>
-                            <li class="multi-select-body">
-                                <ul>
-                                    <li>
-                                        <label class="container">
-                                            One
-                                            <input type="checkbox" checked="checked">
-                                            <span class="checkmark"></span>
-                                        </label>
+            <!-- Filters wizard -->
+            <section class="filters">
+                <div class="multi-select">
+                    <ul>
+                        <li class="multi-select-header">
+                            <span>Verification Company/Studio</span>
+                            <span class="count">2</span>
+                        </li>
+                        <li class="multi-select-body">
+                            <ul>
+                                <li>
+                                    <label class="container">
+                                        One
+                                        <input type="checkbox" checked="checked">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="container">
+                                        Two
+                                        <input type="checkbox" checked="checked">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="multi-select">
+                    <ul>
+                        <li class="multi-select-header">
+                            <span>Label Families</span>
+                            <span class="count">0</span>
+                        </li>
+                        <li class="multi-select-body">
+                            <ul>
+                                <li>
+                                    <label class="container">
+                                        One
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="container">
+                                        Two
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="multi-select">
+                    <ul>
+                        <li class="multi-select-header">
+                            <span>Verification Status</span>
+                            <span class="count">2</span>
+                        </li>
+                        <li class="multi-select-body">
+                            <ul>
+                                <li>
+                                    <label class="container">
+                                        One
+                                        <input type="checkbox" checked="checked">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="container">
+                                        Two
+                                        <input type="checkbox" checked="checked">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <a class="call-to-action">Clear Filters</a>
+            </section>
+
+            <!-- Create wizard -->
+            <section class="wizard">
+                <div id="wiz">
+                    <button id="toggleModal" class="btn-white" type="submit">Create Artist</button>
+                    <div class="tint"></div>
+                    <div class="wiz-content">
+                        <form>
+                            <header class="wiz-header">
+                                <a class="active">Create Artist</a>
+                            </header>
+                            <div class="wiz-body">
+                                <ul class="row">
+                                    <li class="col">
+                                        <div class="form-group">
+                                            <label for="artistName">Artist</label>
+                                            <input type="text" placeholder="Enter Name" />
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="talentId">R2 Talent Id</label>
+                                            <input id="emailHelp" type="text" placeholder="Enter R2 Talent Id" aria-describedby="emailHelp">
+                                            <!--<small id="emailHelp" class="form-text text-muted">Help.</small>-->
+                                            <a class="call-to-action">Add</a>
+                                        </div>
                                     </li>
-                                    <li>
-                                        <label class="container">
-                                            Two
-                                            <input type="checkbox" checked="checked">
-                                            <span class="checkmark"></span>
-                                        </label>
+
+                                    <li class="col button-group border-left">
+                                        <button class="btn-save" type="submit">Save</button>
+                                        <button class="btn-cancel" type="submit">Cancel</button>
+                                        <button class="btn-reset" type="submit">Reset</button>
                                     </li>
                                 </ul>
-                            </li>
-                        </ul>
+                            </div>
+                        </form>
                     </div>
-                    <div class="multi-select">
-                        <ul>
-                            <li class="multi-select-header">
-                                <span>Label Families</span>
-                                <span class="count">0</span>
-                            </li>
-                            <li class="multi-select-body">
-                                <ul>
-                                    <li>
-                                        <label class="container">
-                                            One
-                                            <input type="checkbox">
-                                            <span class="checkmark"></span>
-                                        </label>
-                                    </li>
-                                    <li>
-                                        <label class="container">
-                                            Two
-                                            <input type="checkbox">
-                                            <span class="checkmark"></span>
-                                        </label>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="multi-select">
-                        <ul>
-                            <li class="multi-select-header">
-                                <span>Verification Status</span>
-                                <span class="count">2</span>
-                            </li>
-                            <li class="multi-select-body">
-                                <ul>
-                                    <li>
-                                        <label class="container">
-                                            One
-                                            <input type="checkbox" checked="checked">
-                                            <span class="checkmark"></span>
-                                        </label>
-                                    </li>
-                                    <li>
-                                        <label class="container">
-                                            Two
-                                            <input type="checkbox" checked="checked">
-                                            <span class="checkmark"></span>
-                                        </label>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                    <a class="call-to-action">Clear Filters</a>
-                </section>
-
-                <!-- Create wizard -->
-                <section class="wizard">
-                    <div id="wiz">
-                        <button id="toggleModal" class="btn-white" type="submit">Create Artist</button>
-                        <div class="tint"></div>
-                        <div class="wiz-content">
-                            <form>
-                                <header class="wiz-header">
-                                    <a class="active">Create Artist</a>
-                                </header>
-                                <div class="wiz-body">
-                                    <form name="addArtist">
-                                        <ul class="row">
-                                            <li class="col">
-                                                <div class="form-group">
-                                                    <label for="artistName">Artist</label>
-                                                    <input type="text" placeholder="Enter Name" />
-                                                </div>
-                                                <div class="form-group">
-                                                    <label for="talentId">R2 Talent Id</label>
-                                                    <input id="emailHelp" type="text" placeholder="Enter R2 Talent Id" aria-describedby="emailHelp">
-                                                    <!--<small id="emailHelp" class="form-text text-muted">Help.</small>-->
-                                                    <a class="call-to-action">Add</a>
-                                                </div>
-                                            </li>
-
-                                            <li class="col button-group border-left">
-                                                <button class="btn-save" type="submit">Save</button>
-                                                <button class="btn-cancel" type="submit">Cancel</button>
-                                                <button class="btn-reset" type="submit">Reset</button>
-                                            </li>
-                                        </ul>
-                                    </form>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </section>
-            </header>
+                </div>
+            </section>
+        </header>
             <div class="row artists-page padded-left-only">
                 <div class="col-lg-6">
                     <table class="table table-sm sticky-header">
@@ -503,7 +501,6 @@
                         <h2>Projects</h2>
                     </div>
                 </div>
-
             </div>
         </div>
 
@@ -525,7 +522,10 @@
         <script type="text/javascript" src="js/bootstrap.min.js"></script>
         <!-- MDB core JavaScript -->
         <script type="text/javascript" src="js/mdb.min.js"></script>
+
+
         <script type="text/javascript" src="js/temp.js"></script>
+        <script type="text/javascript" src="js/jquery.floatThead.js"></script>
     </body>
 
 </html>

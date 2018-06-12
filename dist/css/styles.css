@@ -1932,16 +1932,23 @@ ul {
 .sticky-header thead {
   background-color: #fff; }
 
+.fixed {
+  position: fixed;
+  top: 45px;
+  z-index: 99999; }
+
 .paging {
   position: absolute;
   top: -33px;
+  left: 0;
+  right: 0;
   width: 100%;
   min-width: 850px; }
   .paging .pagination {
     margin: 0 40px 0 0;
     position: absolute;
     top: -6px;
-    right: 40px; }
+    right: 0; }
     .paging .pagination .active .page-link {
       background: #01adf2 !important;
       border: 1px solid #01adf2;
