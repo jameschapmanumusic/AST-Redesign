@@ -39,7 +39,7 @@ html {
     }
 }
 
-// Custom StudioHub Header
+// Custom StudioHub Header & Branding
 .stuhub-navbar {
     background-color:                               $stuhub-dark;
     color:                                          $grey-lighten-2;
@@ -106,7 +106,8 @@ header.page-sub-header {
     position:                                       relative;
     height:                                         180px;
     padding:                                        0 40px;
-    // Custom Styles for Bootstrap .nav component
+    min-width:                                      1128px;
+    // StudioHub Secondary Navigation
     .nav {
         margin-top:                                 10px;
         li:first-child {
@@ -262,7 +263,7 @@ header.page-sub-header {
                 }
                 .wiz-body {
                     background-color:               $white;
-                    padding:                        15px 20px;
+                    padding:                        15px 5px;
                     border-radius:                  0 0 6px 6px;
                     .form-group {
                         input {
@@ -345,13 +346,41 @@ a.call-to-action {
 .artists-page {
     height:                                         100%;
     .col-lg-6 {
-        padding-right:                              0;
+        padding:                              0;
     }
     table {
+        margin-bottom:                              0;
+        td:nth-child(1), th:nth-child(1)            { width:35%}
+        td:nth-child(2), th:nth-child(2)            { width:20%}
+        td:nth-child(3), th:nth-child(3)            { width:15%; text-align: center }
+        td:nth-child(4), th:nth-child(4)            { width:15%; text-align: center }
+        td:nth-child(5), th:nth-child(5)            { width:15%; text-align: center }
+        thead, tr {
+            width:                                  100%;
+            td, th {
+                width:                              20%;
+                float:                              left;
+                white-space:                        nowrap;
+            }
+        }
+        tbody {
+            overflow-x:                             auto;
+            height:                                 470px;
+            float:                                  left;
+            width:                                  100%;
+            tr {
+                display:                            block;
+                td {
+                    display:                        table-cell;
+                    width:                          20%;
+                    float:                          left;
+                }
+            }
+        }
     }
     .preview {
         background-color:                           $stuhub-pale-blue;
-        top:                                        33px;
+        top:                                        34px;
         border-top:                                 1px dashed $stuhub-navy!important;
         padding:                                    40px;
         header {

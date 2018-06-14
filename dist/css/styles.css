@@ -1721,9 +1721,15 @@ a.text-light:hover, a.text-light:focus {
 @import "extras/depreciated";*/
 /* Customize ANY Bootstrap Specific Styles */
 .container-fluid {
-  padding: 45px 0; }
+  padding: 45px 0 10px 0; }
+  .container-fluid .row {
+    margin-left: 0;
+    margin-right: 0; }
 
 /* Custom scrollbars. Only works for chrome and Safari */
+.scrollable {
+  overflow: auto; }
+
 body ::-webkit-scrollbar-track {
   -webkit-box-shadow: none;
   -webkit-border-radius: 2px;
@@ -1732,7 +1738,7 @@ body ::-webkit-scrollbar-track {
 
 body ::-webkit-scrollbar {
   width: 2px;
-  background-color: green; }
+  background-color: #fff; }
 
 body ::-webkit-scrollbar-thumb {
   -webkit-border-radius: 2px;
@@ -1929,14 +1935,6 @@ ul {
     font-size: 0.75rem;
     padding: .4rem; }
 
-.sticky-header thead {
-  background-color: #fff; }
-
-.fixed {
-  position: fixed;
-  top: 45px;
-  z-index: 99999; }
-
 .paging {
   position: absolute;
   top: -33px;
@@ -1972,7 +1970,7 @@ ul {
       margin-top: 2px; }
   .paging .a-z {
     position: absolute;
-    left: 0;
+    left: 40px;
     top: 0; }
     .paging .a-z a:hover span {
       opacity: 1; }
@@ -1999,9 +1997,9 @@ ul {
         font-size: 1.5rem;
         color: #e0e0e0 !important;
         opacity: 0;
-        -webkit-transition: all 0.2s ease-in-out;
-        -o-transition: all 0.2s ease-in-out;
-        transition: all 0.2s ease-in-out;
+        -webkit-transition: all 0.2s ease-in-out 0.2s ease-in-out;
+        -o-transition: all 0.2s ease-in-out 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out 0.2s ease-in-out;
         font-weight: 200;
         text-align: center; }
 
@@ -2089,7 +2087,8 @@ html {
 header.page-sub-header {
   position: relative;
   height: 180px;
-  padding: 0 40px; }
+  padding: 0 40px;
+  min-width: 1128px; }
   header.page-sub-header .nav {
     margin-top: 10px; }
     header.page-sub-header .nav li:first-child {
@@ -2215,7 +2214,7 @@ header.page-sub-header {
             opacity: 1; }
         header.page-sub-header .wizard .show-wizard .wiz-content .wiz-body {
           background-color: #fff;
-          padding: 15px 20px;
+          padding: 15px 5px;
           -webkit-border-radius: 0 0 6px 6px;
           border-radius: 0 0 6px 6px; }
           header.page-sub-header .wizard .show-wizard .wiz-content .wiz-body .form-group input {
@@ -2285,10 +2284,42 @@ a.call-to-action {
 .artists-page {
   height: 100%; }
   .artists-page .col-lg-6 {
-    padding-right: 0; }
+    padding: 0; }
+  .artists-page table {
+    margin-bottom: 0; }
+    .artists-page table td:nth-child(1), .artists-page table th:nth-child(1) {
+      width: 35%; }
+    .artists-page table td:nth-child(2), .artists-page table th:nth-child(2) {
+      width: 20%; }
+    .artists-page table td:nth-child(3), .artists-page table th:nth-child(3) {
+      width: 15%;
+      text-align: center; }
+    .artists-page table td:nth-child(4), .artists-page table th:nth-child(4) {
+      width: 15%;
+      text-align: center; }
+    .artists-page table td:nth-child(5), .artists-page table th:nth-child(5) {
+      width: 15%;
+      text-align: center; }
+    .artists-page table thead, .artists-page table tr {
+      width: 100%; }
+      .artists-page table thead td, .artists-page table thead th, .artists-page table tr td, .artists-page table tr th {
+        width: 20%;
+        float: left;
+        white-space: nowrap; }
+    .artists-page table tbody {
+      overflow-x: auto;
+      height: 470px;
+      float: left;
+      width: 100%; }
+      .artists-page table tbody tr {
+        display: block; }
+        .artists-page table tbody tr td {
+          display: table-cell;
+          width: 20%;
+          float: left; }
   .artists-page .preview {
     background-color: #f2fbfe;
-    top: 33px;
+    top: 34px;
     border-top: 1px dashed #314861 !important;
     padding: 40px; }
     .artists-page .preview header {

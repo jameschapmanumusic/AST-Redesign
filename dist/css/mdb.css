@@ -1721,9 +1721,15 @@ a.text-light:hover, a.text-light:focus {
 @import "extras/depreciated";*/
 /* Customize ANY Bootstrap Specific Styles */
 .container-fluid {
-  padding: 45px 0; }
+  padding: 45px 0 10px 0; }
+  .container-fluid .row {
+    margin-left: 0;
+    margin-right: 0; }
 
 /* Custom scrollbars. Only works for chrome and Safari */
+.scrollable {
+  overflow: auto; }
+
 body ::-webkit-scrollbar-track {
   -webkit-box-shadow: none;
   -webkit-border-radius: 2px;
@@ -1732,7 +1738,7 @@ body ::-webkit-scrollbar-track {
 
 body ::-webkit-scrollbar {
   width: 2px;
-  background-color: green; }
+  background-color: #fff; }
 
 body ::-webkit-scrollbar-thumb {
   -webkit-border-radius: 2px;
@@ -1929,14 +1935,6 @@ ul {
     font-size: 0.75rem;
     padding: .4rem; }
 
-.sticky-header thead {
-  background-color: #fff; }
-
-.fixed {
-  position: fixed;
-  top: 45px;
-  z-index: 99999; }
-
 .paging {
   position: absolute;
   top: -33px;
@@ -1972,7 +1970,7 @@ ul {
       margin-top: 2px; }
   .paging .a-z {
     position: absolute;
-    left: 0;
+    left: 40px;
     top: 0; }
     .paging .a-z a:hover span {
       opacity: 1; }
@@ -1999,8 +1997,8 @@ ul {
         font-size: 1.5rem;
         color: #e0e0e0 !important;
         opacity: 0;
-        -webkit-transition: all 0.2s ease-in-out;
-        -o-transition: all 0.2s ease-in-out;
-        transition: all 0.2s ease-in-out;
+        -webkit-transition: all 0.2s ease-in-out 0.2s ease-in-out;
+        -o-transition: all 0.2s ease-in-out 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out 0.2s ease-in-out;
         font-weight: 200;
         text-align: center; }
