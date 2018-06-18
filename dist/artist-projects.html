@@ -1,0 +1,327 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Artist - Projects</title>
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Top Level Page Header with UMG Branding -->
+    <nav class="navbar navbar-expand-lg navbar-dark stuhub-navbar fixed-top">
+        <ul>
+            <li class="umg-platform"><a href="" title="Go to the UMG Platform Homepage"></a></li>
+            <li class="platform">
+                <a class="platformLogo" href=""></a>
+            </li>
+            <li class="ribbon-menu-item">
+                <a title="Asset Workspace" data-ui-sref="root.jobs.list" href="">Asset Workspace</a>
+            </li>
+            <li class="ribbon-menu-item">
+                <a title="Artists" href="">Artists</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="container-fluid">
+        <!-- Start Page Sub-Header -->
+    <header class="page-sub-header">
+        <!-- Site Top Level Navigation -->
+        <ul class="nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Assets</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Jobs</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="#">Artists</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Projects</a>
+            </li>
+        </ul>
+
+        <!-- Heading -->
+        <h1>Aminé/Projects</h1>
+
+        <!-- Filters wizard -->
+        <section class="filters">
+            <div class="multi-select">
+                <ul>
+                    <li class="multi-select-header">
+                        <span>Verification Company/Studio</span>
+                        <span class="count">2</span>
+                    </li>
+                    <li class="multi-select-body">
+                        <ul>
+                            <li>
+                                <label class="container">
+                                    One
+                                    <input type="checkbox" checked="checked">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="container">
+                                    Two
+                                    <input type="checkbox" checked="checked">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="multi-select">
+                <ul>
+                    <li class="multi-select-header">
+                        <span>Label Families</span>
+                        <span class="count">0</span>
+                    </li>
+                    <li class="multi-select-body">
+                        <ul>
+                            <li>
+                                <label class="container">
+                                    One
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="container">
+                                    Two
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="multi-select">
+                <ul>
+                    <li class="multi-select-header">
+                        <span>Verification Status</span>
+                        <span class="count">2</span>
+                    </li>
+                    <li class="multi-select-body">
+                        <ul>
+                            <li>
+                                <label class="container">
+                                    One
+                                    <input type="checkbox" checked="checked">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="container">
+                                    Two
+                                    <input type="checkbox" checked="checked">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <a class="call-to-action">Clear Filters</a>
+        </section>
+
+        <!-- Tools -->
+        <section class="tools">
+            <div class="tools-item">
+                <a class="upload"></a>
+            </div>
+            <div class="tools-item">
+                <!-- Create wizard -->
+                <section class="wizard">
+                    <div id="wiz">
+                        <button id="toggleModal" class="btn-white" type="submit">Create Project</button>
+                        <div class="tint"></div>
+                        <div class="wiz-content">
+                            <form>
+                                <header class="wiz-header">
+                                    <a class="active">Create Artist</a>
+                                </header>
+                                <div class="wiz-body">
+                                    <ul class="row">
+                                        <li class="col">
+                                            <div class="form-group">
+                                                <label for="artistName">Artist</label>
+                                                <input type="text" placeholder="Enter Name" autofocus />
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="talentId">R2 Talent Id</label>
+                                                <input id="emailHelp" type="text" placeholder="Enter R2 Talent Id" aria-describedby="emailHelp">
+                                                <!--<small id="emailHelp" class="form-text text-muted">Help.</small>-->
+                                                <a class="call-to-action">Add</a>
+                                            </div>
+                                        </li>
+
+                                        <li class="col button-group border-left">
+                                            <button class="btn-save" type="submit">Save</button>
+                                            <button class="btn-cancel" type="submit">Cancel</button>
+                                            <button class="btn-reset" type="submit">Reset</button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+    </header>
+    
+    <!-- Uploads Drawer -->
+    <section id="uploads">
+        <div class="uploads-drawer">
+            <div class="uploads-wrapper">
+                <a id="uploads-link" class="toggle-open-red"></a>
+                <h5>Unassigned Assets</h5>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>File</th>
+                            <th>Duration</th>
+                            <th>Bit Depth</th>
+                            <th>Sample Rate</th>
+                            <th>Audio Channels</th>
+                            <th>Codec</th>
+                            <th>Format</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Kill Track_KEYS GTR_79bmp_CU 000002451.wav</td>
+                            <td>04:20:00</td>
+                            <td>24 Bit</td>
+                            <td>192 kHz</td>
+                            <td>2</td>
+                            <td>PCM</td>
+                            <td>Wav</td>
+                        </tr>
+                        <tr>
+                            <td>Kill Track_KEYS GTR_79bmp_CU 000002451.wav</td>
+                            <td>04:20:00</td>
+                            <td>24 Bit</td>
+                            <td>192 kHz</td>
+                            <td>2</td>
+                            <td>PCM</td>
+                            <td>Wav</td>
+                        </tr>
+                        <tr>
+                            <td>Kill Track_KEYS GTR_79bmp_CU 000002451.wav</td>
+                            <td>04:20:00</td>
+                            <td>24 Bit</td>
+                            <td>192 kHz</td>
+                            <td>2</td>
+                            <td>PCM</td>
+                            <td>Wav</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+    
+
+    <div class="row artists-page padded-left-only">
+            <div class="col-lg-6">
+                <table class="table table-sm">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Talent Id</th>
+                            <th>Songs</th>
+                            <th>Digital Assets</th>
+                            <th>Physical Assets</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><a href="#">Amine/LPI</a></td>
+                            <td>8655154548</td>
+                            <td>12</td>
+                            <td>12</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">Amine/Good For You</a></td>
+                            <td>8655154521</td>
+                            <td>4</td>
+                            <td>1</td>
+                            <td>2</td>
+                        </tr>
+                        <tr class="active">
+                            <td><a href="artists.html">Amine/Not At All</a></td>
+                            <td>86551545888</td>
+                            <td>7</td>
+                            <td>3</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">Amine/Caroline</a></td>
+                            <td>8655152248</td>
+                            <td>8</td>
+                            <td>5</td>
+                            <td>3</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-lg-6 preview">
+                <header>
+                    <div class="thumb">
+                        <div class="badge">7</div>
+                        <img src="img/temp-project-image.png" alt="temp project image" />
+                    </div>
+                    <div class="details">
+                        <h1>Amine/Not At All</h1>
+                        <h2>Talent ID: 86551545888</h2>
+                    </div>
+                </header>
+                <div class="content">
+                    <h2>Songs</h2>
+                    <ul>
+                        <li><a href="#">Elgort/EP</a></li>
+                        <li><a href="#">Supernova</a></li>
+                        <li><a href="#">You Can Count On Me</a></li>
+                        <li><a href="#">Killer Track</a></li>
+                        <li><a href="#">Thief</a></li>
+                        <li><a href="#">To Life</a></li>
+                        <li><a href="#">What Did You Do?</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="footer">
+        <h6>Administration</h6>
+        <a href="#">Asset Notification Email Addresses</a>
+        <a href="#">Verification Studios</a>
+        <h6>Reports</h6>
+        <a href="#">Completed Jobs</a>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+
+
+    <script type="text/javascript" src="js/temp.js"></script>
+</body>
+
+</html>

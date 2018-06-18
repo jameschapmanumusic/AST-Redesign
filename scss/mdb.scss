@@ -1,30 +1,4 @@
-﻿/*!
- * Material Design for Bootstrap 4
- * Version: MDB Free 4.5.3
- *
- *
- * Copyright: Material Design for Bootstrap
- * https://mdbootstrap.com/
- *
- * Read the license: https://mdbootstrap.com/license/
- *
- *
- * Documentation: https://mdbootstrap.com/
- *
- * Getting started: https://mdbootstrap.com/getting-started/
- *
- * Tutorials: https://mdbootstrap.com/bootstrap-tutorial/
- *
- * Templates: https://mdbootstrap.com/templates/
- *
- * Support: https://mdbootstrap.com/support/
- *
- * Contact: office@mdbootstrap.com
- *
- * Atribution: Animate CSS, Twitter Bootstrap, Materialize CSS, Normalize CSS, Waves JS, WOW JS, Toastr, Chart.js , Hammer.js
- *
- */
-
+﻿
 @charset "UTF-8";
 
 // Bootstrap
@@ -34,7 +8,6 @@
 // CORE
 @import "core/mixins";
 // Your custom variables
-@import "custom-variables";
 @import "core/colors";
 @import "core/variables";
 @import "core/global";
@@ -42,7 +15,6 @@
 @import "core/typography";
 @import "core/masks";
 //@import "core/waves";
-@import "core/images-data";
 
 // Extras
 /*@import "extras/animations-basic";
@@ -64,5 +36,20 @@
 @import "extras/depreciated";*/
 
 // Your custom styles
-@import "custom-styles";
-@import "custom-variables";
+@import "images-data";
+@import "styles";
+
+@import "badges-icons";
+@import "borders";
+@import "forms";
+@import "headings";
+@import "layout";
+@import "links";
+@import "lists";
+@import "pagination";
+@import "scrolling";
+@import "sub-header";
+@import "tables";
+@import "tools";
+@import "top-header";
+@import "uploads-drawer";

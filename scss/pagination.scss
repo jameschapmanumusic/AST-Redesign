@@ -1,0 +1,97 @@
+﻿// Custom Pagination
+.paging {
+    position:                       absolute;
+    top:                            -33px;
+    left:                           0;
+    right:                          0;
+    width:                          100%;
+    min-width:                      850px;
+    .pagination {
+        margin:                     0 40px 0 0;
+        position:                   absolute;
+        top:                        -2px;
+        right:                      0;
+        .active {
+            .page-link {
+                background:         $stuhub-light-blue!important;
+                border:             1px solid $stuhub-light-blue;
+                color:              $white!important;
+            }
+        }
+        a {
+            font-size:              0.9rem;
+            font-weight:            300;
+        }
+        a:focus {
+            box-shadow:             none!important;
+        }
+        .page-item:last-child {
+            .page-link {
+                margin-right:       0;
+            }
+        }
+        .page-link {
+            border-radius:          2rem!important;
+            padding:                0;
+            margin:                 0 0.6rem 0 0;
+            color:                  $stuhub-navy;
+            width:                  1.7rem;
+            height:                 1.7rem;
+            text-align:             center;
+            line-height:            1.5rem;
+        }
+        .next, .prev {
+            .page-link {
+                border:             none!important;
+                color:              $stuhub-red!important;
+                background-color:   transparent!important;
+                margin-top:         2px;
+                width:              auto;
+                height:             auto;
+            }
+        }
+    }
+}
+
+// A-Z Pagination
+.a-z {
+    position:                       absolute;
+    left:                           40px;
+    top:                            0;
+    a:hover {
+        span {
+            opacity:                1;
+        }
+    }
+    a.active:hover {
+        color:                      $stuhub-light-blue!important;
+    }
+    a.active {
+        border-bottom:              3px solid $stuhub-light-blue;
+        cursor:                     default;
+        span {
+            display:                none;
+        }
+    }
+    a {
+        color:                      $stuhub-light-blue;
+        padding:                    0;
+        margin:                     0 .03rem;
+        position:                   relative;
+        font-size:                  .9rem;
+        font-weight:                200;
+        text-align:                 center;
+        display:                    inline-block;
+        span {
+            position:               absolute;
+            left:                   -20%;
+            top:                    -32px;
+            font-size:              1.5rem;
+            color:                  $grey-lighten-2!important;
+            opacity:                0;
+            @include                transition(all 0.2s ease-in-out);
+            font-weight:            200;
+            text-align:             center;
+        }
+    }
+}

@@ -1,0 +1,28 @@
+﻿/* Custom scrollbars. Only works for chrome and Safari */
+.scrollable {
+    overflow:                               auto;
+}
+body ::-webkit-scrollbar-track {
+    -webkit-box-shadow:                     none;
+    border-radius:                          2px;
+    background:                             $grey-lighten-2;
+}
+
+body ::-webkit-scrollbar {
+    width:                                  2px;
+    background-color:                       $white;;
+}
+
+body ::-webkit-scrollbar-thumb {
+    border-radius:                          2px;
+    -webkit-box-shadow:                     none;
+    background:                             $stuhub-light-blue;;
+}
+
+body ::-webkit-scrollbar-thumb:hover {
+    background:                             $stuhub-red;
+}
+
+body ::-webkit-scrollbar-thumb:active {
+    background:                             orange;
+}

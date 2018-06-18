@@ -1,0 +1,104 @@
+﻿// Custom Subheader
+header.page-sub-header {
+    position:                                       relative;
+    height:                                         180px;
+    padding:                                        0 40px;
+    min-width:                                      1128px;
+    // StudioHub Secondary Navigation
+    .nav {
+        margin-top:                                 10px;
+        li:first-child {
+            margin-left:                            0
+        }
+        li {
+            margin:                                 0 20px;
+            display:inline-block;
+            a {
+                color:                              $stuhub-dark;
+                padding:                            0;
+                font-weight:                        300;
+            }
+            a.active {
+                color:                              $gray-500;
+                border-bottom:                      1px solid $stuhub-red;
+
+            }
+        }
+    }
+
+    // H1 with search field to the right
+    .h1-with-search {
+        h1 {
+            float:                                  left
+        }
+        .search-input {
+            float:                                  left;
+            margin:                                 42px 0 0 20px;
+            width:                                  600px;
+        }
+    }
+
+    // Custom Filters with MultiSelect for StuHub
+    .filters {
+        margin:                                     0;
+        float:                                      left;
+        clear:                                      left;
+        position:                                   absolute;
+        top:                                        130px;
+        .multi-select:hover {
+            @include                                box-shadow(0, 0, 3px, rgba(68,68,68,0.2));
+            .multi-select-body {
+                display:                            block
+            }
+        }
+        .multi-select {
+            float:                                  left;
+            margin-right:                           10px;
+            min-width:                              252px;
+            position:                               relative;
+            z-index:                                1;
+            ul {
+                list-style:                         none; 
+                padding:                            0; 
+                margin:                             0 
+            }
+            .multi-select-header {
+                background:                         $stuhub-dark url($dropdown-chevron) no-repeat 8px 3px;
+                color:                              $white;
+                border-radius:                      3px;
+                font-size:                          0.75rem;
+                padding:                            3px 10px 3px 25px;
+                cursor:pointer;
+                .count {
+                    color:                          $stuhub-light-blue; 
+                    margin-left:                    5px; 
+                    float:                          right
+                }
+            }
+            .multi-select-body {
+                display:                            none;
+                float:                              left;
+                padding:                            5px 0 8px 0;
+                background:                         $white;
+                width:                              100%;
+                border-radius:                      0 0 3px 3px;
+                li {
+                    padding:                        3px 10px;
+                    float:                          left;
+                    clear:                          left;
+                    input[type=checkbox] {
+                        float:                      left; 
+                        margin:                     2px 5px 0 0;
+                    }
+                    label {
+                        font-size:                  0.75rem;
+                        margin:                     0;
+                        padding:                    0;
+                        float:                      left;
+                    }
+                }
+            
+            }
+        }
+    }
+}

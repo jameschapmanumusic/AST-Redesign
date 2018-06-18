@@ -1,0 +1,48 @@
+/* Customize ANY Bootstrap Specific Styles */
+
+html {
+    height:                                 100%;
+    body {
+        min-height:                         100%;
+        display:                            grid;
+        grid-template-rows:                 1fr auto;
+        .footer {
+            background:                     $stuhub-dark url($real-grey) no-repeat;
+            background-size:                200px;
+            background-position:            -96px 20px;
+            padding:                        10px 20px 40px 200px;
+            z-index:                        1;
+            h6 {
+                color:                      $white;
+                margin:                     40px 0 5px 0;
+                letter-spacing:             .03rem;
+            }
+            a:hover {
+                color:                      $white!important;
+            }
+            a {
+                color:                      $grey-lighten-1;
+                font-size:                  12px;
+                font-weight:                200;
+                display:                    block;
+                margin:                     0 0 3px 0;
+            }
+        }
+        .padded {
+            padding:                        0 40px;
+        }
+        .padded-left-only {
+            padding:                        0 0 0 40px;
+        }
+    }
+}
+
+.container-fluid {
+    padding:                                45px 0 10px 0;
+    .row {
+        margin-left:                        0;
+        margin-right:                       0;
+    }
+}
+
+

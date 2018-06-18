@@ -11,7 +11,7 @@ const imagemin = require('gulp-imagemin');
 
 // CSS Tasks
 gulp.task('css-compile', function() {
-  gulp.src('scss/**/*.scss')
+  gulp.src('scss/**/mdb.scss')
     .pipe(sass({outputStyle: 'nested'}).on('error', sass.logError))
     .pipe(autoprefixer({
       browsers: ['last 10 versions'],

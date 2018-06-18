@@ -1,0 +1,93 @@
+﻿// Artists page styles
+.artists-page {
+    height:                                         100%;
+    .col-lg-6 {
+        padding:                                    0;
+    }
+    table {
+        margin-bottom:                              0;
+        td:nth-child(1), th:nth-child(1)            { width:35%}
+        td:nth-child(2), th:nth-child(2)            { width:20%}
+        td:nth-child(3), th:nth-child(3)            { width:15%; text-align: center }
+        td:nth-child(4), th:nth-child(4)            { width:15%; text-align: center }
+        td:nth-child(5), th:nth-child(5)            { width:15%; text-align: center }
+        thead, tr {
+            width:                                  100%;
+            td, th {
+                width:                              20%;
+                float:                              left;
+                white-space:                        nowrap;
+            }
+        }
+        tbody {
+            overflow-x:                             auto;
+            height:                                 470px;
+            float:                                  left;
+            width:                                  100%;
+            tr {
+                display:                            block;
+                td {
+                    display:                        table-cell;
+                    width:                          20%;
+                    float:                          left;
+                }
+            }
+        }
+    }
+    .preview {
+        background-color:                           $stuhub-pale-blue;
+        top:                                        34px;
+        border-top:                                 1px dashed $stuhub-navy!important;
+        padding:                                    40px;
+        header {
+            border-bottom:                          1px dashed $grey-lighten-1!important;
+            padding-bottom:                         10px;
+            margin-bottom:                          10px;
+            h1 {
+                margin:                             113px 0 10px 0;
+            }
+            .thumb {
+                position:                           relative;
+                margin:                             0 15px 0 0;
+                float:                              left;
+                background:                         $white url("../img/silhouette-lined-blue-thin.png") no-repeat 0 0;
+                background-size:                    100%;
+                width:                              212px;
+                height:                             212px;
+                border:                             1px solid $stuhub-navy;
+                img {
+                    width:                          210px;
+                    height:                         210px;
+                }
+                .badge {
+                    position:                       absolute;
+                    top:                            -17px;
+                    right:                          -17px;
+                    width:                          35px;
+                    height:                         35px;
+                    border-radius:                  60px;
+                    background-color:               $stuhub-light-blue;
+                    color:                          $white;
+                    text-align:                     center;
+                    font-weight:                    300;
+                    font-size:                      1rem;
+                }
+            }
+            .details {
+                display:                            inline-block;
+            }
+        }
+
+        .content {
+            ul {
+                li {
+                    display:                        inline-block;
+                    width:                          30%;
+                    font-size:                      0.8rem;
+                }
+            }
+        }
+    }
+}
+// END Artists page styles
+

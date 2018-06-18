@@ -1,0 +1,67 @@
+﻿// Bespoke Uploads Drawer
+.open {
+    .toggle-open-red {
+        transform:                                  rotate(180deg);
+        position:                                   absolute;
+        left:                                       9px;
+        top:                                        9px;
+    }
+    .uploads-drawer {
+        right:                                      0;
+        transition:                                 width 0.25s;
+        -webkit-transition:                         width .25s;
+        -moz-transition:                            width 0.25s;
+        width:                                      970px;
+    }
+}
+
+.uploads-drawer {
+    background:                                     $white;
+    opacity:                                        0.96;
+    @include                                        box-shadow(0, 3px, 8px, rgba(68,68,68,0.15));
+    transition:                                     width 0.25s;
+    -webkit-transition:                             width .25s;
+    -moz-transition:                                width 0.25s;
+    position:                                       absolute;
+    top:                                            271px;
+    right:                                          0;
+    bottom:                                         0;
+    width:                                          38px;
+    overflow:                                       hidden;
+    z-index:                                        1;
+    white-space:                                    nowrap;
+    .uploads-wrapper {
+        padding:                                    11px 40px 10px 38px;
+        table {
+            width:                                  100%;
+            td, th {
+                font-size:                          0.7rem;
+            
+            }
+            thead {
+                tr {
+                    th, td {
+                        font-weight:                200;
+                        color:                      $grey-lighten-1;
+                        border-bottom:              1px dashed $grey-lighten-1;
+                        padding:                    0 20px 4px 0;
+                    }
+                }
+            }
+            tbody {
+                tr {
+                    td {
+                        font-weight:                300;
+                        color:                      $stuhub-dark;
+                        padding:                    5px 20px 2px 0;
+                    }
+                }
+            }
+        }
+        .toggle-open-red {
+            position:                               absolute;
+            left:                                   11px;
+            top:                                    9px;
+        }
+    }
+}

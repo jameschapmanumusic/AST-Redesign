@@ -1,0 +1,439 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Artists</title>
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Top Level Page Header with UMG Branding -->
+    <nav class="navbar navbar-expand-lg navbar-dark stuhub-navbar fixed-top">
+        <ul>
+            <li class="umg-platform"><a href="" title="Go to the UMG Platform Homepage"></a></li>
+            <li class="platform">
+                <a class="platformLogo" href=""></a>
+            </li>
+            <li class="ribbon-menu-item">
+                <a title="Asset Workspace" data-ui-sref="root.jobs.list" href="">Asset Workspace</a>
+            </li>
+            <li class="ribbon-menu-item">
+                <a title="Artists" href="">Artists</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="container-fluid">
+        <!-- Start Page Sub-Header -->
+        <header class="page-sub-header">
+            <!-- Site Top Level Navigation -->
+            <ul class="nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Assets</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Jobs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Artists</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Projects</a>
+                </li>
+            </ul>
+            <!-- Contextual Search -->
+            <section class="h1-with-search">
+                <form>
+                    <h1>Artists</h1>
+                    <input class="search-input" placeholder="Filter By Keyword" type="text" />
+                </form>
+            </section>
+
+            <!-- Filters wizard -->
+            <section class="filters">
+                <div class="multi-select">
+                    <ul>
+                        <li class="multi-select-header">
+                            <span>Verification Company/Studio</span>
+                            <span class="count">2</span>
+                        </li>
+                        <li class="multi-select-body">
+                            <ul>
+                                <li>
+                                    <label class="container">
+                                        One
+                                        <input type="checkbox" checked="checked">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="container">
+                                        Two
+                                        <input type="checkbox" checked="checked">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="multi-select">
+                    <ul>
+                        <li class="multi-select-header">
+                            <span>Label Families</span>
+                            <span class="count">0</span>
+                        </li>
+                        <li class="multi-select-body">
+                            <ul>
+                                <li>
+                                    <label class="container">
+                                        One
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="container">
+                                        Two
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="multi-select">
+                    <ul>
+                        <li class="multi-select-header">
+                            <span>Verification Status</span>
+                            <span class="count">2</span>
+                        </li>
+                        <li class="multi-select-body">
+                            <ul>
+                                <li>
+                                    <label class="container">
+                                        One
+                                        <input type="checkbox" checked="checked">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="container">
+                                        Two
+                                        <input type="checkbox" checked="checked">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <a class="call-to-action">Clear Filters</a>
+            </section>
+
+            <!-- Tools -->
+            <section class="tools">
+                <ul>
+                    <li>
+                        <!-- Create wizard -->
+                        <section class="wizard">
+                            <div id="wiz">
+                                <button id="toggleModal" class="btn-white" type="submit">Create Project</button>
+                                <div class="tint"></div>
+                                <div class="wiz-content">
+                                    <form>
+                                        <header class="wiz-header">
+                                            <a class="active">Create Artist</a>
+                                        </header>
+                                        <div class="wiz-body">
+                                            <ul class="row">
+                                                <li class="col">
+                                                    <div class="form-group">
+                                                        <label for="artistName">Artist</label>
+                                                        <input type="text" placeholder="Enter Name" autofocus />
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="talentId">R2 Talent Id</label>
+                                                        <input id="emailHelp" type="text" placeholder="Enter R2 Talent Id" aria-describedby="emailHelp">
+                                                        <!--<small id="emailHelp" class="form-text text-muted">Help.</small>-->
+                                                        <a class="call-to-action">Add</a>
+                                                    </div>
+                                                </li>
+
+                                                <li class="col button-group border-left">
+                                                    <button class="btn-save" type="submit">Save</button>
+                                                    <button class="btn-cancel" type="submit">Cancel</button>
+                                                    <button class="btn-reset" type="submit">Reset</button>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </section>
+                    </li>
+                </ul>
+            </section>
+
+        </header>
+        <div class="row artists-page padded-left-only">
+            <div class="col-lg-6">
+                <table class="table table-sm">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Talent Id</th>
+                            <th>Projects</th>
+                            <th>Digital Assets</th>
+                            <th>Physical Assets</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><a href="#">Amine/LPI</a></td>
+                            <td>8655154548</td>
+                            <td>4</td>
+                            <td>1</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">Amine/LPI</a></td>
+                            <td>8655154548</td>
+                            <td>4</td>
+                            <td>1</td>
+                            <td>2</td>
+                        </tr>
+                        <tr class="active">
+                            <td><a href="artist-projects.html">Ansel/Elgort/EP</a></td>
+                            <td>8655154548</td>
+                            <td>4</td>
+                            <td>1</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">Amine/LPI</a></td>
+                            <td>8655154548</td>
+                            <td>4</td>
+                            <td>1</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">Amine/LPI</a></td>
+                            <td>8655154548</td>
+                            <td>4</td>
+                            <td>1</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">Amine/LPI</a></td>
+                            <td>8655154548</td>
+                            <td>4</td>
+                            <td>1</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">Amine/LPI</a></td>
+                            <td>8655154548</td>
+                            <td>4</td>
+                            <td>1</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">Amine/LPI</a></td>
+                            <td>8655154548</td>
+                            <td>4</td>
+                            <td>1</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">Amine/LPI</a></td>
+                            <td>8655154548</td>
+                            <td>4</td>
+                            <td>1</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">Amine/LPI</a></td>
+                            <td>8655154548</td>
+                            <td>4</td>
+                            <td>1</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">Amine/LPI</a></td>
+                            <td>8655154548</td>
+                            <td>4</td>
+                            <td>1</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">Amine/LPI</a></td>
+                            <td>8655154548</td>
+                            <td>4</td>
+                            <td>1</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">Amine/LPI</a></td>
+                            <td>8655154548</td>
+                            <td>4</td>
+                            <td>1</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">Amine/LPI</a></td>
+                            <td>8655154548</td>
+                            <td>4</td>
+                            <td>1</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">Amine/LPI</a></td>
+                            <td>8655154548</td>
+                            <td>4</td>
+                            <td>1</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">Amine/LPI</a></td>
+                            <td>8655154548</td>
+                            <td>4</td>
+                            <td>1</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">Amine/LPI</a></td>
+                            <td>8655154548</td>
+                            <td>4</td>
+                            <td>1</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">Amine/LPI</a></td>
+                            <td>8655154548</td>
+                            <td>4</td>
+                            <td>1</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">Amine/LPI</a></td>
+                            <td>8655154548</td>
+                            <td>4</td>
+                            <td>1</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">Amine/LPI</a></td>
+                            <td>8655154548</td>
+                            <td>4</td>
+                            <td>1</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">Amine/LPI</a></td>
+                            <td>8655154548</td>
+                            <td>4</td>
+                            <td>1</td>
+                            <td>2</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-lg-6 preview">
+                <nav class="paging">
+                    <div class="a-z">
+                        <a href="">A <span>A</span></a>
+                        <a href="">B <span>B</span></a>
+                        <a href="">C <span>C</span></a>
+                        <a href="">D <span>D</span></a>
+                        <a href="">E <span>E</span></a>
+                        <a href="">F <span>F</span></a>
+                        <a href="">G <span>G</span></a>
+                        <a href="">H <span>H</span></a>
+                        <a href="">I <span>I</span></a>
+                        <a href="">J <span>J</span></a>
+                        <a href="">K <span>K</span></a>
+                        <a href="">L <span>L</span></a>
+                        <a href="" class="active">M <span>M</span></a>
+                        <a href="">N <span>N</span></a>
+                        <a href="">O <span>O</span></a>
+                        <a href="">P <span>P</span></a>
+                        <a href="">Q <span>Q</span></a>
+                        <a href="">R <span>R</span></a>
+                        <a href="">S <span>S</span></a>
+                        <a href="">T <span>T</span></a>
+                        <a href="">U <span>U</span></a>
+                        <a href="">V <span>V</span></a>
+                        <a href="">W <span>W</span></a>
+                        <a href="">X <span>X</span></a>
+                        <a href="">Y <span>Y</span></a>
+                        <a href="">Z <span>Z</span></a>
+                    </div>
+                    <ul id="pagination" class="pagination justify-content-end">
+                        <li class="page-item prev disabled">
+                            <a class="page-link" href="#" tabindex="-1">Previous</a>
+                        </li>
+                        <li class="page-item next">
+                            <a class="page-link" href="#">Next</a>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item active"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link" href="#">4</a></li>
+                        <li class="page-item"><a class="page-link" href="#">5</a></li>
+                    </ul>
+                </nav>
+                <header>
+                    <div class="thumb">
+                        <div class="badge">7</div>
+                        <img src="img/temp-artist-image.png" alt="temp artist image" />
+                    </div>
+                    <div class="details">
+                        <h1>Ansel/Elgort/EP</h1>
+                        <h2>Talent ID: 21548824369</h2>
+                    </div>
+                </header>
+                <div class="content">
+                    <h2>Projects</h2>
+                    <ul>
+                        <li><a href="#">Elgort/EP</a></li>
+                        <li><a href="#">Supernova</a></li>
+                        <li><a href="#">You Can Count On Me</a></li>
+                        <li><a href="#">Killer Track</a></li>
+                        <li><a href="#">Thief</a></li>
+                        <li><a href="#">To Life</a></li>
+                        <li><a href="#">What Did You Do?</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="footer">
+        <h6>Administration</h6>
+        <a href="#">Asset Notification Email Addresses</a>
+        <a href="#">Verification Studios</a>
+        <h6>Reports</h6>
+        <a href="#">Completed Jobs</a>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+
+
+    <script type="text/javascript" src="js/temp.js"></script>
+</body>
+
+</html>
