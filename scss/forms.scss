@@ -62,7 +62,7 @@ input.search-input {
     background-color:                       $grey-lighten-3;
     padding:                                5px 20px;
     font-weight:                            200;  
-    font-size:                              0.9rem;
+    font-size:                              .9rem;
     background-image:                       url($iconSearch);
     background-repeat:                      no-repeat;
     background-position:                    right 10px top 0.45rem;
@@ -74,7 +74,7 @@ a.call-to-action:active {
 }
 a.call-to-action {                  
     color:                                  $stuhub-red !important;
-    font-size:                              0.9rem;
+    font-size:                              .9rem;
 }
 
 .btn-save, 
@@ -101,73 +101,73 @@ a.call-to-action {
 }
 
 label { 
-    color:                          $grey-lighten-1; 
-    font-size:                      0.8rem;
-    margin-bottom:                  0;
-    display:                        block;
+    color:                                  $grey-lighten-1; 
+    font-size:                              .8rem;
+    margin-bottom:                          0;
+    display:                                block;
 }
 
 // Override Bootstrap Input Styles
-input::-webkit-input-placeholder    { color: $grey-lighten-1 !important }
-input:-moz-placeholder              { color: $grey-lighten-1 !important }
-input::-moz-placeholder             { color: $grey-lighten-1 !important }
-input:-ms-input-placeholder         { color: $grey-lighten-1 !important }
+input::-webkit-input-placeholder            { color: $grey-lighten-1 !important }
+input:-moz-placeholder                      { color: $grey-lighten-1 !important }
+input::-moz-placeholder                     { color: $grey-lighten-1 !important }
+input:-ms-input-placeholder                 { color: $grey-lighten-1 !important }
 input, .form-control {                  
-    display:                        inline-block; 
-    border:                         none!important;
-    outline:                        none!important;
-    border-radius:                  0.2rem; 
-    @include                        inner-shadow(0, 0, 2px, 0.5);
-    background-color:               $grey-lighten-3;
-    font-weight:                    300;
-    font-size:                      0.8rem;
-    padding:                        6px 10px;
-    color:                          $grey-darken-1;
+    display:                                inline-block; 
+    border:                                 none!important;
+    outline:                                none!important;
+    border-radius:                          .2rem; 
+    @include                                inner-shadow(0, 0, 2px, 0.5);
+    background-color:                       $grey-lighten-3;
+    font-weight:                            300;
+    font-size:                              .8rem;
+    padding:                                6px 10px;
+    color:                                  $grey-darken-1;
 }
 
 input:focus, .form-control:focus {
-    border-radius:                  0.2rem;
-    outline:                        none!important;
-    border:                         1px solid $stuhub-light-blue!important;
-    background-image:               none!important;
-    @include                        inner-shadow(0, 0, 2px, 0.5);
-    background-color:               $grey-lighten-3;
+    border-radius:                          .2rem;
+    outline:                                none!important;
+    border:                                 1px solid $stuhub-light-blue!important;
+    background-image:                       none!important;
+    @include                                inner-shadow(0, 0, 2px, 0.5);
+    background-color:                       $grey-lighten-3;
 }
 
 // Override Bootstrap Button Styles
 button:focus {
-    outline:                        none!important;
-    border:                         none;
-    border-radius:                  20px;
-    @include                        box-shadow(inset, 0, 0, 20px, rgba(68,68,68,0.4));
+    outline:                                none!important;
+    border:                                 none;
+    border-radius:                          20px;
+    @include                                box-shadow(inset, 0, 0, 20px, rgba(68,68,68,0.4));
 }
 button {
-    border-radius:                  20px;
-    border:                         none;
-    font-weight:                    300;
-    font-size:                      0.8rem;
-    padding:                        7px 20px;
-    min-width:                      130px;
-    cursor:                         pointer;
+    border-radius:                          20px;
+    border:                                 none;
+    font-weight:                            300;
+    font-size:                              .8rem;
+    padding:                                7px 20px;
+    min-width:                              130px;
+    cursor:                                 pointer;
 }
 .btn-white:focus { 
-    outline:                        none!important;
-    border:                         1px solid $stuhub-light-blue!important;
-    box-shadow:                     none!important;
-    border-radius:                  3px;
+    outline:                                none!important;
+    border:                                 1px solid $stuhub-light-blue!important;
+    box-shadow:                             none!important;
+    border-radius:                          3px;
 }
 .btn-white:hover { 
-    background-color:               $stuhub-red!important;
-    color:                          $white!important;
+    background-color:                       $stuhub-red!important;
+    color:                                  $white!important;
 }
 .btn-white {
-    background:                     $white;
-    border:                         none;
-    @include                        box-shadow(0, 0, 4px, rgba(68,68,68,0.3));
-    border-radius:                  3px;
-    color:                          $stuhub-red!important;
-    font-weight:                    200;
-    font-size:                      0.95rem;
-    padding:                        8px 40px;
-    cursor:                         pointer;
+    background:                             $white;
+    border:                                 none;
+    @include                                box-shadow(0, 0, 4px, rgba(68,68,68,0.3));
+    border-radius:                          3px;
+    color:                                  $stuhub-red!important;
+    font-weight:                            200;
+    font-size:                              .95rem;
+    padding:                                8px 40px;
+    cursor:                                 pointer;
 }

@@ -12,9 +12,12 @@
         -webkit-transition:                         width .25s;
         -moz-transition:                            width 0.25s;
         width:                                      970px;
+        @include                                    box-shadow(0, 3px, 8px, rgba(68,68,68,0.15));
         .uploads-wrapper {
             margin:                                15px 40px 10px 20px;
-            h5                                      { display:block }
+            h5 { 
+                display:                            block;
+            }
             table {
                 display:                            table;
                 width:                              100%;
@@ -48,8 +51,7 @@
 
 .uploads-drawer {
     background:                                     $white;
-    opacity:                                        0.96;
-    @include                                        box-shadow(0, 3px, 8px, rgba(68,68,68,0.15));
+    opacity:                                        0.95;
     transition:                                     width 0.25s;
     -webkit-transition:                             width .25s;
     -moz-transition:                                width 0.25s;
@@ -61,6 +63,7 @@
     z-index:                                        1;
     white-space:                                    nowrap;
     cursor:                                         pointer;
+    border-left:1px dashed $grey-lighten-1;
     .badge {
         top:                                        -15px;
         left:                                       -15px;
@@ -77,7 +80,7 @@
         }
         .toggle-open-red {
             position:                               absolute;
-            right:                                  11px;
+            right:                                  8px;
             top:                                    14px;
         }
     }

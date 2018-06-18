@@ -1,4 +1,5 @@
 ﻿// Custom Borders
-.border-left { 
-    border-left:            1px dashed $grey-lighten-1!important;
-}
+.border-left { border-left:                 1px solid $grey-lighten-1!important }
+.border-right { border-right:               1px solid $grey-lighten-1!important }
+.border-left-dashed { border-left:          1px dashed $grey-lighten-1!important }
+.border-right-dashed { border-right:        1px dashed $grey-lighten-1!important }
