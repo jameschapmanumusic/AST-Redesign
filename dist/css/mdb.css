@@ -2394,8 +2394,8 @@ header.page-sub-header {
   -ms-transform: rotate(180deg);
   transform: rotate(180deg);
   position: absolute;
-  left: 9px;
-  top: 9px; }
+  right: 8px;
+  top: 14px; }
 
 .open .uploads-drawer {
   right: 0;
@@ -2405,6 +2405,24 @@ header.page-sub-header {
   -webkit-transition: width .25s;
   -moz-transition: width 0.25s;
   width: 970px; }
+  .open .uploads-drawer .uploads-wrapper {
+    margin: 15px 40px 10px 20px; }
+    .open .uploads-drawer .uploads-wrapper h5 {
+      display: block; }
+    .open .uploads-drawer .uploads-wrapper table {
+      display: table;
+      width: 100%; }
+      .open .uploads-drawer .uploads-wrapper table td, .open .uploads-drawer .uploads-wrapper table th {
+        font-size: .7rem; }
+      .open .uploads-drawer .uploads-wrapper table thead tr th, .open .uploads-drawer .uploads-wrapper table thead tr td {
+        font-weight: 200;
+        color: #bdbdbd;
+        border-bottom: 1px dashed #bdbdbd;
+        padding: 0 20px 4px 0; }
+      .open .uploads-drawer .uploads-wrapper table tbody tr td {
+        font-weight: 300;
+        color: #333333;
+        padding: 5px 20px 2px 0; }
 
 .uploads-drawer {
   background: #fff;
@@ -2421,25 +2439,22 @@ header.page-sub-header {
   right: 0;
   bottom: 0;
   width: 38px;
-  overflow: hidden;
   z-index: 1;
-  white-space: nowrap; }
+  white-space: nowrap;
+  cursor: pointer; }
+  .uploads-drawer .badge {
+    top: -15px;
+    left: -15px;
+    width: 26px;
+    height: 26px;
+    font-size: .7rem;
+    line-height: 1.6rem;
+    padding-right: 1px; }
   .uploads-drawer .uploads-wrapper {
-    padding: 11px 40px 10px 38px; }
-    .uploads-drawer .uploads-wrapper table {
-      width: 100%; }
-      .uploads-drawer .uploads-wrapper table td, .uploads-drawer .uploads-wrapper table th {
-        font-size: 0.7rem; }
-      .uploads-drawer .uploads-wrapper table thead tr th, .uploads-drawer .uploads-wrapper table thead tr td {
-        font-weight: 200;
-        color: #bdbdbd;
-        border-bottom: 1px dashed #bdbdbd;
-        padding: 0 20px 4px 0; }
-      .uploads-drawer .uploads-wrapper table tbody tr td {
-        font-weight: 300;
-        color: #333333;
-        padding: 5px 20px 2px 0; }
+    overflow: hidden; }
+    .uploads-drawer .uploads-wrapper table, .uploads-drawer .uploads-wrapper h5 {
+      display: none; }
     .uploads-drawer .uploads-wrapper .toggle-open-red {
       position: absolute;
-      left: 11px;
-      top: 9px; }
+      right: 11px;
+      top: 14px; }
