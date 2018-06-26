@@ -1,173 +1,368 @@
 ﻿// Custom Checkbox & Radio Styles ----- MUST NEST INPUT WITHIN LABELS AND ADD THE CLASS .container TO THE LABEL!!!!!!!!!!!
 label.container:hover input[type=checkbox] ~ .checkmark {
-    background-color:                       $grey-lighten-2;
+    background-color:                                   $grey-lighten-2;
 }
 label.container {
-    position:                               relative;
-    cursor:                                 pointer;
-    -webkit-user-select:                    none;
-    -moz-user-select:                       none;
-    -ms-user-select:                        none;
-    user-select:                            none;
-    padding:                                3px 0 0 28px!important;
+    position:                                           relative;
+    cursor:                                             pointer;
+    -webkit-user-select:                                none;
+    -moz-user-select:                                   none;
+    -ms-user-select:                                    none;
+    user-select:                                        none;
+    padding:                                            3px 0 0 28px!important;
     /* Hide the browser's default checkbox */
     input[type=checkbox] {
-      position:                             absolute;
-      opacity:                              0;
-      cursor:                               pointer;
+      position:                                         absolute;
+      opacity:                                          0;
+      cursor:                                           pointer;
     }
     input[type=checkbox]:checked ~ .checkmark {
-        background-color:                   $stuhub-light-blue;
-        border-radius:                      2px;
+        background-color:                               $stuhub-light-blue;
+        border-radius:                                  2px;
     }
     input[type=checkbox]:checked ~ .checkmark:after {
-        display:                            block;
+        display:                                        block;
     }
     .checkmark {
-        position:                           absolute;
-        top:                                0;
-        left:                               0;
-        height:                             22px;
-        width:                              22px;
-        background-color:                   $grey-lighten-2;
+        position:                                       absolute;
+        top:                                            0;
+        left:                                           0;
+        height:                                         22px;
+        width:                                          22px;
+        background-color:                               $grey-lighten-2;
     }
     .checkmark:after {
-        content:                            "";
-        position:                           absolute;
-        display:                            none;
-        left:                               8px;
-        top:                                4px;
-        width:                              6px;
-        height:                             12px;
-        border:                             solid $white;
-        border-width:                       0 2px 2px 0;
-        -webkit-transform:                  rotate(45deg);
-        -ms-transform:                      rotate(45deg);
-        transform:                          rotate(45deg);
+        content:                                        "";
+        position:                                       absolute;
+        display:                                        none;
+        left:                                           8px;
+        top:                                            4px;
+        width:                                          6px;
+        height:                                         12px;
+        border:                                         solid $white;
+        border-width:                                   0 2px 2px 0;
+        -webkit-transform:                              rotate(45deg);
+        -ms-transform:                                  rotate(45deg);
+        transform:                                      rotate(45deg);
     }
 }
 
 // Custom Inputs & Buttons
 input.search-input:focus {
-    border-radius:                          1rem;
-    outline:                                none;
-    border:                                 1px solid $stuhub-light-blue!important;
-    background-image:                       none!important;
+    border-radius:                                      1rem;
+    outline:                                            none;
+    border:                                             1px solid $stuhub-light-blue!important;
+    background-image:                                   none!important;
 }
 
 input.search-input {
-    border-radius:                          1rem;
-    @include                                inner-shadow(0, 0, 2px, 0.2);
-    border:                                 none;
-    background-color:                       $grey-lighten-3;
-    padding:                                5px 20px;
-    font-weight:                            200;  
-    font-size:                              .9rem;
-    background-image:                       url($iconSearch);
-    background-repeat:                      no-repeat;
-    background-position:                    right 10px top 0.45rem;
-    background-size:                        18px;
+    border-radius:                                      1rem;
+    @include                                            inner-shadow(0, 0, 2px, 0.2);
+    border:                                             none;
+    background-color:                                   $grey-lighten-3;
+    padding:                                            5px 20px;
+    font-weight:                                        200;  
+    font-size:                                          .9rem;
+    background-image:                                   url($iconSearch);
+    background-repeat:                                  no-repeat;
+    background-position:                                right 10px top 0.45rem;
+    background-size:                                    18px;
 }
 
 a.call-to-action:active {
-    color:                                  $stuhub-light-blue !important;
+    color:                                              $stuhub-light-blue !important;
 }
+
 a.call-to-action {                  
-    color:                                  $stuhub-red !important;
-    font-size:                              .9rem;
+    color:                                              $stuhub-red !important;
+    font-size:                                          .9rem;
 }
 
 .btn-save, 
 .btn-cancel, 
-.btn-reset {
-    float:                                  left;
-    clear:                                  left;
-    margin:                                 0 0 20px 0;
+.btn-reset,
+.btn-edit, 
+.btn {
+    margin:                                             0 0 20px 0;
+    border-radius:                                      20px;
+    border:                                             none;
+    font-weight:                                        300;
+    font-size:                                          .8rem;
+    padding:                                            7px 20px;
+    min-width:                                          130px;
+    cursor:                                             pointer;
 }
-.btn-save {
-    color:                                  $white;
-    background-color:                       $stuhub-red;
+
+.btn-save, .btn-edit, .btn {
+    color:                                              $white;
+    background-color:                                   $stuhub-red;
 }
 
 .btn-cancel {
-    color:                                  $white;
-    background-color:                       $stuhub-light-blue;
+    color:                                              $white;
+    background-color:                                   $stuhub-light-blue;
 }
 
 .btn-reset {
-    color:                                  $stuhub-navy;
-    background-color:                       $white;
-    border:                                 1px solid $stuhub-navy!important;
+    color:                                              $stuhub-navy;
+    background-color:                                   $white;
+    border:                                             1px solid $stuhub-navy!important;
 }
 
 label { 
-    color:                                  $grey-lighten-1; 
-    font-size:                              .8rem;
-    margin-bottom:                          0;
-    display:                                block;
+    color:                                              $grey-lighten-1; 
+    font-size:                                          .8rem;
+    margin-bottom:                                      .15rem;
+    display:                                            block;
 }
 
 // Override Bootstrap Input Styles
-input::-webkit-input-placeholder            { color: $grey-lighten-1 !important }
-input:-moz-placeholder                      { color: $grey-lighten-1 !important }
-input::-moz-placeholder                     { color: $grey-lighten-1 !important }
-input:-ms-input-placeholder                 { color: $grey-lighten-1 !important }
+input::-webkit-input-placeholder                        { color: $grey-lighten-1 !important }
+input:-moz-placeholder                                  { color: $grey-lighten-1 !important }
+input::-moz-placeholder                                 { color: $grey-lighten-1 !important }
+input:-ms-input-placeholder                             { color: $grey-lighten-1 !important }
+input, 
+select.form-control:not([size]):not([multiple])         {height: 31px;}
+
+select {
+    -webkit-appearance:                                 none; 
+    -moz-appearance:                                    none;
+    appearance:                                         none;       
+    background:                                         transparent url($chevron-grey-open) right 8px center no-repeat;
+    background-size:                                    16px;
+    option {
+        font-weight:                                    200;
+        font-size:                                      .8rem;
+    }
+}
+
 input, .form-control {                  
-    display:                                inline-block; 
-    border:                                 none!important;
-    outline:                                none!important;
-    border-radius:                          .2rem; 
-    @include                                inner-shadow(0, 0, 2px, 0.5);
-    background-color:                       $grey-lighten-3;
-    font-weight:                            300;
-    font-size:                              .8rem;
-    padding:                                6px 10px;
-    color:                                  $grey-darken-1;
+    display:                                            inline-block; 
+    border:                                             none!important;
+    outline:                                            none!important;
+    border-radius:                                      .2rem; 
+    @include                                            inner-shadow(0, 0, 2px, 0.5);
+    background-color:                                   $grey-lighten-3;
+    font-weight:                                        300;
+    font-size:                                          .8rem;
+    padding:                                            6px 10px;
+    color:                                              $grey-darken-1;
 }
 
 input:focus, .form-control:focus {
-    border-radius:                          .2rem;
-    outline:                                none!important;
-    border:                                 1px solid $stuhub-light-blue!important;
-    background-image:                       none!important;
-    @include                                inner-shadow(0, 0, 2px, 0.5);
-    background-color:                       $grey-lighten-3;
+    border-radius:                                      .2rem;
+    outline:                                            none!important;
+    border:                                             1px solid $stuhub-light-blue!important;
+    background-image:                                   none!important;
+    @include                                            inner-shadow(0, 0, 2px, 0.5);
+    background-color:                                   $grey-lighten-3;
 }
 
 // Override Bootstrap Button Styles
 button:focus {
-    outline:                                none!important;
-    border:                                 none;
-    border-radius:                          20px;
-    @include                                box-shadow(inset, 0, 0, 20px, rgba(68,68,68,0.4));
+    outline:                                            none!important;
+    border:                                             none;
+    border-radius:                                      20px;
+    @include                                            box-shadow(inset, 0, 0, 20px, rgba(68,68,68,0.4));
 }
 button {
-    border-radius:                          20px;
-    border:                                 none;
-    font-weight:                            300;
-    font-size:                              .8rem;
-    padding:                                7px 20px;
-    min-width:                              130px;
-    cursor:                                 pointer;
+    border-radius:                                      20px;
+    border:                                             none;
+    font-weight:                                        300;
+    font-size:                                          .8rem;
+    padding:                                            7px 20px;
+    min-width:                                          130px;
+    cursor:                                             pointer;
 }
 .btn-white:focus { 
-    outline:                                none!important;
-    border:                                 1px solid $stuhub-light-blue!important;
-    box-shadow:                             none!important;
-    border-radius:                          3px;
+    outline:                                            none!important;
+    border:                                             1px solid $stuhub-light-blue!important;
+    box-shadow:                                         none!important;
+    border-radius:                                      3px;
 }
 .btn-white:hover { 
-    background-color:                       $stuhub-red!important;
-    color:                                  $white!important;
+    background-color:                                   $stuhub-red!important;
+    color:                                              $white!important;
 }
 .btn-white {
-    background:                             $white;
-    border:                                 none;
-    @include                                box-shadow(0, 0, 4px, rgba(68,68,68,0.3));
-    border-radius:                          3px;
-    color:                                  $stuhub-red!important;
-    font-weight:                            200;
-    font-size:                              .95rem;
-    padding:                                8px 40px;
-    cursor:                                 pointer;
+    background:                                         $white;
+    border:                                             none;
+    @include                                            box-shadow(0, 0, 4px, rgba(68,68,68,0.3));
+    border-radius:                                      3px;
+    color:                                              $stuhub-red!important;
+    font-weight:                                        200;
+    font-size:                                          .95rem;
+    padding:                                            8px 40px;
+    cursor:                                             pointer;
+}
+
+// Custom Filters with MultiSelect for StuHub
+.filters {
+    margin:                                                 0;
+    float:                                                  left;
+    clear:                                                  left;
+    position:                                               absolute;
+    top:                                                    75px;
+    .multi-select:hover {
+        @include                                            box-shadow(0, 0, 3px, rgba(68,68,68,0.2));
+        .multi-select-body {
+            display:                                        block
+        }
+    }
+    .multi-select {
+        float:                                              left;
+        margin-right:                                       10px;
+        min-width:                                          252px;
+        position:                                           relative;
+        z-index:                                            1;
+        ul {
+            list-style:                                     none; 
+            padding:                                        0; 
+            margin:                                         0 
+        }
+        .multi-select-header {
+            background:                                     $stuhub-dark url($dropdown-chevron) no-repeat 8px 3px;
+            color:                                          $white;
+            border-radius:                                  3px;
+            font-size:                                      0.75rem;
+            padding:                                        3px 10px 3px 25px;
+            cursor:pointer;
+            .count {
+                color:                                      $stuhub-light-blue; 
+                margin-left:                                5px; 
+                float:                                      right
+            }
+        }
+        .multi-select-body {
+            display:                                        none;
+            float:                                          left;
+            padding:                                        5px 0 8px 0;
+            background:                                     $white;
+            width:                                          100%;
+            border-radius:                                  0 0 3px 3px;
+            li {
+                padding:                                    3px 10px;
+                float:                                      left;
+                clear:                                      left;
+                input[type=checkbox] {
+                    float:                                  left; 
+                    margin:                                 2px 5px 0 0;
+                }
+                label {
+                    font-size:                              0.75rem;
+                    margin:                                 0;
+                    padding:                                0;
+                    float:                                  left;
+                }
+            }
+            
+        }
+    }
+}
+
+// Custom Bootstrap Responsive Form Styles
+.form-group                                                 {margin-bottom:1.5rem}
+.form-row>.col, .form-row>[class*=col-] {
+    padding-right:                                          20px;
+    padding-left:                                           5px;
+    .call-to-action {
+        margin:                                             27px 0 0;
+        display:                                            inline-block;
+    }
+}
+
+// Switch - to replace radio buttons
+.switch {
+    position:                                               relative;
+    display:                                                inline-block;
+    width:                                                  30px;
+    height:                                                 16px;
+    margin:                                                 8px 20px 0 0;
+    .switch input                                           {display:none;}
+    .slider {
+      position:                                             absolute;
+      cursor:                                               pointer;
+      top:                                                  0;
+      left:                                                 0;
+      right:                                                0;
+      bottom:                                               0;
+      background-color:                                     $grey-lighten-1;
+      -webkit-transition:                                   .4s;
+      transition:                                           .4s;
+    }
+    .slider:before {
+      position:                                             absolute;
+      content:                                              "";
+      height:                                               12px;
+      width:                                                12px;
+      left:                                                 2px;
+      bottom:                                               2px;
+      background-color:                                     $white;
+      -webkit-transition:                                   .4s;
+      transition:                                           .4s;
+    }
+    input                                                   {opacity:0}
+    input:checked + .slider {
+      background-color:                                     $stuhub-light-blue;
+    }
+    input:focus + .slider {
+      box-shadow: 0 0 1px                                   $stuhub-light-blue;
+    }
+    input:checked + .slider:before {
+      -webkit-transform:                                    translateX(14px);
+      -ms-transform:                                        translateX(14px);
+      transform:                                            translateX(14px);
+    }
+    .slider.round {
+      border-radius:                                        34px;
+    }
+    .slider.round:before {
+      border-radius:                                        50%;
+    }
+}
+
+summary {                                   
+    min-width:                                              10.74rem;
+    font-weight:                                            300;
+    font-size:                                              .8rem;
+    margin-bottom:                                          12px;
+}
+
+// Hide Form Ele By Default
+.main-content {
+    .mid-section {
+        .form-row {
+            input, .switch                                  {display:none}
+        }
+    }
+    aside {
+        .btn-cancel {
+            display:                                        none;
+        }
+        .btn-edit::after {
+            content:                                        "Edit";
+        }
+    }
+}
+// Show Form Inputs
+.show-form {
+    .mid-section {
+        input, .switch {
+        display:                                            block!important;
+        }
+        summary {
+            display:                                        none;
+        }
+    }
+    aside {
+        .btn-cancel {
+            display:                                        block;     
+        }
+        .btn-cancel::after {
+                content:                                    "Cancel";
+        }
+        .btn-edit::after {
+            content:                                        "Save";
+        }
+    }
 }

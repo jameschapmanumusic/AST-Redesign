@@ -1,0 +1,146 @@
+﻿// Custom Navigation
+
+// StudioHub Top Level Navigation
+.stuhub-navbar {
+    ul {
+        display:                                    inline-block;
+        list-style:                                 none;
+        margin:                                     0;
+        padding:                                    0;
+        float:                                      left;
+        li {
+            display:                                inline-block;
+            border-right:                           1px solid $grey-darken-1;
+            padding:                                0 15px 0 0;
+            margin:                                 0 15px 0 0;
+            vertical-align:                         top;
+            position:                               relative;
+            float:                                  left;
+            a:hover {
+                color:                              $white!important;
+            }
+            a {
+                height:                             45px;
+                float:                              left;
+                color:                              $grey-lighten-2;
+                font-size:                          0.9em;
+                font-weight:                        100;
+                line-height:                        46px;
+            }
+        }
+        li.ribbon-menu-item {
+            border-right:                           none;
+            background-image:                       url($ribbonChevron);
+            background-repeat:                      no-repeat;
+            background-position:                    right 19px;
+            padding-right:                          20px;
+        }
+        li.ribbon-menu-item:last-child {
+            background-image:                       none;
+        }
+        li.umg-platform {
+            a {
+                background:                         url($umgPlatformLogo) no-repeat;
+                background-size:                    auto 32px;
+                background-position:                0 6px;
+                width:                              58px;
+            }
+        }
+        li.platform {
+            a.platformLogo {
+                background:                         url($stuHubLogoInverted) no-repeat;
+                background-size:                    auto 32px;
+                background-position:                0 8px;
+                width:                              132px;
+            }
+        }
+    }  
+}
+
+// StudioHub Secondary Navigation
+.stuhub-sub-navbar {
+    top:                                            45px;
+    background-color:                               $white;
+    padding:                                        10px 40px;
+    z-index:                                        2;
+    ul {
+        li:first-child {
+            margin-left:                            0
+        }
+        li {
+            margin:                                 0 20px;
+            display:inline-block;
+            a {
+                color:                              $stuhub-dark;
+                padding:                            0;
+                font-weight:                        300;
+            }
+            a.active {
+                color:                              $gray-500;
+                border-bottom:                      1px solid $stuhub-red;
+
+            }
+        }
+    }
+}
+    
+// StudioHub Contextual Navigation
+.contextual-navigation {
+    border-top:                                     1px solid $grey-lighten-1;
+    margin:                                         20px 0 0 0;
+    ul {
+        li {
+            display:                                inline-block;
+            font-weight:                            100;
+            font-size:                              1.7rem;
+            float:                                  left;
+            a {
+                color:                              $grey-lighten-1;
+                float:                              left;
+                margin:                             0 4rem 0 0;
+                min-width:                          110px;
+            }
+            a.selected {
+                color:                              $stuhub-navy;
+                font-weight:                        200;
+            }
+            a.selected::after {
+                content:                            "...";
+                position:                           absolute;
+            }
+            
+        }
+        li.physical-assets {
+            a {
+                background:                         url($real-off) 0 0 no-repeat;
+                background-size:                    100px;
+                padding:                            3.04rem 0 0 6.5rem;
+                min-height:                         6.6rem;
+                margin:                             -2.8rem 3rem 0 0;
+                min-width:                          325px;
+            }
+            a.selected {
+                background:                         url($real-on) 0 0 no-repeat;
+                background-size:                    100px;
+                padding:                            3.04rem 0 0 6.5rem;
+                min-height:                         6.6rem;
+                margin:                             -2.8rem 3rem 0 0;
+            }
+        }
+         li.verifications {
+            a {
+                background:                         url($verifications-off) 0 0 no-repeat;
+                background-size:                    108px;
+                padding:                            3.17rem 0 0 6.5rem;
+                min-height:                         7rem;
+                margin:                             -3.2rem 3rem 0 0;
+            }
+            a.selected {
+                background:                         url($verifications-on) 0 0 no-repeat;
+                background-size:                    108px;
+                padding:                            3.17rem 0 0 6.5rem;
+                margin:                             -3.2rem 3rem 0 0;
+            }
+        }
+    }
+}

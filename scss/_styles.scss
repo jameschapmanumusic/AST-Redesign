@@ -1,42 +1,13 @@
 ﻿// Artists page styles
-.artists-page {
-    height:                                         100%;
+.main-content {
+    width:                                          100%;
+    padding-top:                                    2rem;
     .col-lg-6 {
         padding:                                    0;
     }
-    table {
-        margin-bottom:                              0;
-        td:nth-child(1), th:nth-child(1)            { width:35%}
-        td:nth-child(2), th:nth-child(2)            { width:20%}
-        td:nth-child(3), th:nth-child(3)            { width:15%; text-align: center }
-        td:nth-child(4), th:nth-child(4)            { width:15%; text-align: center }
-        td:nth-child(5), th:nth-child(5)            { width:15%; text-align: center }
-        thead, tr {
-            width:                                  100%;
-            td, th {
-                width:                              20%;
-                float:                              left;
-                white-space:                        nowrap;
-            }
-        }
-        tbody {
-            overflow-x:                             auto;
-            height:                                 470px;
-            float:                                  left;
-            width:                                  100%;
-            tr {
-                display:                            block;
-                td {
-                    display:                        table-cell;
-                    width:                          20%;
-                    float:                          left;
-                }
-            }
-        }
-    }
     .preview {
         background-color:                           $stuhub-pale-blue;
-        top:                                        34px;
+        top:                                        31px;
         border-top:                                 1px solid $grey-lighten-1!important;
         padding:                                    40px;
         header {
@@ -77,8 +48,7 @@
                 display:                            inline-block;
             }
         }
-
-        .content {
+        .preview-content {
             ul {
                 li {
                     display:                        inline-block;
@@ -87,6 +57,16 @@
                 }
             }
         }
+    }
+    aside {
+        padding:                                    33px 25px 0 40px;
+        button {
+            clear:                                  left;
+            float:                                  left;
+        }
+    }
+    form {
+        margin-left:                                40px;
     }
 }
 // END Artists page styles

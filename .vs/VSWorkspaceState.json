@@ -2,12 +2,11 @@
   "ExpandedNodes": [
     "",
     "\\dist",
-    "\\node_modules\\bootstrap",
-    "\\node_modules\\bootstrap\\dist",
-    "\\node_modules\\bootstrap\\scss",
-    "\\node_modules\\bootstrap\\scss\\mixins",
+    "\\dist\\font",
+    "\\js",
+    "\\node_modules",
     "\\scss"
   ],
-  "SelectedNode": "\\scss\\_custom-variables.scss",
+  "SelectedNode": "\\dist\\font\\glyphicons",
   "PreviewInSolutionExplorer": false
 }

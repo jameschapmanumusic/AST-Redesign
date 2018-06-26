@@ -14,16 +14,29 @@
         width:                                      970px;
         @include                                    box-shadow(0, 3px, 8px, rgba(68,68,68,0.15));
         .uploads-wrapper {
-            margin:                                15px 40px 10px 20px;
+            margin:                                 15px 40px 10px 20px;
             h5 { 
                 display:                            block;
             }
             table {
                 display:                            table;
                 width:                              100%;
+                td:nth-child(1), th:nth-child(1) {
+                    width:                          40%;
+                }
+                thead, tbody, tr, td, th { 
+                    display:                        block; 
+                }
+                tr:after {
+                    content:                        ' ';
+                    display:                        block;
+                    visibility:                     hidden;
+                    clear:                          both;
+                }
                 td, th {
                     font-size:                      .7rem;
-            
+                    width:                          10%;
+                    float:                          left;
                 }
                 thead {
                     tr {
@@ -36,11 +49,21 @@
                     }
                 }
                 tbody {
+                    overflow-y:                     auto;
+                    margin-top:                     5px;
+                    position:                       absolute;
+                    top:                            65px;
+                    left:                           20px;
+                    right:                          40px;
+                    bottom:                         33%;
                     tr {
                         td {
                             font-weight:            300;
                             color:                  $stuhub-dark;
                             padding:                5px 20px 2px 0;
+                            white-space:            nowrap;
+                            overflow:               hidden;
+                            text-overflow:          ellipsis;
                         }
                     }
                 }
@@ -48,15 +71,19 @@
         }
     }
 }
-
+.artist-projects-page {
+    .uploads-drawer {
+        top:                                        247px;
+    }
+}
 .uploads-drawer {
     background:                                     $white;
-    opacity:                                        0.95;
+    opacity:                                        0.92;
     transition:                                     width 0.25s;
     -webkit-transition:                             width .25s;
     -moz-transition:                                width 0.25s;
     position:                                       absolute;
-    top:                                            271px;
+    top:                                            239px;
     right:                                          0;
     bottom:                                         0;
     width:                                          38px;

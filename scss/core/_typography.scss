@@ -88,6 +88,22 @@
   font-weight: 700;
 }
 
+@font-face {
+  font-family: "Glyphicons Halflings";
+  src: local(glyphicon),
+    url("#{glyphicons-font-path}glyphicons-halflings-regular.eot");
+  src: url("#{glyphicons-font-path}glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"),
+    url("#{glyphicons-font-path}glyphicons-halflings-regular.woff") format("woff"),
+    url("#{glyphicons-font-path}glyphicons-halflings-regular.ttf") format("truetype");
+  font-weight: 200;
+}
+
+/* GLYPHICONS */
+.glyphicon {
+    font-family: 'Glyphicons Halflings' !important;
+    font-weight: 200;
+}
+
 body {
   font-family: "OpenSans";
   font-weight: 300;

@@ -1,8 +1,15 @@
 ﻿// MK - Bespoke Tools
 
+// Target Artist Page Only for correct positioning
+.artists-page {
+    .tools {
+        top:                                        60px;
+    }
+}
+
 .tools {
     position:                                       absolute;
-    top:                                            125px;
+    top:                                            80px;
     right:                                          40px;
     .tools-item {
         display:                                    inline-block;
@@ -21,7 +28,7 @@
     .wizard {
         button {
             position:                               relative; 
-            z-index:                                3
+            z-index:                                4;
         }
         .show {
             display:                                block!important
@@ -35,16 +42,17 @@
                 display:                            block;
             }
             .wiz-content {
-                float: left;
                 background-image:                   url($dk-blue-triangle-right);
                 background-repeat:                  no-repeat;
                 background-position:                right 11px;
                 background-size:                    10px;
-                position:                           relative;
+                position:                           absolute;
                 padding-right:                      9px;
                 margin-right:                       2px;
-                z-index:                            2;
+                z-index:                            3;
                 min-width:                          400px;
+                top:                                0;
+                right:                              100%;
                 .wiz-header {
                     height:                         40px;
                     padding:                        8px 20px 0 20px;
@@ -92,7 +100,7 @@
             }
             .tint {
                 position:                           fixed;
-                z-index:                            2;
+                z-index:                            3;
                 background:                         $black;
                 opacity:                            0.4;
                 top:                                0;

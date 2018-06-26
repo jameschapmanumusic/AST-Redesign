@@ -1,37 +1,195 @@
 ﻿// Custom Tables
 
+table {
+    thead {
+        td, th {
+            font-weight:                                    300;
+            font-size:                                      0.9rem;
+            padding:                                        .3rem 1rem .3rem 0;
+        }
+    }
+    tbody {
+        td {
+            font-weight:                                    300;
+            font-size:                                      0.8rem;
+            padding:                                        .65rem 1rem .65rem 0;
+            white-space:                                    nowrap;
+            overflow:                                       hidden;
+            text-overflow:                                  ellipsis;
+        }
+    }
+}
+
+// Artists Page ONLY
+.table-fixed {
+    margin-bottom:                                          0;
+    td:nth-child(1), th:nth-child(1)                        { width:35%}
+    td:nth-child(2), th:nth-child(2)                        { width:20%}
+    td:nth-child(3), th:nth-child(3)                        { width:15%; text-align: center }
+    td:nth-child(4), th:nth-child(4)                        { width:15%; text-align: center }
+    td:nth-child(5), th:nth-child(5)                        { width:15%; text-align: center }
+    thead, tr {
+        width:                                              100%;
+        td, th {
+            width:                                          20%;
+            float:                                          left;
+            white-space:                                    nowrap;
+        }
+    }
+    tbody {
+        overflow-x:                                         auto;
+        height:                                             470px;
+        float:                                              left;
+        width:                                              100%;
+        tr {
+            display:                                        block;
+            td {
+                display:                                    table-cell;
+                width:                                      20%;
+                float:                                      left;
+            }
+        }
+    }
+}
+// End Artists Page ONLY
+
+.table-striped {
+    width:100%;
+    td:first-child, th:first-child {
+        padding-left:                                       40px;
+    }
+    td:last-child, th:last-child {
+        padding-right:                                      40px;
+    }
+    thead {
+        th, td {
+            background-color:                               $stuhub-navy;
+            color:                                          $white;
+        }
+    }
+    tbody {
+        td {
+            border-bottom:                                  1px dashed $grey-lighten-1;
+        }
+        tr.row-open {
+            td {
+                border-bottom:                              none;
+                background-color:                           $white;
+            }
+            td:nth-child(3), 
+            td:nth-child(4) {
+                font-weight:                                200;
+                font-size:                                  1.4rem;
+                padding:                                    .1rem 1rem .1rem 0;
+            }
+            td:first-child {
+                background:                                 $white url($chevron-navy-open) 40px center no-repeat!important;
+                cursor:                                     pointer;
+            }
+        }
+        tr.details-row {
+            td:first-child {
+                background:                                 url($chevron-navy-closed) 40px center no-repeat;
+                cursor:                                     pointer;
+            }
+        }
+        tr.row-open + .expanded-row {
+            display:                                        table-row;
+        }
+        tr.expanded-row {
+            display:                                        none;
+            position:                                       relative;
+            td:first-child {
+                background:                                 none;
+            }
+            td.container-cell {
+                background:                                 none;
+                cursor:                                     default;
+                padding:                                    0;
+                position:                                   relative;
+                min-height:                                 400px;
+                vertical-align:                             top;
+                overflow:                                   visible;
+                #uploads {
+                    min-height:                             100px;
+                }
+                form {
+                    width:                                  56%;
+                    margin:                                 20px 0 0 40px;
+                }
+                table.table-striped {
+                    margin:                                 0 20px 20px 40px;
+                    width:                                  56%;
+                    td:first-child, th:first-child {
+                        padding-left:                       20px;
+                        background-image:                   none;
+                    }
+                    td:last-child, th:last-child {
+                        padding-right:                      20px;
+                        background-image:                   none;
+                    }
+                    tbody {
+                        td {
+                            background-color:               $white;
+                            border-bottom:                  1px dashed $grey-lighten-1;
+                            padding:                        .6rem 1rem .6rem 0;
+                        }
+                    }
+                }
+                .uploads-drawer {
+                    top:                                    -39px;
+                    width:                                  40%;
+                    z-index:                                0;
+                    box-shadow:                             none;
+                    cursor:                                 default;
+                    table {
+                        td, th {
+                            background-color:               $white;
+                        }
+                        tbody {
+                            td {
+                                border-bottom:              none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
 .table-sm {
-    border-collapse:                    collapse;
+    border-collapse:                                        collapse;
     thead {
         th:first-child, 
         td:first-child {
-            padding-left:               0;
+            padding-left:                                   0;
         }
-        th, td {
-            font-weight:                200;
-            font-size:                  0.9rem;
-            border-top:                 none;
-            color:                      $stuhub-navy;
-            border-bottom:              1px solid $grey-lighten-1;
-            padding:                    .25rem .4rem .55rem .4rem;
+        th, td {                
+            font-weight:                                    200;
+            font-size:                                      0.9rem;
+            border-top:                                     none;
+            color:                                          $stuhub-navy;
+            border-bottom:                                  1px solid $grey-lighten-1;
+            padding:                                        .25rem .4rem .4rem .4rem;
         }
     }
     tbody {
         tr.active {
             td {
-                background-color:       $stuhub-pale-blue;
+                background-color:                           $stuhub-pale-blue;
             }
         }
         tr {
             td:first-child {
-            padding-left:               0;
+            padding-left:                                   0;
             }
             td {
-                border-top:             none;
-                border-bottom:          1px dashed $grey-lighten-1;
-                font-weight:            300;
-                font-size:              0.75rem;
-                padding:                .4rem;
+                border-top:                                 none;
+                border-bottom:                              1px dashed $grey-lighten-1;
+                font-weight:                                300;
+                font-size:                                  .75rem;
+                padding:                                    .4rem;
             }
         }
     }

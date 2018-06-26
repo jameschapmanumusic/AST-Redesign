@@ -38,10 +38,21 @@ html {
 }
 
 .container-fluid {
-    padding:                                45px 0 10px 0;
+    padding:                                100px 0 0 0;
     .row {
         margin-left:                        0;
         margin-right:                       0;
+    }
+    .main-table-section {
+        width:                                      100%;
+        border-top:                                 1px dashed $grey-lighten-1;
+        padding:                                    10px 0 0 0;
+        background-color:                           white;
+        /*position:                                   relative;
+        z-index:                                    2;*/
+        h4 {
+            margin-left:                            40px;
+        }
     }
 }
 

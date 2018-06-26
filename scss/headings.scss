@@ -4,12 +4,19 @@ h1 {
     font-size:                      3.5rem; 
     font-weight:                    100!important; 
     color:                          $stuhub-navy; 
-    margin-top:                     15px;
+    margin-top:                     0;
+    margin-bottom:                  0;
 }
 
 h2 {
     font-size:                      1.45rem; 
     font-weight:                    200!important; 
+    color:                          $stuhub-navy; 
+}
+
+h4 {
+    font-size:                      1.12rem; 
+    font-weight:                    300!important; 
     color:                          $stuhub-navy; 
 }
 

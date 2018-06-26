@@ -1,0 +1,706 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Artist - Projects</title>
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Top Level Page Header with UMG Branding -->
+    <nav class="navbar navbar-expand-lg navbar-dark stuhub-navbar fixed-top">
+        <ul>
+            <li class="umg-platform"><a href="" title="Go to the UMG Platform Homepage"></a></li>
+            <li class="platform">
+                <a class="platformLogo" href=""></a>
+            </li>
+            <li class="ribbon-menu-item">
+                <a title="Asset Workspace" data-ui-sref="root.jobs.list" href="">Asset Workspace</a>
+            </li>
+            <li class="ribbon-menu-item">
+                <a title="Artists" href="">Artists</a>
+            </li>
+        </ul>
+    </nav>
+    
+    <!-- Site Top Level Navigation -->
+    <nav class="navbar navbar-expand-lg stuhub-sub-navbar fixed-top">
+        <ul>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Assets</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Jobs</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="artists.html">Artists</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Projects</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="container-fluid">
+        <!-- Start Page Sub-Header -->
+        <header class="page-sub-header">
+            <!-- Album Artwork -->
+            <div class="album-art">
+                <img src="img/temp-project-image.png" alt="temp project image" />
+            </div>
+
+            <!-- Album Name -->
+            <h1>Aminé/LPI</h1>
+
+            <!-- Artsist Name -->
+            <h2>Aminé</h2>
+            <!-- Tools -->
+            <section class="tools">
+                <div class="tools-item">
+                    <a id="rotate" class="upload"></a>
+                </div>
+                <div class="tools-item">
+                    <!-- Create wizard -->
+                    <section class="wizard">
+                        <div id="wiz">
+                            <button id="toggleModal" class="btn-white" type="submit">Create Project</button>
+                            <div class="tint"></div>
+                            <div class="wiz-content">
+                                <form>
+                                    <header class="wiz-header">
+                                        <a class="active">Create Artist</a>
+                                    </header>
+                                    <div class="wiz-body">
+                                        <ul class="row">
+                                            <li class="col">
+                                                <div class="form-group">
+                                                    <label for="artistName">Artist</label>
+                                                    <input type="text" placeholder="Enter Name" autofocus />
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="talentId">R2 Talent Id</label>
+                                                    <input id="emailHelp" type="text" placeholder="Enter R2 Talent Id" aria-describedby="emailHelp">
+                                                    <!--<small id="emailHelp" class="form-text text-muted">Help.</small>-->
+                                                    <a class="call-to-action">Add</a>
+                                                </div>
+                                            </li>
+
+                                            <li class="col button-group border-left-dashed">
+                                                <button class="btn-save" type="submit">Save</button>
+                                                <button class="btn-cancel" type="submit">Cancel</button>
+                                                <button class="btn-reset" type="submit">Reset</button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </section>
+        </header>
+        <!-- Contextual Navigation -->
+        <nav class="contextual-navigation">
+            <ul onclick="toggleActiveClass(event)">
+                <li>
+                    <a href="#" class="selected">Project</a>
+                </li>
+                <li class="physical-assets">
+                    <a href="#">Physical Assets</a>
+                </li>
+                <li class="verifications">
+                    <a href="#">Verifications</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- Uploads Drawer -->
+        <section id="uploads">
+            <div class="uploads-drawer">
+                <div class="badge">3</div>
+                <div class="uploads-wrapper">
+                    <a id="uploads-link" class="toggle-open-red"></a>
+                    <h5>Unassigned Assets</h5>
+                    <div class="scrollable">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>File</th>
+                                    <th>Duration</th>
+                                    <th>Bit Depth</th>
+                                    <th>Sample Rate</th>
+                                    <th>Audio Channels</th>
+                                    <th>Codec</th>
+                                    <th>Format</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><a class="glyphicon glyphicon-pencil"></a>Kill Track_KEYS GTR_79bmp_CU 000002451.wav</td>
+                                    <td>04:20:00</td>
+                                    <td>24 Bit</td>
+                                    <td>192 kHz</td>
+                                    <td>2</td>
+                                    <td>PCM</td>
+                                    <td>Wav</td>
+                                </tr>
+                                <tr>
+                                    <td>Kill Track_KEYS GTR_79bmp_CU 000002451.wav</td>
+                                    <td>04:20:00</td>
+                                    <td>24 Bit</td>
+                                    <td>192 kHz</td>
+                                    <td>2</td>
+                                    <td>PCM</td>
+                                    <td>Wav</td>
+                                </tr>
+                                <tr>
+                                    <td>Kill Track_KEYS GTR_79bmp_CU 000002451.wav</td>
+                                    <td>04:20:00</td>
+                                    <td>24 Bit</td>
+                                    <td>192 kHz</td>
+                                    <td>2</td>
+                                    <td>PCM</td>
+                                    <td>Wav</td>
+                                </tr>
+                                <tr>
+                                    <td><a class="glyphicon glyphicon-pencil"></a>Kill Track_KEYS GTR_79bmp_CU 000002451.wav</td>
+                                    <td>04:20:00</td>
+                                    <td>24 Bit</td>
+                                    <td>192 kHz</td>
+                                    <td>2</td>
+                                    <td>PCM</td>
+                                    <td>Wav</td>
+                                </tr>
+                                <tr>
+                                    <td>Kill Track_KEYS GTR_79bmp_CU 000002451.wav</td>
+                                    <td>04:20:00</td>
+                                    <td>24 Bit</td>
+                                    <td>192 kHz</td>
+                                    <td>2</td>
+                                    <td>PCM</td>
+                                    <td>Wav</td>
+                                </tr>
+                                <tr>
+                                    <td>Kill Track_KEYS GTR_79bmp_CU 000002451.wav</td>
+                                    <td>04:20:00</td>
+                                    <td>24 Bit</td>
+                                    <td>192 kHz</td>
+                                    <td>2</td>
+                                    <td>PCM</td>
+                                    <td>Wav</td>
+                                </tr>
+                                <tr>
+                                    <td><a class="glyphicon glyphicon-pencil"></a>Kill Track_KEYS GTR_79bmp_CU 000002451.wav</td>
+                                    <td>04:20:00</td>
+                                    <td>24 Bit</td>
+                                    <td>192 kHz</td>
+                                    <td>2</td>
+                                    <td>PCM</td>
+                                    <td>Wav</td>
+                                </tr>
+                                <tr>
+                                    <td>Kill Track_KEYS GTR_79bmp_CU 000002451.wav</td>
+                                    <td>04:20:00</td>
+                                    <td>24 Bit</td>
+                                    <td>192 kHz</td>
+                                    <td>2</td>
+                                    <td>PCM</td>
+                                    <td>Wav</td>
+                                </tr>
+                                <tr>
+                                    <td>Kill Track_KEYS GTR_79bmp_CU 000002451.wav</td>
+                                    <td>04:20:00</td>
+                                    <td>24 Bit</td>
+                                    <td>192 kHz</td>
+                                    <td>2</td>
+                                    <td>PCM</td>
+                                    <td>Wav</td>
+                                </tr>
+                                <tr>
+                                    <td><a class="glyphicon glyphicon-pencil"></a>Kill Track_KEYS GTR_79bmp_CU 000002451.wav</td>
+                                    <td>04:20:00</td>
+                                    <td>24 Bit</td>
+                                    <td>192 kHz</td>
+                                    <td>2</td>
+                                    <td>PCM</td>
+                                    <td>Wav</td>
+                                </tr>
+                                <tr>
+                                    <td>Kill Track_KEYS GTR_79bmp_CU 000002451.wav</td>
+                                    <td>04:20:00</td>
+                                    <td>24 Bit</td>
+                                    <td>192 kHz</td>
+                                    <td>2</td>
+                                    <td>PCM</td>
+                                    <td>Wav</td>
+                                </tr>
+                                <tr>
+                                    <td>Kill Track_KEYS GTR_79bmp_CU 000002451.wav</td>
+                                    <td>04:20:00</td>
+                                    <td>24 Bit</td>
+                                    <td>192 kHz</td>
+                                    <td>2</td>
+                                    <td>PCM</td>
+                                    <td>Wav</td>
+                                </tr>
+                                <tr>
+                                    <td><a class="glyphicon glyphicon-pencil"></a>Kill Track_KEYS GTR_79bmp_CU 000002451.wav</td>
+                                    <td>04:20:00</td>
+                                    <td>24 Bit</td>
+                                    <td>192 kHz</td>
+                                    <td>2</td>
+                                    <td>PCM</td>
+                                    <td>Wav</td>
+                                </tr>
+                                <tr>
+                                    <td>Kill Track_KEYS GTR_79bmp_CU 000002451.wav</td>
+                                    <td>04:20:00</td>
+                                    <td>24 Bit</td>
+                                    <td>192 kHz</td>
+                                    <td>2</td>
+                                    <td>PCM</td>
+                                    <td>Wav</td>
+                                </tr>
+                                <tr>
+                                    <td>Kill Track_KEYS GTR_79bmp_CU 000002451.wav</td>
+                                    <td>04:20:00</td>
+                                    <td>24 Bit</td>
+                                    <td>192 kHz</td>
+                                    <td>2</td>
+                                    <td>PCM</td>
+                                    <td>Wav</td>
+                                </tr>
+                                <tr>
+                                    <td><a class="glyphicon glyphicon-pencil"></a>Kill Track_KEYS GTR_79bmp_CU 000002451.wav</td>
+                                    <td>04:20:00</td>
+                                    <td>24 Bit</td>
+                                    <td>192 kHz</td>
+                                    <td>2</td>
+                                    <td>PCM</td>
+                                    <td>Wav</td>
+                                </tr>
+                                <tr>
+                                    <td>Kill Track_KEYS GTR_79bmp_CU 000002451.wav</td>
+                                    <td>04:20:00</td>
+                                    <td>24 Bit</td>
+                                    <td>192 kHz</td>
+                                    <td>2</td>
+                                    <td>PCM</td>
+                                    <td>Wav</td>
+                                </tr>
+                                <tr>
+                                    <td>Kill Track_KEYS GTR_79bmp_CU 000002451.wav</td>
+                                    <td>04:20:00</td>
+                                    <td>24 Bit</td>
+                                    <td>192 kHz</td>
+                                    <td>2</td>
+                                    <td>PCM</td>
+                                    <td>Wav</td>
+                                </tr>
+                                <tr>
+                                    <td><a class="glyphicon glyphicon-pencil"></a>Kill Track_KEYS GTR_79bmp_CU 000002451.wav</td>
+                                    <td>04:20:00</td>
+                                    <td>24 Bit</td>
+                                    <td>192 kHz</td>
+                                    <td>2</td>
+                                    <td>PCM</td>
+                                    <td>Wav</td>
+                                </tr>
+                                <tr>
+                                    <td>Kill Track_KEYS GTR_79bmp_CU 000002451.wav</td>
+                                    <td>04:20:00</td>
+                                    <td>24 Bit</td>
+                                    <td>192 kHz</td>
+                                    <td>2</td>
+                                    <td>PCM</td>
+                                    <td>Wav</td>
+                                </tr>
+                                <tr>
+                                    <td>Kill Track_KEYS GTR_79bmp_CU 000002451.wav</td>
+                                    <td>04:20:00</td>
+                                    <td>24 Bit</td>
+                                    <td>192 kHz</td>
+                                    <td>2</td>
+                                    <td>PCM</td>
+                                    <td>Wav</td>
+                                </tr>
+                                <tr>
+                                    <td><a class="glyphicon glyphicon-pencil"></a>Kill Track_KEYS GTR_79bmp_CU 000002451.wav</td>
+                                    <td>04:20:00</td>
+                                    <td>24 Bit</td>
+                                    <td>192 kHz</td>
+                                    <td>2</td>
+                                    <td>PCM</td>
+                                    <td>Wav</td>
+                                </tr>
+                                <tr>
+                                    <td>Kill Track_KEYS GTR_79bmp_CU 000002451.wav</td>
+                                    <td>04:20:00</td>
+                                    <td>24 Bit</td>
+                                    <td>192 kHz</td>
+                                    <td>2</td>
+                                    <td>PCM</td>
+                                    <td>Wav</td>
+                                </tr>
+                                <tr>
+                                    <td>Kill Track_KEYS GTR_79bmp_CU 000002451.wav</td>
+                                    <td>04:20:00</td>
+                                    <td>24 Bit</td>
+                                    <td>192 kHz</td>
+                                    <td>2</td>
+                                    <td>PCM</td>
+                                    <td>Wav</td>
+                                </tr>
+                                <tr>
+                                    <td><a class="glyphicon glyphicon-pencil"></a>Kill Track_KEYS GTR_79bmp_CU 000002451.wav</td>
+                                    <td>04:20:00</td>
+                                    <td>24 Bit</td>
+                                    <td>192 kHz</td>
+                                    <td>2</td>
+                                    <td>PCM</td>
+                                    <td>Wav</td>
+                                </tr>
+                                <tr>
+                                    <td>Kill Track_KEYS GTR_79bmp_CU 000002451.wav</td>
+                                    <td>04:20:00</td>
+                                    <td>24 Bit</td>
+                                    <td>192 kHz</td>
+                                    <td>2</td>
+                                    <td>PCM</td>
+                                    <td>Wav</td>
+                                </tr>
+                                <tr>
+                                    <td>Kill Track_KEYS GTR_79bmp_CU 000002451.wav</td>
+                                    <td>04:20:00</td>
+                                    <td>24 Bit</td>
+                                    <td>192 kHz</td>
+                                    <td>2</td>
+                                    <td>PCM</td>
+                                    <td>Wav</td>
+                                </tr>
+                                <tr>
+                                    <td><a class="glyphicon glyphicon-pencil"></a>Kill Track_KEYS GTR_79bmp_CU 000002451.wav</td>
+                                    <td>04:20:00</td>
+                                    <td>24 Bit</td>
+                                    <td>192 kHz</td>
+                                    <td>2</td>
+                                    <td>PCM</td>
+                                    <td>Wav</td>
+                                </tr>
+                                <tr>
+                                    <td>Kill Track_KEYS GTR_79bmp_CU 000002451.wav</td>
+                                    <td>04:20:00</td>
+                                    <td>24 Bit</td>
+                                    <td>192 kHz</td>
+                                    <td>2</td>
+                                    <td>PCM</td>
+                                    <td>Wav</td>
+                                </tr>
+                                <tr>
+                                    <td>Kill Track_KEYS GTR_79bmp_CU 000002451.wav</td>
+                                    <td>04:20:00</td>
+                                    <td>24 Bit</td>
+                                    <td>192 kHz</td>
+                                    <td>2</td>
+                                    <td>PCM</td>
+                                    <td>Wav</td>
+                                </tr>
+                                <tr>
+                                    <td><a class="glyphicon glyphicon-pencil"></a>Kill Track_KEYS GTR_79bmp_CU 000002451.wav</td>
+                                    <td>04:20:00</td>
+                                    <td>24 Bit</td>
+                                    <td>192 kHz</td>
+                                    <td>2</td>
+                                    <td>PCM</td>
+                                    <td>Wav</td>
+                                </tr>
+                                <tr>
+                                    <td>Kill Track_KEYS GTR_79bmp_CU 000002451.wav</td>
+                                    <td>04:20:00</td>
+                                    <td>24 Bit</td>
+                                    <td>192 kHz</td>
+                                    <td>2</td>
+                                    <td>PCM</td>
+                                    <td>Wav</td>
+                                </tr>
+                                <tr>
+                                    <td>Kill Track_KEYS GTR_79bmp_CU 000002451.wav</td>
+                                    <td>04:20:00</td>
+                                    <td>24 Bit</td>
+                                    <td>192 kHz</td>
+                                    <td>2</td>
+                                    <td>PCM</td>
+                                    <td>Wav</td>
+                                </tr>
+                                <tr>
+                                    <td><a class="glyphicon glyphicon-pencil"></a>Kill Track_KEYS GTR_79bmp_CU 000002451.wav</td>
+                                    <td>04:20:00</td>
+                                    <td>24 Bit</td>
+                                    <td>192 kHz</td>
+                                    <td>2</td>
+                                    <td>PCM</td>
+                                    <td>Wav</td>
+                                </tr>
+                                <tr>
+                                    <td>Kill Track_KEYS GTR_79bmp_CU 000002451.wav</td>
+                                    <td>04:20:00</td>
+                                    <td>24 Bit</td>
+                                    <td>192 kHz</td>
+                                    <td>2</td>
+                                    <td>PCM</td>
+                                    <td>Wav</td>
+                                </tr>
+                                <tr>
+                                    <td>Kill Track_KEYS GTR_79bmp_CU 000002451.wav</td>
+                                    <td>04:20:00</td>
+                                    <td>24 Bit</td>
+                                    <td>192 kHz</td>
+                                    <td>2</td>
+                                    <td>PCM</td>
+                                    <td>Wav</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="row main-content" id="toggleForm">
+            <aside>
+                <button id="showForm" class="btn-edit"></button>
+                <button id="cancelForm" class="btn-cancel"></button>
+            </aside>
+            <section class="mid-section">
+                <form>
+                    <h4>Project Details</h4>
+                    <!-- row 1 -->
+                    <div class="form-row">
+                        <div class="form-group col-md-2">
+                            <label for="artistsOnAsset">Multiple Artists on Asset?</label>
+                            <!-- Switch -->
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                            <summary>No</summary>
+                        </div>
+                        <div class="form-group col-md-2">
+                            <label for="mainArtistName">Main Artist Name</label>
+                            <input type="text" class="form-control" id="mainArtistName" placeholder="Main Artist Name" autofocus="">
+                            <summary>Amine</summary>
+                        </div>
+                        <div class="form-group col-md-2">
+                            <label for="sideArtist">Side Artist</label>
+                            <input type="text" class="form-control" id="sideArtist" placeholder="Side Artist">
+                            <summary>None</summary>
+                        </div>
+                        <div class="form-group col-md-2">
+                            <label for="repProjectTitle">Repertoire Project Title</label>
+                            <input type="text" class="form-control" id="repProjectTitle" placeholder="Repertoire Project Title">
+                            <summary>Amine/LP1</summary>
+                        </div>
+                        <div class="form-group col-md-2">
+                            <label for="originRecordingLabel">Original Recording Label</label>
+                            <input type="text" class="form-control" id="originRecordingLabel" placeholder="Original Recording Label">
+                            <summary>Republic records</summary>
+                        </div>
+                        <div class="form-group col-md-2">
+                            <label for="creationDate">Creation Date</label>
+                            <input type="date" class="form-control" id="creationDate" placeholder="Creation Date">
+                            <summary>21 Apr 2017</summary>
+                        </div>
+                    </div>
+                    <!-- row 2 -->
+                    <div class="form-row">
+                        <div class="form-group col-md-2">
+                            <label for="creationCountry">Creation Country</label>
+                            <input type="text" class="form-control" id="creationCountry" placeholder="Creation Country">
+                            <summary>USA</summary>
+                        </div>
+                        <div class="form-group col-md-2">
+                            <label for="creationStudio">Creation Studio</label>
+                            <input type="text" class="form-control" id="mainArtistName" placeholder="Creation Studio">
+                            <summary>Mile End Studios</summary>
+                        </div>
+                        <div class="form-group col-md-2">
+                            <label for="sessionProducer">Session Producer</label>
+                            <input type="text" class="form-control" id="sideArtist" placeholder="Session Producer">
+                            <summary>Mike Walters</summary>
+                        </div>
+                        <div class="form-group col-md-2">
+                            <label for="sessionEngineer">Session Engineer</label>
+                            <input type="text" class="form-control" id="repProjectTitle" placeholder="Session Engineer">
+                            <summary>David Ives</summary>
+                        </div>
+                    </div>
+                </form>
+            </section>
+            
+            <section class="main-table-section">
+                <h4>Songs</h4>
+                <table class="table-striped">
+                    <thead>
+                    <tr>
+                        <th width="75">&nbsp;</th>
+                        <th width="30">#</th>
+                        <th>Title</th>
+                        <th>Artist(s)</th>
+                        <th>Production Phase</th>
+                        <th>Assets</th>
+                        <th>exp/collapse</th>
+                    </tr>
+                    </thead>
+                    <tbody onclick="toggleRowOpenRowClosed(event)">
+                        <!-- IMPORTANT: THE 2 ROWS SEEN BELOW WILL NEED TO BE ENCAPSULATED INTO A TEMPLATE - REFER TO http://www.foursails.co/blog/advanced-tables/ -->
+                        <tr class="details-row">
+                            <td>&nbsp;</td>
+                            <td>1</td>
+                            <td>A Dog Of A Night</td>
+                            <td>Amine</td>
+                            <td>Tracking</td>
+                            <td>Icons</td>
+                            <td>upload</td>
+                        </tr>
+                        <tr class="expanded-row">
+                            <td class="container-cell" colspan="100">
+                                
+                                <form>
+                                    <div class="form-row">
+                                        <div class="form-group col-md-3">
+                                            <label for="internalVersionTitle">Internal Version Title</label>
+                                            <input type="text" class="form-control" id="internalVersionTitle" placeholder="Internal Version Title">
+                                        </div>
+                                        <div class="form-group col-md-1">
+                                            <a class="call-to-action">Add</a>
+                                        </div>
+                                        <div class="form-group col-md-2">
+                                            <label for="productionPhase">Production Phase</label>
+                                            <select class="form-control" id="productionPhase">
+                                                <option>Please Select</option>
+                                                <option>Some Value</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group col-md-2">
+                                            <label for="parentalAdvisory">Parental Advisory</label>
+                                            <select class="form-control" id="parentalAdvisory">
+                                                <option>Please Select</option>
+                                                <option>Some Value</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group col-md-2">
+                                            <label for="duration">Duration</label>
+                                            <input type="duration" class="form-control" id="duration" placeholder="00:00:00">
+                                        </div>
+                                    </div>
+                                </form>
+
+                                <table class="table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th>Recording</th>
+                                            <th>Production Phase</th>
+                                            <th>Parental Advisory</th>
+                                            <th>Duration</th>
+                                            <th>Status</th>
+                                            <th>Assets</th>
+                                            <th>Comment</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Master Mix</td>
+                                            <td>Mixing</td>
+                                            <td>Explicit</td>
+                                            <td>00:14:22</td>
+                                            <td>V</td>
+                                            <td>Upload</td>
+                                            <td>Comment</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                                <div id="uploads" class="open">
+                                    <div class="uploads-drawer">
+                                        <div class="badge">3</div>
+                                        <div class="uploads-wrapper">
+                                            <h5>Unassigned Assets</h5>
+                                            <table>
+                                                <thead>
+                                                    <tr>
+                                                        <th>File</th>
+                                                        <th>Duration</th>
+                                                        <th>Bit Depth</th>
+                                                        <th>Sample Rate</th>
+                                                        <th>Channels</th>
+                                                        <th>Codec</th>
+                                                        <th>Format</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td><a class="glyphicon glyphicon-pencil"></a>Kill Track_KEYS GTR_79bmp_CU 000002451.wav</td>
+                                                        <td>04:20:00</td>
+                                                        <td>24 Bit</td>
+                                                        <td>192 kHz</td>
+                                                        <td>2</td>
+                                                        <td>PCM</td>
+                                                        <td>Wav</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Kill Track_KEYS GTR_79bmp_CU 000002451.wav</td>
+                                                        <td>04:20:00</td>
+                                                        <td>24 Bit</td>
+                                                        <td>192 kHz</td>
+                                                        <td>2</td>
+                                                        <td>PCM</td>
+                                                        <td>Wav</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Kill Track_KEYS GTR_79bmp_CU 000002451.wav</td>
+                                                        <td>04:20:00</td>
+                                                        <td>24 Bit</td>
+                                                        <td>192 kHz</td>
+                                                        <td>2</td>
+                                                        <td>PCM</td>
+                                                        <td>Wav</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+        </div>
+    </div>
+
+    <footer class="footer">
+        <h6>Administration</h6>
+        <a href="#">Asset Notification Email Addresses</a>
+        <a href="#">Verification Studios</a>
+        <h6>Reports</h6>
+        <a href="#">Completed Jobs</a>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+
+
+    <script type="text/javascript" src="js/temp.js"></script>
+</body>
+
+</html>

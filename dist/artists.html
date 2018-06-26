@@ -10,7 +10,7 @@
     <!-- Material Design Bootstrap -->
     <link href="css/mdb.min.css" rel="stylesheet">
 </head>
-<body>
+<body class="artists-page">
     <!-- Top Level Page Header with UMG Branding -->
     <nav class="navbar navbar-expand-lg navbar-dark stuhub-navbar fixed-top">
         <ul>
@@ -26,24 +26,28 @@
             </li>
         </ul>
     </nav>
+
+    <!-- Site Top Level Navigation -->
+    <nav class="navbar navbar-expand-lg stuhub-sub-navbar fixed-top">
+        <ul>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Assets</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Jobs</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="artists.html">Artists</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Projects</a>
+            </li>
+        </ul>
+    </nav>
+
     <div class="container-fluid">
         <!-- Start Page Sub-Header -->
         <header class="page-sub-header">
-            <!-- Site Top Level Navigation -->
-            <ul class="nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Assets</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Jobs</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" href="#">Artists</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Projects</a>
-                </li>
-            </ul>
             <!-- Contextual Search -->
             <section class="h1-with-search">
                 <form>
@@ -180,9 +184,9 @@
             </section>
 
         </header>
-        <div class="row artists-page padded-left-only">
+        <div class="row main-content padded-left-only">
             <div class="col-lg-6">
-                <table class="table table-sm">
+                <table class="table table-sm table-fixed">
                     <thead>
                         <tr>
                             <th>Name</th>
@@ -397,7 +401,7 @@
                         <h2>Talent ID: 21548824369</h2>
                     </div>
                 </header>
-                <div class="content">
+                <div class="preview-content">
                     <h2>Projects</h2>
                     <ul>
                         <li><a href="#">Elgort/EP</a></li>

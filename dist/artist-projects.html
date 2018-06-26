@@ -10,7 +10,7 @@
     <!-- Material Design Bootstrap -->
     <link href="css/mdb.min.css" rel="stylesheet">
 </head>
-<body>
+<body class="artist-projects-page">
     <!-- Top Level Page Header with UMG Branding -->
     <nav class="navbar navbar-expand-lg navbar-dark stuhub-navbar fixed-top">
         <ul>
@@ -26,11 +26,10 @@
             </li>
         </ul>
     </nav>
-    <div class="container-fluid">
-        <!-- Start Page Sub-Header -->
-    <header class="page-sub-header">
-        <!-- Site Top Level Navigation -->
-        <ul class="nav">
+    
+    <!-- Site Top Level Navigation -->
+    <nav class="navbar navbar-expand-lg stuhub-sub-navbar fixed-top">
+        <ul>
             <li class="nav-item">
                 <a class="nav-link" href="#">Assets</a>
             </li>
@@ -38,13 +37,17 @@
                 <a class="nav-link" href="#">Jobs</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link active" href="#">Artists</a>
+                <a class="nav-link active" href="artists.html">Artists</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">Projects</a>
             </li>
         </ul>
+    </nav>
 
+    <div class="container-fluid">
+        <!-- Start Page Sub-Header -->
+    <header class="page-sub-header">
         <!-- Heading -->
         <h1>Aminé/Projects</h1>
 
@@ -134,7 +137,7 @@
         <!-- Tools -->
         <section class="tools">
             <div class="tools-item">
-                <a class="upload"></a>
+                <a id="rotate" class="upload"></a>
             </div>
             <div class="tools-item">
                 <!-- Create wizard -->
@@ -180,60 +183,62 @@
     <!-- Uploads Drawer -->
     <section id="uploads">
         <div class="uploads-drawer">
-            <div class="badge">12</div>
+            <div class="badge">3</div>
             <div class="uploads-wrapper">
                 <a id="uploads-link" class="toggle-open-red"></a>
                 <h5>Unassigned Assets</h5>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>File</th>
-                            <th>Duration</th>
-                            <th>Bit Depth</th>
-                            <th>Sample Rate</th>
-                            <th>Audio Channels</th>
-                            <th>Codec</th>
-                            <th>Format</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Kill Track_KEYS GTR_79bmp_CU 000002451.wav</td>
-                            <td>04:20:00</td>
-                            <td>24 Bit</td>
-                            <td>192 kHz</td>
-                            <td>2</td>
-                            <td>PCM</td>
-                            <td>Wav</td>
-                        </tr>
-                        <tr>
-                            <td>Kill Track_KEYS GTR_79bmp_CU 000002451.wav</td>
-                            <td>04:20:00</td>
-                            <td>24 Bit</td>
-                            <td>192 kHz</td>
-                            <td>2</td>
-                            <td>PCM</td>
-                            <td>Wav</td>
-                        </tr>
-                        <tr>
-                            <td>Kill Track_KEYS GTR_79bmp_CU 000002451.wav</td>
-                            <td>04:20:00</td>
-                            <td>24 Bit</td>
-                            <td>192 kHz</td>
-                            <td>2</td>
-                            <td>PCM</td>
-                            <td>Wav</td>
-                        </tr>
-                    </tbody>
-                </table>
+                <div class="scrollable">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>File</th>
+                                <th>Duration</th>
+                                <th>Bit Depth</th>
+                                <th>Sample Rate</th>
+                                <th>Audio Channels</th>
+                                <th>Codec</th>
+                                <th>Format</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><a class="glyphicon glyphicon-pencil"></a>Kill Track_KEYS GTR_79bmp_CU 000002451.wav</td>
+                                <td>04:20:00</td>
+                                <td>24 Bit</td>
+                                <td>192 kHz</td>
+                                <td>2</td>
+                                <td>PCM</td>
+                                <td>Wav</td>
+                            </tr>
+                            <tr>
+                                <td>Kill Track_KEYS GTR_79bmp_CU 000002451.wav</td>
+                                <td>04:20:00</td>
+                                <td>24 Bit</td>
+                                <td>192 kHz</td>
+                                <td>2</td>
+                                <td>PCM</td>
+                                <td>Wav</td>
+                            </tr>
+                            <tr>
+                                <td>Kill Track_KEYS GTR_79bmp_CU 000002451.wav</td>
+                                <td>04:20:00</td>
+                                <td>24 Bit</td>
+                                <td>192 kHz</td>
+                                <td>2</td>
+                                <td>PCM</td>
+                                <td>Wav</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
     </section>
     
 
-    <div class="row artists-page padded-left-only">
+    <div class="row main-content padded-left-only">
             <div class="col-lg-6">
-                <table class="table table-sm">
+                <table class="table table-sm table-fixed">
                     <thead>
                         <tr>
                             <th>Name</th>
@@ -259,7 +264,7 @@
                             <td>2</td>
                         </tr>
                         <tr class="active">
-                            <td><a href="artists.html">Amine/Not At All</a></td>
+                            <td><a href="project.html">Amine/Not At All</a></td>
                             <td>86551545888</td>
                             <td>7</td>
                             <td>3</td>
@@ -286,7 +291,7 @@
                         <h2>Talent ID: 86551545888</h2>
                     </div>
                 </header>
-                <div class="content">
+                <div class="preview-content">
                     <h2>Songs</h2>
                     <ul>
                         <li><a href="#">Elgort/EP</a></li>
