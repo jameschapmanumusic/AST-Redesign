@@ -16,7 +16,9 @@
         .uploads-wrapper {
             margin:                                 15px 40px 10px 20px;
             h5 { 
-                display:                            block;
+                display:                            inline-block;
+                float:                              left;
+                margin-right:                       .5rem;
             }
             table {
                 display:                            table;
@@ -101,7 +103,6 @@
         padding-right:                              1px;
     }
     .uploads-wrapper {
-        overflow:                                   hidden;
         table, h5 {
             display:none;
         }

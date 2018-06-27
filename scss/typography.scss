@@ -1,0 +1,51 @@
+﻿// Custom Headings
+
+h1 {
+    font-size:                      3.5rem; 
+    font-weight:                    100!important; 
+    color:                          $stuhub-navy; 
+    margin-top:                     0;
+    margin-bottom:                  0;
+}
+
+h2 {
+    font-size:                      1.45rem; 
+    font-weight:                    200!important; 
+    color:                          $stuhub-navy; 
+}
+
+h4 {
+    font-size:                      1.12rem; 
+    font-weight:                    300!important; 
+    color:                          $stuhub-navy; 
+}
+
+h5 {
+    font-size:                      1.12rem; 
+    font-weight:                    200!important; 
+    color:                          $stuhub-navy; 
+}
+
+h6 {
+    font-size:                      .83rem; 
+    font-weight:                    200!important; 
+}
+
+.add-remove-group {
+    font-weight:                    600;
+    font-size:                      .8rem;
+    color:                          $stuhub-light-blue;
+    span:hover {
+        cursor:                     url($cursorRemove),url('img/cursor-remove.cur'), auto;
+    }
+    span {
+        margin-right:               5px;
+        cursor:                     pointer;
+    }
+    span::after {
+        content:                    ",";
+    }
+    span:last-child::after {
+        content:                    " ";
+    }
+}

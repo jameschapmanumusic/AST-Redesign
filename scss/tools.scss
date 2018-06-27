@@ -24,90 +24,99 @@
             cursor:                                 pointer;
         }
     }
-    // Bespoke Wizard
-    .wizard {
-        button {
-            position:                               relative; 
-            z-index:                                4;
-        }
-        .show {
-            display:                                block!important
-        }
-        .tint, .wiz-content {
-            display:                                none;
-        }
-        .show-wizard {
-            position:                               relative;
-            .tint, .wiz-content {
-                display:                            block;
+}
+
+// Bespoke Wizard
+.wizard {
+    button {
+        position:                               relative; 
+        z-index:                                4;
+        float:                                  right;
+    }
+    .show {
+        display:                                block!important
+    }
+    .tint, .wiz-content {
+        display:                                none;
+    }
+
+}
+
+.show-wizard {
+    .tools-item {
+        display:                            none;
+    }
+    .wiz, .tint, .wiz-content {
+        display:                            block!important;
+    }
+    .wiz-content {
+        background-image:                   url($dk-blue-triangle-right);
+        background-repeat:                  no-repeat;
+        background-position:                right 11px;
+        background-size:                    10px;
+        position:                           relative;
+        padding-right:                      9px;
+        margin-right:                       2px;
+        z-index:                            3;
+        float:                              right;
+        .wiz-header {
+            height:                         40px;
+            padding:                        8px 20px 0 20px;
+            color:                          $white;
+            background-color:               $stuhub-navy;
+            border-radius:                  6px 6px 0 0;
+            font-weight:                    200;
+            font-size:                      0.85rem;
+            a:last-child {
+                margin-right:               0;
             }
-            .wiz-content {
-                background-image:                   url($dk-blue-triangle-right);
-                background-repeat:                  no-repeat;
-                background-position:                right 11px;
-                background-size:                    10px;
-                position:                           absolute;
-                padding-right:                      9px;
-                margin-right:                       2px;
-                z-index:                            3;
-                min-width:                          400px;
-                top:                                0;
-                right:                              100%;
-                .wiz-header {
-                    height:                         40px;
-                    padding:                        8px 20px 0 20px;
-                    color:                          $white;
-                    background-color:               $stuhub-navy;
-                    border-radius:                  6px 6px 0 0;
-                    font-weight:                    200;
-                    font-size:                      0.85rem;
-                    a:last-child {
-                        margin-right:               0;
-                    }
-                    a {
-                        float:                      left;
-                        padding-top:                2px;
-                        margin-right:               40px;
-                        height:                     41px;
-                        opacity:                    0.5;
-                        background-repeat:          no-repeat;
-                        background-position:        center bottom;
-                        background-size:            20px;
-                        opacity:                    0.4;
-                    }
-                    a:hover {
-                        opacity:                    1;
-                        color:                      $white!important;
-                    }
-                    a.active {
-                        background-image:           url($dk-blue-triangle-bottom);
-                        opacity:                    1;
-                    }
+            a {
+                float:                      left;
+                padding-top:                2px;
+                margin-right:               40px;
+                height:                     41px;
+                opacity:                    0.5;
+                background-repeat:          no-repeat;
+                background-position:        center bottom;
+                background-size:            20px;
+                opacity:                    0.4;
+            }
+            a:hover {
+                opacity:                    1;
+                color:                      $white!important;
+            }
+            a.active {
+                background-image:           url($dk-blue-triangle-bottom);
+                opacity:                    1;
+            }
+        }
+        .wiz-body {
+            position:                       relative;
+            background-color:               $white;
+            padding:                        15px 165px 15px 20px;
+            border-radius:                  0 0 6px 6px;
+            min-height:                     175px;
+            .button-group {
+                position:                   absolute;
+                top:                        0;
+                right:                      0;
+                bottom:                     0;
+                padding:                    1rem 1rem 0 1rem;
+                button {
+                    float:                  left;
+                    clear:                  left;
                 }
-                .wiz-body {
-                    background-color:               $white;
-                    padding:                        15px 5px;
-                    border-radius:                  0 0 6px 6px;
-                    .form-group {
-                        input {
-                            margin-right:           10px
-                        }
-                    }
-                    .button-group {
-                        max-width:                  155px;
-                    }
-                }
-            }
-            .tint {
-                position:                           fixed;
-                z-index:                            3;
-                background:                         $black;
-                opacity:                            0.4;
-                top:                                0;
-                right:                              0;
-                bottom:                             0;
-                left:                               0;
             }
         }
+    }
+    .tint {
+        position:                           fixed;
+        z-index:                            3;
+        background:                         $black;
+        opacity:                            0.4;
+        top:                                0;
+        right:                              0;
+        bottom:                             0;
+        left:                               0;
     }
 }

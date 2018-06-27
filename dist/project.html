@@ -59,14 +59,14 @@
             <!-- Artsist Name -->
             <h2>Aminé</h2>
             <!-- Tools -->
-            <section class="tools">
+            <section class="tools" id="wiz">
                 <div class="tools-item">
                     <a id="rotate" class="upload"></a>
                 </div>
-                <div class="tools-item">
+                <div class="tools-item wiz">
                     <!-- Create wizard -->
                     <section class="wizard">
-                        <div id="wiz">
+                        <div>
                             <button id="toggleModal" class="btn-white" type="submit">Create Project</button>
                             <div class="tint"></div>
                             <div class="wiz-content">
@@ -75,26 +75,43 @@
                                         <a class="active">Create Artist</a>
                                     </header>
                                     <div class="wiz-body">
-                                        <ul class="row">
-                                            <li class="col">
-                                                <div class="form-group">
-                                                    <label for="artistName">Artist</label>
-                                                    <input type="text" placeholder="Enter Name" autofocus />
-                                                </div>
-                                                <div class="form-group">
-                                                    <label for="talentId">R2 Talent Id</label>
-                                                    <input id="emailHelp" type="text" placeholder="Enter R2 Talent Id" aria-describedby="emailHelp">
-                                                    <!--<small id="emailHelp" class="form-text text-muted">Help.</small>-->
-                                                    <a class="call-to-action">Add</a>
-                                                </div>
-                                            </li>
+                                        <!--
+                                        A NOTE ON BOOTSTRAP COLUMNS AND HOW THEY SHOULD BE IMPLEMENTED...
+                                        
+                                        1) FOR EVERY NEW ROW, ADD A NEW DIV WITH THE CLASS NAME 'row' 
+                                        2) ENCAPSULATE ALL INPUTS AND THEIR ASSOCIATED LABELS IN A DIV WITH CLASS NAME FORM-GROUP.
+                                        3) FOR THE LAYOUT TO APPEAR CORRRECTLY AND FOR MEDIA QUERIES TO KICK IN, YOU MUST DIVIDE UP FORM-GROUPS INTO DIVISIONS OF 12
+                                        WITH THE CLASS NAME 'col-md-?'. FOR EXAMPLE, IF YOU WANT 2 ROWS IN YOUR FORM, THE FIRST ROW WITH ONE FORM-GROUP AND THE SECOND
+                                        WITH 3 FORM-GROUPS, THEN THE FIRST FORM-GROUP CLASS TO BE ADDED WOULD BE 'col-md-12' AND THE SECOND ROW'S FORM-GROUP'S WOULD EACH
+                                        HAVE THE CLASS NAME 'col-md-4'.
+                                        -->
+                                        <div class="form-row">
+                                            <div class="form-group col-md-12">
+                                                <label for="artistName">Artist</label>
+                                                <input type="text" placeholder="Enter Name" autofocus/>
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="form-group col-md-4">
+                                                <label for="talentId">Item 1</label>
+                                                <input id="emailHelp" type="text" placeholder="Enter R2 Talent Id" aria-describedby="emailHelp">
+                                            </div>
+                                            <div class="form-group col-md-4">
+                                                <label for="talentId">Item 2</label>
+                                                <input id="emailHelp" type="text" placeholder="Enter R2 Talent Id" aria-describedby="emailHelp">
+                                            </div>
+                                            <div class="form-group col-md-4">
+                                                <label for="talentId">Item 3</label>
+                                                <input id="emailHelp" type="text" placeholder="Enter R2 Talent Id" aria-describedby="emailHelp">
+                                                <!--<a class="call-to-action">Add</a>-->
+                                            </div>
+                                        </div>
+                                        <div class="button-group border-left-dashed">
+                                            <button class="btn-save" type="submit">Save</button>
+                                            <button class="btn-cancel" type="submit">Cancel</button>
+                                            <button class="btn-reset" type="submit">Reset</button>
+                                        </div>
 
-                                            <li class="col button-group border-left-dashed">
-                                                <button class="btn-save" type="submit">Save</button>
-                                                <button class="btn-cancel" type="submit">Cancel</button>
-                                                <button class="btn-reset" type="submit">Reset</button>
-                                            </li>
-                                        </ul>
                                     </div>
                                 </form>
                             </div>
@@ -124,7 +141,6 @@
                 <div class="uploads-wrapper">
                     <a id="uploads-link" class="toggle-open-red"></a>
                     <h5>Unassigned Assets</h5>
-                    <div class="scrollable">
                         <table>
                             <thead>
                                 <tr>
@@ -464,7 +480,7 @@
                                 </tr>
                             </tbody>
                         </table>
-                    </div>
+
                 </div>
             </div>
         </section>
@@ -569,11 +585,11 @@
                                 
                                 <form>
                                     <div class="form-row">
-                                        <div class="form-group col-md-3">
+                                        <div class="form-group col-md-2">
                                             <label for="internalVersionTitle">Internal Version Title</label>
-                                            <input type="text" class="form-control" id="internalVersionTitle" placeholder="Internal Version Title">
+                                            <input type="text" class="form-control" id="internalVersionTitle" placeholder="Internal Version Title" autofocus="">
                                         </div>
-                                        <div class="form-group col-md-1">
+                                        <div class="form-group col-md-0">
                                             <a class="call-to-action">Add</a>
                                         </div>
                                         <div class="form-group col-md-2">
@@ -593,6 +609,16 @@
                                         <div class="form-group col-md-2">
                                             <label for="duration">Duration</label>
                                             <input type="duration" class="form-control" id="duration" placeholder="00:00:00">
+                                        </div>
+                                        <div class="form-group col-md-2">
+                                            <button class="btn-cancel">Cancel</button>
+                                            <button class="btn-save">Save</button>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="form-row">
+                                        <div class="form-group col-md-12 add-remove-group">
+                                            <span>Instrumental</span> <span>A Cappella</span> <span>TV Track</span> <span>Mix Stems</span> <span>Multitrack</span>
                                         </div>
                                     </div>
                                 </form>
@@ -627,6 +653,17 @@
                                         <div class="badge">3</div>
                                         <div class="uploads-wrapper">
                                             <h5>Unassigned Assets</h5>
+                                            <ul class="icon-set">
+                                                <li class="tracking">
+                                                    <div title="Tracking" class="tiny-badge">12</div>
+                                                </li>
+                                                <li class="masters">
+                                                    <div title="Masters" class="tiny-badge">3</div>
+                                                </li>
+                                                <li class="mixing">
+                                                    <div title="Mixing" class="tiny-badge">6</div>
+                                                </li>
+                                            </ul>
                                             <table>
                                                 <thead>
                                                     <tr>
