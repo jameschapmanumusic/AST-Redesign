@@ -72,7 +72,9 @@
                             <div class="wiz-content">
                                 <form>
                                     <header class="wiz-header">
-                                        <a class="active">Create Artist</a>
+                                        <a class="">Create Song</a>
+                                        <a class="active">Create Session</a>
+                                        <a class="">Create Contributors</a>
                                     </header>
                                     <div class="wiz-body">
                                         <!--
@@ -85,32 +87,68 @@
                                         WITH 3 FORM-GROUPS, THEN THE FIRST FORM-GROUP CLASS TO BE ADDED WOULD BE 'col-md-12' AND THE SECOND ROW'S FORM-GROUP'S WOULD EACH
                                         HAVE THE CLASS NAME 'col-md-4'.
                                         -->
-                                        <div class="form-row">
-                                            <div class="form-group col-md-12">
-                                                <label for="artistName">Artist</label>
-                                                <input type="text" placeholder="Enter Name" autofocus/>
+                                        <nav>
+                                            <ul>
+                                                <li>
+                                                    <label class="container">
+                                                        <strong>Caroline</strong>
+                                                        <input type="checkbox">
+                                                        <span class="checkmark"></span>
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <label class="container">
+                                                        <strong>Some Other Song</strong>
+                                                        <input type="checkbox">
+                                                        <span class="checkmark"></span>
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <label class="container">
+                                                        <strong>And Yet Another Song</strong>
+                                                        <input type="checkbox">
+                                                        <span class="checkmark"></span>
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <label class="container">
+                                                        <strong>Not again! Yes Another Song But This Tine Rediculously Long!</strong>
+                                                        <input type="checkbox">
+                                                        <span class="checkmark"></span>
+                                                    </label>
+                                                </li>
+                                            </ul>
+                                        </nav>
+
+                                        <section>
+                                            <div class="form-row">
+                                                <div class="form-group col-md-12">
+                                                    <label for="artistName">Artist</label>
+                                                    <input type="text" placeholder="Enter Name" autofocus />
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="form-row">
-                                            <div class="form-group col-md-4">
-                                                <label for="talentId">Item 1</label>
-                                                <input id="emailHelp" type="text" placeholder="Enter R2 Talent Id" aria-describedby="emailHelp">
+                                            <div class="form-row">
+                                                <div class="form-group col-md-4">
+                                                    <label for="talentId">Item 1</label>
+                                                    <input id="emailHelp" type="text" placeholder="Enter R2 Talent Id" aria-describedby="emailHelp">
+                                                </div>
+                                                <div class="form-group col-md-4">
+                                                    <label for="talentId">Item 2</label>
+                                                    <input id="emailHelp" type="text" placeholder="Enter R2 Talent Id" aria-describedby="emailHelp">
+                                                </div>
+                                                <div class="form-group col-md-4">
+                                                    <label for="talentId">Item 3</label>
+                                                    <input id="emailHelp" type="text" placeholder="Enter R2 Talent Id" aria-describedby="emailHelp">
+                                                    <!--<a class="call-to-action">Add</a>-->
+                                                </div>
                                             </div>
-                                            <div class="form-group col-md-4">
-                                                <label for="talentId">Item 2</label>
-                                                <input id="emailHelp" type="text" placeholder="Enter R2 Talent Id" aria-describedby="emailHelp">
-                                            </div>
-                                            <div class="form-group col-md-4">
-                                                <label for="talentId">Item 3</label>
-                                                <input id="emailHelp" type="text" placeholder="Enter R2 Talent Id" aria-describedby="emailHelp">
-                                                <!--<a class="call-to-action">Add</a>-->
-                                            </div>
-                                        </div>
-                                        <div class="button-group border-left-dashed">
+                                        </section>
+
+                                        <aside class="button-group border-left-dashed">
                                             <button class="btn-save" type="submit">Save</button>
                                             <button class="btn-cancel" type="submit">Cancel</button>
                                             <button class="btn-reset" type="submit">Reset</button>
-                                        </div>
+                                        </aside>
 
                                     </div>
                                 </form>

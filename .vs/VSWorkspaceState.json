@@ -2,11 +2,12 @@
   "ExpandedNodes": [
     "",
     "\\dist",
-    "\\dist\\font",
-    "\\js",
-    "\\node_modules",
-    "\\scss"
+    "\\dist\\font\\glyphicons",
+    "\\dist\\img",
+    "\\dist\\js",
+    "\\scss",
+    "\\scss\\core"
   ],
-  "SelectedNode": "\\dist\\font\\glyphicons",
+  "SelectedNode": "\\scss\\badges-icons.scss",
   "PreviewInSolutionExplorer": false
 }

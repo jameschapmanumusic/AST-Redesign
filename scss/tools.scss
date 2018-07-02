@@ -3,25 +3,25 @@
 // Target Artist Page Only for correct positioning
 .artists-page {
     .tools {
-        top:                                        60px;
+        top:                                60px;
     }
 }
 
 .tools {
-    position:                                       absolute;
-    top:                                            80px;
-    right:                                          40px;
+    position:                               absolute;
+    top:                                    80px;
+    right:                                  40px;
     .tools-item {
-        display:                                    inline-block;
-        float:                                      left;
-        margin:                                     0 0 0 20px;
+        display:                            inline-block;
+        float:                              left;
+        margin:                             0 0 0 20px;
         .upload {
-            background:                             url($upload) no-repeat center center;
-            display:                                block;
-            background-size:                        100%;
-            width:                                  38px;
-            height:                                 38px;
-            cursor:                                 pointer;
+            background:                     url($upload) no-repeat center center;
+            display:                        block;
+            background-size:                100%;
+            width:                          38px;
+            height:                         38px;
+            cursor:                         pointer;
         }
     }
 }
@@ -29,15 +29,15 @@
 // Bespoke Wizard
 .wizard {
     button {
-        position:                               relative; 
-        z-index:                                4;
-        float:                                  right;
+        position:                           relative; 
+        z-index:                            4;
+        float:                              right;
     }
     .show {
-        display:                                block!important
+        display:                            block!important
     }
     .tint, .wiz-content {
-        display:                                none;
+        display:                            none;
     }
 
 }
@@ -96,7 +96,23 @@
             padding:                        15px 165px 15px 20px;
             border-radius:                  0 0 6px 6px;
             min-height:                     175px;
-            .button-group {
+            nav, section {
+                float:                      left;
+            }
+            nav {
+                margin:                     0 40px 0 0;
+                ul > li {
+                    margin:                 0 0 .8rem;
+                }
+                li label > strong {
+                    max-width:              200px;
+                    white-space:            nowrap;
+                    overflow:               hidden;
+                    text-overflow:          ellipsis;
+                    display:                block;
+                }
+            }
+            aside {
                 position:                   absolute;
                 top:                        0;
                 right:                      0;

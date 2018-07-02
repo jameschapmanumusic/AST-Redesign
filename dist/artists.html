@@ -140,49 +140,78 @@
             </section>
 
             <!-- Tools -->
-            <section class="tools">
-                <ul>
-                    <li>
-                        <!-- Create wizard -->
-                        <section class="wizard">
-                            <div id="wiz">
-                                <button id="toggleModal" class="btn-white" type="submit">Create Project</button>
-                                <div class="tint"></div>
-                                <div class="wiz-content">
-                                    <form>
-                                        <header class="wiz-header">
-                                            <a class="active">Create Artist</a>
-                                        </header>
-                                        <div class="wiz-body">
-                                            <ul class="row">
-                                                <li class="col">
-                                                    <div class="form-group">
-                                                        <label for="artistName">Artist</label>
-                                                        <input type="text" placeholder="Enter Name" autofocus />
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <label for="talentId">R2 Talent Id</label>
-                                                        <input id="emailHelp" type="text" placeholder="Enter R2 Talent Id" aria-describedby="emailHelp">
-                                                        <!--<small id="emailHelp" class="form-text text-muted">Help.</small>-->
-                                                        <a class="call-to-action">Add</a>
-                                                    </div>
-                                                </li>
+            <section class="tools" id="wiz">
+                <div class="tools-item">
+                    <a id="rotate" class="upload"></a>
+                </div>
+                <div class="tools-item wiz">
+                    <!-- Create wizard -->
+                    <section class="wizard">
+                        <div>
+                            <button id="toggleModal" class="btn-white" type="submit">Create Project</button>
+                            <div class="tint"></div>
+                            <div class="wiz-content">
+                                <form>
+                                    <header class="wiz-header">
+                                        <a class="active">Create Artist</a>
+                                    </header>
+                                    <div class="wiz-body">
+                                        <!--
+                                        A NOTE ON BOOTSTRAP COLUMNS AND HOW THEY SHOULD BE IMPLEMENTED...
 
-                                                <li class="col button-group border-left-dashed">
-                                                    <button class="btn-save" type="submit">Save</button>
-                                                    <button class="btn-cancel" type="submit">Cancel</button>
-                                                    <button class="btn-reset" type="submit">Reset</button>
-                                                </li>
-                                            </ul>
+                                        1) FOR EVERY NEW ROW, ADD A NEW DIV WITH THE CLASS NAME 'row'
+                                        2) ENCAPSULATE ALL INPUTS AND THEIR ASSOCIATED LABELS IN A DIV WITH CLASS NAME FORM-GROUP.
+                                        3) FOR THE LAYOUT TO APPEAR CORRRECTLY AND FOR MEDIA QUERIES TO KICK IN, YOU MUST DIVIDE UP FORM-GROUPS INTO DIVISIONS OF 12
+                                        WITH THE CLASS NAME 'col-md-?'. FOR EXAMPLE, IF YOU WANT 2 ROWS IN YOUR FORM, THE FIRST ROW WITH ONE FORM-GROUP AND THE SECOND
+                                        WITH 3 FORM-GROUPS, THEN THE FIRST FORM-GROUP CLASS TO BE ADDED WOULD BE 'col-md-12' AND THE SECOND ROW'S FORM-GROUP'S WOULD EACH
+                                        HAVE THE CLASS NAME 'col-md-4'.
+                                        -->
+                                        <div class="form-row">
+                                            <div class="form-group col-md-12">
+                                                <label for="artistName">Artist</label>
+                                                <input type="text" placeholder="Enter Name" autofocus />
+                                            </div>
                                         </div>
-                                    </form>
-                                </div>
-                            </div>
-                        </section>
-                    </li>
-                </ul>
-            </section>
+                                        <div class="form-row">
+                                            <div class="form-group col-md-9">
+                                                <label for="talentId">Talent Id</label>
+                                                <input id="emailHelp" type="text" placeholder="Enter R2 Talent Id" aria-describedby="emailHelp">
+                                            </div>
+                                            <div class="form-group col-md-3">
+                                                <a class="call-to-action">Add</a>
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="form-group col-md-12">
+                                                <div class="add-remove-group width200">
+                                                    <span>000255465456</span>
+                                                    <span>000255465456</span>
+                                                    <span>000255465456</span>
+                                                    <span>000255465456</span>
+                                                    <span>000255465456</span>
+                                                    <span>000255465456</span>
+                                                    <span>000255465456</span>
+                                                    <span>000255465456</span>
+                                                    <span>000255465456</span>
+                                                    <span>000255465456</span>
+                                                    <span>000255465456</span>
+                                                    <span>000255465456</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="button-group border-left-dashed">
+                                            <button class="btn-save" type="submit">Save</button>
+                                            <button class="btn-cancel" type="submit">Cancel</button>
+                                            <button class="btn-reset" type="submit">Reset</button>
+                                        </div>
 
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </section>
         </header>
         <div class="row main-content padded-left-only">
             <div class="col-lg-6">

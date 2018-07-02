@@ -1788,7 +1788,8 @@ a.text-light:hover, a.text-light:focus {
   display: inline-block; }
 
 ul.icon-set {
-  display: inline-block; }
+  display: inline-block;
+  margin: 0 0 0 5px; }
   ul.icon-set li {
     position: relative;
     float: left;
@@ -2187,6 +2188,129 @@ summary {
 
 .show-form aside .btn-edit::after {
   content: "Save"; }
+
+.width5 {
+  width: 5px; }
+
+.width10 {
+  width: 10px; }
+
+.width15 {
+  width: 15px; }
+
+.width20 {
+  width: 20px; }
+
+.width25 {
+  width: 25px; }
+
+.width30 {
+  width: 30px; }
+
+.width35 {
+  width: 35px; }
+
+.width40 {
+  width: 40px; }
+
+.width45 {
+  width: 45px; }
+
+.width50 {
+  width: 50px; }
+
+.width55 {
+  width: 55px; }
+
+.width60 {
+  width: 60px; }
+
+.width65 {
+  width: 65px; }
+
+.width70 {
+  width: 70px; }
+
+.width75 {
+  width: 75px; }
+
+.width80 {
+  width: 80px; }
+
+.width85 {
+  width: 85px; }
+
+.width90 {
+  width: 90px; }
+
+.width95 {
+  width: 95px; }
+
+.width100 {
+  width: 100px; }
+
+.width105 {
+  width: 105px; }
+
+.width110 {
+  width: 110px; }
+
+.width115 {
+  width: 115px; }
+
+.width120 {
+  width: 120px; }
+
+.width125 {
+  width: 125px; }
+
+.width130 {
+  width: 130px; }
+
+.width135 {
+  width: 135px; }
+
+.width140 {
+  width: 140px; }
+
+.width145 {
+  width: 145px; }
+
+.width150 {
+  width: 150px; }
+
+.width155 {
+  width: 155px; }
+
+.width160 {
+  width: 160px; }
+
+.width165 {
+  width: 165px; }
+
+.width170 {
+  width: 170px; }
+
+.width175 {
+  width: 175px; }
+
+.width180 {
+  width: 180px; }
+
+.width185 {
+  width: 185px; }
+
+.width190 {
+  width: 190px; }
+
+.width195 {
+  width: 195px; }
+
+.width200 {
+  width: 200px; }
+
+strong {
+  font-weight: 300; }
 
 h1 {
   font-size: 3.5rem;
@@ -2749,13 +2873,26 @@ table tbody td {
     -webkit-border-radius: 0 0 6px 6px;
     border-radius: 0 0 6px 6px;
     min-height: 175px; }
-    .show-wizard .wiz-content .wiz-body .button-group {
+    .show-wizard .wiz-content .wiz-body nav, .show-wizard .wiz-content .wiz-body section {
+      float: left; }
+    .show-wizard .wiz-content .wiz-body nav {
+      margin: 0 40px 0 0; }
+      .show-wizard .wiz-content .wiz-body nav ul > li {
+        margin: 0 0 .8rem; }
+      .show-wizard .wiz-content .wiz-body nav li label > strong {
+        max-width: 200px;
+        white-space: nowrap;
+        overflow: hidden;
+        -o-text-overflow: ellipsis;
+        text-overflow: ellipsis;
+        display: block; }
+    .show-wizard .wiz-content .wiz-body aside {
       position: absolute;
       top: 0;
       right: 0;
       bottom: 0;
       padding: 1rem 1rem 0 1rem; }
-      .show-wizard .wiz-content .wiz-body .button-group button {
+      .show-wizard .wiz-content .wiz-body aside button {
         float: left;
         clear: left; }
 
