@@ -13,6 +13,7 @@
     line-height:                    2.25rem;
 }
 
+// Currently for Uploads Drawer Only
 .toggle-open-red { 
     background:                     url($toggle-open-red) no-repeat 0 0;
     background-size:                100%;
@@ -20,6 +21,32 @@
     height:                         23px;
     display:                        inline-block;
 }
+
+// Navy Open Close Chevron
+ .toggle-open {
+    background:                     url($chevron-navy) 0 0 no-repeat;
+    cursor:                         pointer;
+    width:                          13px;
+    height:                         16px;
+    float:                          left;
+}
+
+// Currently Only for '.table-striped' Tables!!! Resides in thead...
+.expand-collapse-all {
+    float:                          right;
+    a {
+        width:                      16px;
+        height:                     13px;
+        float:                      left;
+        background:                 url($chevron-white) no-repeat 0 0;
+        margin-right:               .3rem;
+    }
+    a:last-child {
+        transform:                  rotate(180deg);
+        height:                     15px;
+    }
+}
+
 
 ul.icon-set {
     display:                        inline-block;

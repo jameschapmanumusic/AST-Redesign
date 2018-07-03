@@ -82,15 +82,10 @@ table {
                 font-size:                                  1.4rem;
                 padding:                                    .1rem 1rem .1rem 0;
             }
-            td:first-child {
-                background:                                 $white url($chevron-navy-open) 40px center no-repeat!important;
-                cursor:                                     pointer;
-            }
-        }
-        tr.details-row {
-            td:first-child {
-                background:                                 url($chevron-navy-closed) 40px center no-repeat;
-                cursor:                                     pointer;
+            td {
+                .toggle-open {
+                    transform:                              rotate(90deg)
+                }
             }
         }
         tr.row-open + .expanded-row {
