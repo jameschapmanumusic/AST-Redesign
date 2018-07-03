@@ -1809,8 +1809,8 @@ a.text-light:hover, a.text-light:focus {
     height: 15px; }
 
 ul.icon-set {
-  display: inline-block;
-  margin: 0 0 0 5px; }
+  float: left;
+  margin: -1px 0 -4px 0; }
   ul.icon-set li {
     position: relative;
     float: left;
@@ -1852,6 +1852,21 @@ ul.icon-set {
     width: 26px;
     height: 24px;
     display: inline-block; }
+
+ul.tool-set {
+  float: right; }
+  ul.tool-set li {
+    display: inline-block;
+    margin-right: 20px; }
+    ul.tool-set li .upload {
+      background: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNi4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB3aWR0aD0iMzJweCIgaGVpZ2h0PSIzMnB4IiB2aWV3Qm94PSIwIDAgMzIgMzIiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDMyIDMyIiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxjaXJjbGUgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjQzgzOTI3IiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIGN4PSIxNiIgY3k9IjE2IiByPSIxNSIvPg0KPGc+DQoJPHBvbHlsaW5lIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0M4MzkyNyIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBwb2ludHM9IjguNDczLDE2LjAzMyAxNiw4LjUwNyAyMy41MjcsMTYuMDMzIAkiLz4NCgk8bGluZSBmaWxsPSJub25lIiBzdHJva2U9IiNDODM5MjciIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgeDE9IjE2IiB5MT0iOC43ODUiIHgyPSIxNiIgeTI9IjIzLjQ5MyIvPg0KPC9nPg0KPC9zdmc+DQo=") no-repeat center center;
+      display: block;
+      -webkit-background-size: 100% 100%;
+      background-size: 100%;
+      width: 25px;
+      height: 25px;
+      cursor: pointer;
+      margin: -2px 0 -7px 0; }
 
 .border-left {
   border-left: 1px solid #bdbdbd !important; }
@@ -2130,7 +2145,9 @@ button {
     margin: 27px 0 0;
     display: inline-block; }
   .form-row > .col button, .form-row > [class*=col-] button {
-    margin: 20px 5px 0 5px; }
+    margin-top: 20px; }
+  .form-row > .col button + button, .form-row > [class*=col-] button + button {
+    margin-left: 5px; }
 
 .switch {
   position: relative;
@@ -2749,21 +2766,19 @@ table tbody td {
     .table-striped tbody tr.expanded-row td:first-child {
       background: none; }
     .table-striped tbody tr.expanded-row td.container-cell {
-      background: none;
-      cursor: default;
-      padding: 0;
       position: relative;
-      min-height: 400px;
-      vertical-align: top;
       overflow: visible; }
+      .table-striped tbody tr.expanded-row td.container-cell form {
+        width: 95%;
+        margin: 15px 0; }
+        .table-striped tbody tr.expanded-row td.container-cell form .add-remove-group {
+          border-bottom: 1px dashed #bdbdbd;
+          padding-bottom: 5px; }
       .table-striped tbody tr.expanded-row td.container-cell #uploads {
         min-height: 80px; }
-      .table-striped tbody tr.expanded-row td.container-cell form {
-        width: 56%;
-        margin: 20px 0 0 40px; }
       .table-striped tbody tr.expanded-row td.container-cell table.table-striped {
-        margin: 0 20px 20px 40px;
-        width: 56%; }
+        margin: 15px 0;
+        width: 95%; }
         .table-striped tbody tr.expanded-row td.container-cell table.table-striped td:first-child, .table-striped tbody tr.expanded-row td.container-cell table.table-striped th:first-child {
           padding-left: 20px;
           background-image: none; }
@@ -2775,16 +2790,22 @@ table tbody td {
           border-bottom: 1px dashed #bdbdbd;
           padding: .6rem 1rem .6rem 0; }
       .table-striped tbody tr.expanded-row td.container-cell .uploads-drawer {
-        top: -39px;
-        width: 40%;
+        top: -41px;
+        left: -20px;
         z-index: 0;
         -webkit-box-shadow: none;
         box-shadow: none;
-        cursor: default; }
+        cursor: default;
+        opacity: 1;
+        width: 100%; }
+        .table-striped tbody tr.expanded-row td.container-cell .uploads-drawer .uploads-wrapper {
+          margin-right: 0; }
         .table-striped tbody tr.expanded-row td.container-cell .uploads-drawer table td, .table-striped tbody tr.expanded-row td.container-cell .uploads-drawer table th {
           background-color: #fff; }
-        .table-striped tbody tr.expanded-row td.container-cell .uploads-drawer table tbody td {
-          border-bottom: none; }
+        .table-striped tbody tr.expanded-row td.container-cell .uploads-drawer table tbody {
+          right: 0; }
+          .table-striped tbody tr.expanded-row td.container-cell .uploads-drawer table tbody td {
+            border-bottom: none; }
 
 .table-sm {
   border-collapse: collapse; }

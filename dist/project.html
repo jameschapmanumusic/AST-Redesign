@@ -501,13 +501,14 @@
                 <table class="table-striped">
                     <thead>
                     <tr>
-                        <th width="75">&nbsp;</th>
-                        <th width="30">#</th>
-                        <th>Title</th>
-                        <th>Artist(s)</th>
-                        <th>Production Phase</th>
-                        <th>Assets</th>
-                        <th>
+                        <!-- use inline styles for cell widths ( MUST ADD UP TO 100% ) --> 
+                        <th style="width: 2%">&nbsp;</th>
+                        <th style="width: 2%">#</th>
+                        <th style="width: 36%">Title</th>
+                        <th style="width: 10%">Artist(s)</th>
+                        <th style="width: 10%">Production Phase</th>
+                        <th style="width: 20%">Assets</th>
+                        <th style="width: 20%">
                             <div class="expand-collapse-all">
                                 <a class="expand-all"></a>
                                 <a class="collapse-all"></a>
@@ -515,37 +516,70 @@
                         </th>
                     </tr>
                     </thead>
-                    <tbody onclick="toggleRowOpenRowClosed(event)">
-                        <!-- IMPORTANT: THE 2 ROWS SEEN BELOW WILL NEED TO BE ENCAPSULATED INTO A TEMPLATE - REFER TO http://www.foursails.co/blog/advanced-tables/ -->
+                    <tbody>
+                    <!-- IMPORTANT: THE 2 ROWS SEEN BELOW WILL NEED TO BE ENCAPSULATED INTO A TEMPLATE - REFER TO http://www.foursails.co/blog/advanced-tables/ -->
                         <tr class="details-row">
                             <td><a class="toggle-open"></a></td>
                             <td>1</td>
                             <td>A Dog Of A Night</td>
                             <td>Amine</td>
                             <td>Tracking</td>
-                            <td>Icons</td>
-                            <td>upload</td>
+                            <td>
+                                <ul class="icon-set">
+                                    <li class="tracking">
+                                        <div title="Tracking" class="tiny-badge">12</div>
+                                    </li>
+                                    <li class="masters">
+                                        <div title="Masters" class="tiny-badge">3</div>
+                                    </li>
+                                    <li class="mixing">
+                                        <div title="Mixing" class="tiny-badge">6</div>
+                                    </li>
+                                </ul>
+                            </td>
+                            <td>
+                                <ul class="tool-set">
+                                    <li>
+                                        <div class="tools-item">
+                                            <a id="rotate" class="upload"></a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a class="call-to-action">Edit</a>
+                                    </li>
+                                    <li class="mixing">
+                                        <a class="call-to-action">Remove</a>
+                                    </li>
+                                </ul>
+                            </td>
                         </tr>
                         <tr class="expanded-row">
-                            <td class="container-cell" colspan="100">
+                            <td class="container-cell" colspan="5">
                                 
                                 <form>
                                     <div class="form-row">
-                                        <div class="form-group col-md-2">
+                                        <div class="form-group col-md-6">
                                             <label for="internalVersionTitle">Internal Version Title</label>
                                             <input type="text" class="form-control" id="internalVersionTitle" placeholder="Internal Version Title" autofocus="">
                                         </div>
-                                        <div class="form-group col-md-0">
+                                        <div class="form-group col-md-1">
                                             <a class="call-to-action">Add</a>
                                         </div>
-                                        <div class="form-group col-md-2">
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group col-md-12 add-remove-group">
+                                            <span>Instrumental</span> <span>A Cappella</span> <span>TV Track</span> <span>Mix Stems</span> <span>Multitrack</span>
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group col-md-3">
                                             <label for="productionPhase">Production Phase</label>
                                             <select class="form-control" id="productionPhase">
                                                 <option>Please Select</option>
                                                 <option>Some Value</option>
                                             </select>
                                         </div>
-                                        <div class="form-group col-md-2">
+                                        <div class="form-group col-md-3">
                                             <label for="parentalAdvisory">Parental Advisory</label>
                                             <select class="form-control" id="parentalAdvisory">
                                                 <option>Please Select</option>
@@ -556,15 +590,9 @@
                                             <label for="duration">Duration</label>
                                             <input type="duration" class="form-control" id="duration" placeholder="00:00:00">
                                         </div>
-                                        <div class="form-group col-md-2">
+                                        <div class="form-group col-md-4">
                                             <button class="btn-cancel">Cancel</button>
                                             <button class="btn-save">Save</button>
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="form-row">
-                                        <div class="form-group col-md-12 add-remove-group">
-                                            <span>Instrumental</span> <span>A Cappella</span> <span>TV Track</span> <span>Mix Stems</span> <span>Multitrack</span>
                                         </div>
                                     </div>
                                 </form>
@@ -593,12 +621,12 @@
                                         </tr>
                                     </tbody>
                                 </table>
-
+                            </td>
+                            <td class="container-cell" colspan="2">
                                 <div id="uploads" class="open">
                                     <div class="uploads-drawer">
-                                        <div class="badge">3</div>
                                         <div class="uploads-wrapper">
-                                            <h5>Unassigned Assets</h5>
+                                            <h5>Recording Assets</h5>
                                             <ul class="icon-set">
                                                 <li class="tracking">
                                                     <div title="Tracking" class="tiny-badge">12</div>

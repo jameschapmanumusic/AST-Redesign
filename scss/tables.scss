@@ -98,23 +98,22 @@ table {
                 background:                                 none;
             }
             td.container-cell {
-                background:                                 none;
-                cursor:                                     default;
-                padding:                                    0;
                 position:                                   relative;
-                min-height:                                 400px;
-                vertical-align:                             top;
                 overflow:                                   visible;
+                form {
+                    width:                                  95%;
+                    margin:                                 15px 0;
+                    .add-remove-group {
+                        border-bottom:                      1px dashed $grey-lighten-1;
+                        padding-bottom:                     5px;
+                    }
+                }
                 #uploads {
                     min-height:                             80px;
                 }
-                form {
-                    width:                                  56%;
-                    margin:                                 20px 0 0 40px;
-                }
                 table.table-striped {
-                    margin:                                 0 20px 20px 40px;
-                    width:                                  56%;
+                    margin:                                 15px 0;
+                    width:                                  95%;
                     td:first-child, th:first-child {
                         padding-left:                       20px;
                         background-image:                   none;
@@ -132,16 +131,22 @@ table {
                     }
                 }
                 .uploads-drawer {
-                    top:                                    -39px;
-                    width:                                  40%;
+                    top:                                    -41px;
+                    left:                                   -20px;
                     z-index:                                0;
                     box-shadow:                             none;
                     cursor:                                 default;
+                    opacity:                                1;
+                    width:                                  100%;
+                    .uploads-wrapper {
+                        margin-right:                       0;
+                    }
                     table {
                         td, th {
                             background-color:               $white;
                         }
                         tbody {
+                            right:                          0;
                             td {
                                 border-bottom:              none;
                             }

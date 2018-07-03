@@ -49,8 +49,8 @@
 
 
 ul.icon-set {
-    display:                        inline-block;
-    margin:                         0 0 0 5px;
+    float:                          left;
+    margin:                         -1px 0 -4px 0;
     li {
         position:                   relative;
         float:                      left;
@@ -91,6 +91,23 @@ ul.icon-set {
         width:                      26px;
         height:                     24px;
         display:                    inline-block;
+    }
+}
+
+ul.tool-set {
+    float:                          right;
+    li {
+        display:                    inline-block;
+        margin-right:               20px;
+        .upload {
+            background:             url($upload) no-repeat center center;
+            display:                block;
+            background-size:        100%;
+            width:                  25px;
+            height:                 25px;
+            cursor:                 pointer;
+            margin:                 -2px 0 -7px 0;
+        }
     }
 }
 

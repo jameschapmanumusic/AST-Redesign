@@ -270,7 +270,10 @@ button {
         display:                                            inline-block;
     }
     button {
-        margin:                                             20px 5px 0 5px;
+        margin-top:                                         20px;
+    }
+    button + button {
+        margin-left:5px;
     }
 }
 
