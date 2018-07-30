@@ -35,9 +35,9 @@ function cancelForm() {
 }
 
 // MK - toggle row open and closed
-$(".main-table-section .table-striped tbody tr.details-row").each(function () {
+$(".main-table-section .table-striped tbody tr.details-row td:first-child").each(function () {
     var $thisRow = $(this);
     $thisRow.click(function () {
-        $thisRow.toggleClass("row-open");
+        $thisRow.parent().toggleClass("row-open");
     });
 });

@@ -101,7 +101,7 @@ table {
                 position:                                   relative;
                 overflow:                                   visible;
                 form {
-                    width:                                  95%;
+                    width:                                  97%;
                     margin:                                 15px 0;
                     .add-remove-group {
                         border-bottom:                      1px dashed $grey-lighten-1;
@@ -113,7 +113,7 @@ table {
                 }
                 table.table-striped {
                     margin:                                 15px 0;
-                    width:                                  95%;
+                    width:                                  97%;
                     td:first-child, th:first-child {
                         padding-left:                       20px;
                         background-image:                   none;
@@ -123,9 +123,13 @@ table {
                         background-image:                   none;
                     }
                     tbody {
+                        tr:last-child {
+                            td {
+                                border-bottom:              none;
+                            }
+                        }
                         td {
                             background-color:               $white;
-                            border-bottom:                  1px dashed $grey-lighten-1;
                             padding:                        .6rem 1rem .6rem 0;
                         }
                     }

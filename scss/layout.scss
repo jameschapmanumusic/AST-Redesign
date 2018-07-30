@@ -11,7 +11,7 @@ html {
             background-size:                200px;
             background-position:            -96px 20px;
             padding:                        10px 20px 40px 200px;
-            z-index:                        1;
+            z-index:                        2;
             h6 {
                 color:                      $white;
                 margin:                     40px 0 5px 0;
@@ -44,14 +44,12 @@ html {
         margin-right:                       0;
     }
     .main-table-section {
-        width:                                      100%;
-        border-top:                                 1px dashed $grey-lighten-1;
-        padding:                                    10px 0 0 0;
-        background-color:                           white;
-        /*position:                                   relative;
-        z-index:                                    2;*/
+        width:                              100%;
+        border-top:                         1px dashed $grey-lighten-1;
+        padding:                            10px 0 0 0;
+        background-color:                   white;
         h4 {
-            margin-left:                            40px;
+            margin-left:                    40px;
         }
     }
 }
