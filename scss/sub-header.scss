@@ -10,9 +10,11 @@ header.page-sub-header {
             float:                                  left
         }
         .search-input {
-            float:                                  left;
             margin:                                 25px 0 0 20px;
-            width:                                  600px;
+            input {
+                float:                              left;
+                width:                              600px;
+            }
         }
     }
 

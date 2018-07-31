@@ -5,4 +5,32 @@
     padding:                                        0 40px;
     box-shadow:                                     none;
     height:                                         45px;
+    .search-and-login {
+        position:                                   absolute;
+        right:                                      0;
+        padding-right:                              5px;
+        .search:hover {
+            background:                             url($iconSearchGrey) no-repeat center 18px;
+            background-size:                        18px;
+        }
+        .search {
+            background:                             url($iconSearch) no-repeat center 18px;
+            background-size:                        18px;
+            display:                                inline-block;
+            width:                                  32px;
+            height:                                 50px;
+            cursor:                                 pointer;
+        }
+        .login:hover {
+            background:                             url($icon-login-hover) no-repeat center 12px;
+        }
+        .login {
+            background:                             url($icon-login) no-repeat center 12px;
+            display:                                inline-block;
+            width:                                  35px;
+            height:                                 50px;
+            background-size:                        29px;
+            cursor:                                 pointer;
+        }
+    }
 }
