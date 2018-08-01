@@ -136,14 +136,17 @@ table {
                 }
                 .uploads-drawer {
                     top:                                    -41px;
+                    bottom:                                 0;
                     left:                                   -20px;
                     z-index:                                0;
                     box-shadow:                             none;
                     cursor:                                 default;
                     opacity:                                1;
                     width:                                  100%;
+                    position:                               absolute;
                     .uploads-wrapper {
                         margin-right:                       0;
+                        overflow:                           unset;
                     }
                     table {
                         td, th {

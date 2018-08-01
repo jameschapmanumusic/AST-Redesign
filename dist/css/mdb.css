@@ -2799,15 +2799,18 @@ table tbody td {
           padding: .6rem 1rem .6rem 0; }
       .table-striped tbody tr.expanded-row td.container-cell .uploads-drawer {
         top: -41px;
+        bottom: 0;
         left: -20px;
         z-index: 0;
         -webkit-box-shadow: none;
         box-shadow: none;
         cursor: default;
         opacity: 1;
-        width: 100%; }
+        width: 100%;
+        position: absolute; }
         .table-striped tbody tr.expanded-row td.container-cell .uploads-drawer .uploads-wrapper {
-          margin-right: 0; }
+          margin-right: 0;
+          overflow: unset; }
         .table-striped tbody tr.expanded-row td.container-cell .uploads-drawer table td, .table-striped tbody tr.expanded-row td.container-cell .uploads-drawer table th {
           background-color: #fff; }
         .table-striped tbody tr.expanded-row td.container-cell .uploads-drawer table tbody {
@@ -3012,7 +3015,8 @@ table tbody td {
   -webkit-box-shadow: 0 3px 8px rgba(68, 68, 68, 0.15) ;
   box-shadow: 0 3px 8px rgba(68, 68, 68, 0.15) ; }
   .open .uploads-drawer .uploads-wrapper {
-    margin: 15px 40px 10px 20px; }
+    margin: 15px 40px 10px 20px;
+    overflow: hidden; }
     .open .uploads-drawer .uploads-wrapper h5 {
       display: inline-block;
       float: left;
