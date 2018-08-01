@@ -2816,7 +2816,8 @@ table tbody td {
         .table-striped tbody tr.expanded-row td.container-cell .uploads-drawer table td, .table-striped tbody tr.expanded-row td.container-cell .uploads-drawer table th {
           background-color: #fff; }
         .table-striped tbody tr.expanded-row td.container-cell .uploads-drawer table tbody {
-          right: 0; }
+          right: 0;
+          top: 75px; }
           .table-striped tbody tr.expanded-row td.container-cell .uploads-drawer table tbody td {
             border-bottom: none; }
 
