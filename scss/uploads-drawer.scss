@@ -1,4 +1,42 @@
 ﻿// Bespoke Uploads Drawer
+
+.uploads-drawer {
+    background:                                     $white;
+    opacity:                                        0.92;
+    transition:                                     width 0.25s;
+    -webkit-transition:                             width .25s;
+    -moz-transition:                                width 0.25s;
+    position:                                       absolute;
+    top:                                            247px;
+    right:                                          0;
+    bottom:                                         0;
+    width:                                          38px;
+    z-index:                                        2;
+    white-space:                                    nowrap;
+    cursor:                                         pointer;
+    border-left:1px dashed $grey-lighten-1;
+    .badge {
+        top:                                        -15px;
+        left:                                       -15px;
+        width:                                      26px;
+        height:                                     26px;
+        font-size:                                  .7rem;
+        line-height:                                1.6rem;
+        padding-right:                              1px;
+    }
+    .uploads-wrapper {
+        table, h5 {
+            display:none;
+        }
+        .toggle-open-red {
+            position:                               absolute;
+            right:                                  8px;
+            top:                                    14px;
+        }
+    }
+}
+
+// When Opened
 .open {
     .toggle-open-red {
         transform:                                  rotate(180deg);
@@ -71,46 +109,6 @@
                     }
                 }
             }
-        }
-    }
-}
-.artist-projects-page {
-    .uploads-drawer {
-        top:                                        247px;
-    }
-}
-.uploads-drawer {
-    background:                                     $white;
-    opacity:                                        0.92;
-    transition:                                     width 0.25s;
-    -webkit-transition:                             width .25s;
-    -moz-transition:                                width 0.25s;
-    position:                                       absolute;
-    top:                                            239px;
-    right:                                          0;
-    bottom:                                         0;
-    width:                                          38px;
-    z-index:                                        2;
-    white-space:                                    nowrap;
-    cursor:                                         pointer;
-    border-left:1px dashed $grey-lighten-1;
-    .badge {
-        top:                                        -15px;
-        left:                                       -15px;
-        width:                                      26px;
-        height:                                     26px;
-        font-size:                                  .7rem;
-        line-height:                                1.6rem;
-        padding-right:                              1px;
-    }
-    .uploads-wrapper {
-        table, h5 {
-            display:none;
-        }
-        .toggle-open-red {
-            position:                               absolute;
-            right:                                  8px;
-            top:                                    14px;
         }
     }
 }

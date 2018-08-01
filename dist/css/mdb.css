@@ -2520,7 +2520,7 @@ ul {
 
 .contextual-navigation {
   border-top: 1px solid #bdbdbd;
-  margin: 20px 0 0 0; }
+  margin: 31px 0 0 0; }
   .contextual-navigation ul li {
     display: inline-block;
     font-weight: 100;
@@ -2687,8 +2687,8 @@ header.page-sub-header {
     border: 1px solid #314861;
     display: inline-block;
     float: left;
-    height: 174px;
-    width: 174px;
+    height: 185px;
+    width: 185px;
     overflow: hidden;
     margin: 0 1.2rem 0 0; }
     header.page-sub-header .album-art img {
@@ -2842,11 +2842,11 @@ table tbody td {
     padding: .4rem; }
 
 .artists-page .tools {
-  top: 55px; }
+  top: 60px; }
 
 .tools {
   position: absolute;
-  top: 80px;
+  top: 85px;
   right: 40px; }
   .tools .tools-item {
     display: inline-block;
@@ -2996,6 +2996,38 @@ table tbody td {
       background-size: 29px;
       cursor: pointer; }
 
+.uploads-drawer {
+  background: #fff;
+  opacity: 0.92;
+  -webkit-transition: width 0.25s;
+  -o-transition: width 0.25s;
+  transition: width 0.25s;
+  -webkit-transition: width .25s;
+  -moz-transition: width 0.25s;
+  position: absolute;
+  top: 247px;
+  right: 0;
+  bottom: 0;
+  width: 38px;
+  z-index: 2;
+  white-space: nowrap;
+  cursor: pointer;
+  border-left: 1px dashed #bdbdbd; }
+  .uploads-drawer .badge {
+    top: -15px;
+    left: -15px;
+    width: 26px;
+    height: 26px;
+    font-size: .7rem;
+    line-height: 1.6rem;
+    padding-right: 1px; }
+  .uploads-drawer .uploads-wrapper table, .uploads-drawer .uploads-wrapper h5 {
+    display: none; }
+  .uploads-drawer .uploads-wrapper .toggle-open-red {
+    position: absolute;
+    right: 8px;
+    top: 14px; }
+
 .open .toggle-open-red {
   -webkit-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
@@ -3058,38 +3090,3 @@ table tbody td {
           overflow: hidden;
           -o-text-overflow: ellipsis;
           text-overflow: ellipsis; }
-
-.artist-projects-page .uploads-drawer {
-  top: 247px; }
-
-.uploads-drawer {
-  background: #fff;
-  opacity: 0.92;
-  -webkit-transition: width 0.25s;
-  -o-transition: width 0.25s;
-  transition: width 0.25s;
-  -webkit-transition: width .25s;
-  -moz-transition: width 0.25s;
-  position: absolute;
-  top: 239px;
-  right: 0;
-  bottom: 0;
-  width: 38px;
-  z-index: 2;
-  white-space: nowrap;
-  cursor: pointer;
-  border-left: 1px dashed #bdbdbd; }
-  .uploads-drawer .badge {
-    top: -15px;
-    left: -15px;
-    width: 26px;
-    height: 26px;
-    font-size: .7rem;
-    line-height: 1.6rem;
-    padding-right: 1px; }
-  .uploads-drawer .uploads-wrapper table, .uploads-drawer .uploads-wrapper h5 {
-    display: none; }
-  .uploads-drawer .uploads-wrapper .toggle-open-red {
-    position: absolute;
-    right: 8px;
-    top: 14px; }
