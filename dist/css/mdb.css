@@ -2574,7 +2574,7 @@ ul {
   width: 100%;
   min-width: 850px; }
   .paging .pagination {
-    margin: 0 40px 0 0;
+    margin: 0 48px 0 0;
     position: absolute;
     top: -2px;
     right: 0; }
@@ -2808,6 +2808,8 @@ table tbody td {
         opacity: 1;
         width: 100%;
         position: absolute; }
+        .table-striped tbody tr.expanded-row td.container-cell .uploads-drawer h5 {
+          margin: 0 1rem 1rem 0; }
         .table-striped tbody tr.expanded-row td.container-cell .uploads-drawer .uploads-wrapper {
           margin-right: 0;
           overflow: unset; }
@@ -2846,8 +2848,8 @@ table tbody td {
 
 .tools {
   position: absolute;
-  top: 85px;
-  right: 40px; }
+  top: 94px;
+  right: 50px; }
   .tools .tools-item {
     display: inline-block;
     float: left;
@@ -3004,8 +3006,8 @@ table tbody td {
   transition: width 0.25s;
   -webkit-transition: width .25s;
   -moz-transition: width 0.25s;
-  position: absolute;
-  top: 247px;
+  position: fixed;
+  top: 45px;
   right: 0;
   bottom: 0;
   width: 38px;
@@ -3014,8 +3016,8 @@ table tbody td {
   cursor: pointer;
   border-left: 1px dashed #bdbdbd; }
   .uploads-drawer .badge {
-    top: -15px;
-    left: -15px;
+    top: 30px;
+    left: -13px;
     width: 26px;
     height: 26px;
     font-size: .7rem;
@@ -3026,7 +3028,7 @@ table tbody td {
   .uploads-drawer .uploads-wrapper .toggle-open-red {
     position: absolute;
     right: 8px;
-    top: 14px; }
+    top: 10px; }
 
 .open .toggle-open-red {
   -webkit-transform: rotate(180deg);
@@ -3037,6 +3039,7 @@ table tbody td {
   top: 14px; }
 
 .open .uploads-drawer {
+  z-index: 20;
   right: 0;
   -webkit-transition: width 0.25s;
   -o-transition: width 0.25s;
@@ -3052,7 +3055,7 @@ table tbody td {
     .open .uploads-drawer .uploads-wrapper h5 {
       display: inline-block;
       float: left;
-      margin-right: .5rem; }
+      margin: 1.1rem 0 1rem 0; }
     .open .uploads-drawer .uploads-wrapper table {
       display: table;
       width: 100%; }
@@ -3078,10 +3081,10 @@ table tbody td {
         overflow-y: auto;
         margin-top: 5px;
         position: absolute;
-        top: 65px;
+        top: 90px;
         left: 20px;
         right: 40px;
-        bottom: 33%; }
+        bottom: 1rem; }
         .open .uploads-drawer .uploads-wrapper table tbody tr td {
           font-weight: 300;
           color: #333333;

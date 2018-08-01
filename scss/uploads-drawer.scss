@@ -6,8 +6,8 @@
     transition:                                     width 0.25s;
     -webkit-transition:                             width .25s;
     -moz-transition:                                width 0.25s;
-    position:                                       absolute;
-    top:                                            247px;
+    position:                                       fixed;
+    top:                                            45px;
     right:                                          0;
     bottom:                                         0;
     width:                                          38px;
@@ -16,8 +16,8 @@
     cursor:                                         pointer;
     border-left:1px dashed $grey-lighten-1;
     .badge {
-        top:                                        -15px;
-        left:                                       -15px;
+        top:                                        30px;
+        left:                                       -13px;
         width:                                      26px;
         height:                                     26px;
         font-size:                                  .7rem;
@@ -31,7 +31,7 @@
         .toggle-open-red {
             position:                               absolute;
             right:                                  8px;
-            top:                                    14px;
+            top:                                    10px;
         }
     }
 }
@@ -45,6 +45,7 @@
         top:                                        14px;
     }
     .uploads-drawer {
+        z-index:                                    20;
         right:                                      0;
         transition:                                 width 0.25s;
         -webkit-transition:                         width .25s;
@@ -57,7 +58,7 @@
             h5 { 
                 display:                            inline-block;
                 float:                              left;
-                margin-right:                       .5rem;
+                margin:                             1.1rem 0 1rem 0;
             }
             table {
                 display:                            table;
@@ -93,10 +94,10 @@
                     overflow-y:                     auto;
                     margin-top:                     5px;
                     position:                       absolute;
-                    top:                            65px;
+                    top:                            90px;
                     left:                           20px;
                     right:                          40px;
-                    bottom:                         33%;
+                    bottom:                         1rem;
                     tr {
                         td {
                             font-weight:            300;
