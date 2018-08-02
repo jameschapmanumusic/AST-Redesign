@@ -1,0 +1,88 @@
+﻿// TO AID READABILTY AND HELP PREVENT DUPLICATED STYLES, PLEASE MAINTAIN THE CURRENT TWO COLUMN INDENTATION.
+
+// Custom Popups
+
+// Sort out positioning - BOTTOM LEFT AND RIGHT
+.info-popup-position-bottom-left,
+.info-popup-position-bottom-right {
+    background-image:                   url($dk-blue-triangle-top);
+    background-repeat:                  no-repeat;
+    background-size:                    15px;
+    padding-top:                        9px;
+    margin-top:                         2px;
+}
+.info-popup-position-bottom-left {
+    background-position:                top right 30px;
+    right:                              0;
+}
+
+.info-popup-position-bottom-right {
+    background-position:                top left 30px;
+    left:                               0;
+}
+
+// Globals
+.selected {
+    .info-popup-position-top-left,
+    .info-popup-position-top-right,
+    .info-popup-position-bottom-left,
+    .info-popup-position-bottom-right {
+        display:                        block;
+    }
+}
+
+.info-popup-position-top-left,
+.info-popup-position-top-right,
+.info-popup-position-bottom-left,
+.info-popup-position-bottom-right {
+    display:                            none;
+    position:                           absolute;
+    z-index:                            3;
+    .info-popup-header {
+        height:                         40px;
+        padding:                        10px 20px 0 20px;
+        color:                          $white;
+        background-color:               $stuhub-navy;
+        border-radius:                  6px 6px 0 0;
+        font-weight:                    200;
+        font-size:                      0.85rem;
+        float:                          left;
+        width:                          100%;
+        a:last-child {
+            margin-right:               0;
+        }
+        a {
+            float:                      left;
+            padding-top:                2px;
+            margin-right:               40px;
+            height:                     41px;
+            opacity:                    0.5;
+            background-repeat:          no-repeat;
+            background-position:        center bottom;
+            background-size:            20px;
+            opacity:                    0.4;
+        }
+        a:hover {
+            opacity:                    1;
+            color:                      $white!important;
+        }
+        a.active {
+            background-image:           url($dk-blue-triangle-bottom);
+            opacity:                    1;
+        }
+    }
+    .info-popup-body {
+        @include                        box-shadow(0, 0, 12px, rgba(68,68,68,0.2));
+        position:                       relative;
+        background-color:               $white;
+        padding:                        15px 165px 15px 20px;
+        border-radius:                  0 0 6px 6px;
+        min-height:                     175px;
+        float:                          left;
+        clear:                          left;
+        width:                          100%;
+        h1, h2, h3, h4, h5, h6 {
+            white-space:                nowrap;
+        }
+    }
+}
