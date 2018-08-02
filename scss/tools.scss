@@ -1,27 +1,38 @@
 ﻿// TO AID READABILTY AND HELP PREVENT DUPLICATED STYLES, PLEASE MAINTAIN THE CURRENT TWO COLUMN INDENTATION.
 
-// Target Artist Page Only for correct positioning
-.artists-page {
-    .tools {
-        top:                                60px;
-    }
-}
-
 .tools {
-    position:                               absolute;
-    top:                                    94px;
-    right:                                  50px;
+    position:                                   absolute;
+    top:                                        94px;
+    right:                                      50px;
     .tools-item {
-        display:                            inline-block;
-        float:                              left;
-        margin:                             0 0 0 20px;
+        display:                                inline-block;
+        float:                                  left;
+        margin:                                 0 0 0 20px;
         .upload {
-            background:                     url($upload) no-repeat center center;
-            display:                        block;
-            background-size:                100%;
-            width:                          38px;
-            height:                         38px;
-            cursor:                         pointer;
+            background:                         url($upload) no-repeat center center;
+            display:                            block;
+            background-size:                    100%;
+            width:                              38px;
+            height:                             38px;
+            cursor:                             pointer;
+        }
+        .call-to-action {
+            position:                           relative;
+            display:                            inline-block;
+            margin-top:                         10px;
+            padding-right:                      30px;
+            .badge {
+                position:                       absolute;
+                right:                          0;
+                top:                            -1px;
+                width:                          23px;
+                height:                         23px;
+                font-size:                      .75rem;
+                line-height:                    2.08em;
+            }
+            .info-popup-position-bottom-left {
+                right:                          -26px;
+            }
         }
     }
 }
@@ -29,115 +40,115 @@
 // Bespoke Wizard
 .wizard {
     button {
-        position:                           relative; 
-        z-index:                            4;
-        float:                              right;
+        position:                               relative; 
+        z-index:                                4;
+        float:                                  right;
     }
     .show {
-        display:                            block!important
+        display:                                block!important
     }
     .tint, .wiz-content {
-        display:                            none;
+        display:                                none;
     }
 
 }
 
 .show-wizard {
     .tools-item {
-        display:                            none;
+        display:                                none;
     }
     .wiz, .tint, .wiz-content {
-        display:                            block!important;
+        display:                                block!important;
     }
     .wiz-content {
-        background-image:                   url($dk-blue-triangle-right);
-        background-repeat:                  no-repeat;
-        background-position:                right 11px;
-        background-size:                    10px;
-        position:                           relative;
-        padding-right:                      9px;
-        margin-right:                       2px;
-        z-index:                            3;
-        float:                              right;
+        background-image:                       url($dk-blue-triangle-right);
+        background-repeat:                      no-repeat;
+        background-position:                    right 11px;
+        background-size:                        10px;
+        position:                               relative;
+        padding-right:                          9px;
+        margin-right:                           2px;
+        z-index:                                3;
+        float:                                  right;
         .wiz-header {
-            height:                         40px;
-            padding:                        8px 20px 0 20px;
-            color:                          $white;
-            background-color:               $stuhub-navy;
-            border-radius:                  6px 6px 0 0;
-            font-weight:                    200;
-            font-size:                      0.85rem;
-            float:                          left;
-            width:                          100%;
+            height:                             40px;
+            padding:                            8px 20px 0 20px;
+            color:                              $white;
+            background-color:                   $stuhub-navy;
+            border-radius:                      6px 6px 0 0;
+            font-weight:                        200;
+            font-size:                          0.85rem;
+            float:                              left;
+            width:                              100%;
             a:last-child {
-                margin-right:               0;
+                margin-right:                   0;
             }
             a {
-                float:                      left;
-                padding-top:                2px;
-                margin-right:               40px;
-                height:                     41px;
-                opacity:                    0.5;
-                background-repeat:          no-repeat;
-                background-position:        center bottom;
-                background-size:            20px;
-                opacity:                    0.4;
+                float:                          left;
+                padding-top:                    2px;
+                margin-right:                   40px;
+                height:                         41px;
+                opacity:                        0.5;
+                background-repeat:              no-repeat;
+                background-position:            center bottom;
+                background-size:                20px;
+                opacity:                        0.4;
             }
             a:hover {
-                opacity:                    1;
-                color:                      $white!important;
+                opacity:                        1;
+                color:                          $white!important;
             }
             a.active {
-                background-image:           url($dk-blue-triangle-bottom);
-                opacity:                    1;
+                background-image:               url($dk-blue-triangle-bottom);
+                opacity:                        1;
             }
         }
         .wiz-body {
-            position:                       relative;
-            background-color:               $white;
-            padding:                        15px 165px 15px 20px;
-            border-radius:                  0 0 6px 6px;
-            min-height:                     175px;
-            float:                          left;
-            clear:                          left;
-            width:                          100%;
+            position:                           relative;
+            background-color:                   $white;
+            padding:                            15px 165px 15px 20px;
+            border-radius:                      0 0 6px 6px;
+            min-height:                         175px;
+            float:                              left;
+            clear:                              left;
+            width:                              100%;
             nav, section {
-                float:                      left;
+                float:                          left;
             }
             nav {
-                margin:                     .3rem 2rem 0 0;
+                margin:                         .3rem 2rem 0 0;
                 ul > li {
-                    margin:                 0 0 .65rem;
+                    margin:                     0 0 .65rem;
                 }
                 li label > strong {
-                    max-width:              200px;
-                    white-space:            nowrap;
-                    overflow:               hidden;
-                    text-overflow:          ellipsis;
-                    display:                block;
+                    max-width:                  200px;
+                    white-space:                nowrap;
+                    overflow:                   hidden;
+                    text-overflow:              ellipsis;
+                    display:                    block;
                 }
             }
             aside {
-                position:                   absolute;
-                top:                        0;
-                right:                      0;
-                bottom:                     0;
-                padding:                    1rem 1rem 0 1rem;
+                position:                       absolute;
+                top:                            0;
+                right:                          0;
+                bottom:                         0;
+                padding:                        1rem 1rem 0 1rem;
                 button {
-                    float:                  left;
-                    clear:                  left;
+                    float:                      left;
+                    clear:                      left;
                 }
             }
         }
     }
     .tint {
-        position:                           fixed;
-        z-index:                            3;
-        background:                         $black;
-        opacity:                            0.4;
-        top:                                0;
-        right:                              0;
-        bottom:                             0;
-        left:                               0;
+        position:                               fixed;
+        z-index:                                3;
+        background:                             $black;
+        opacity:                                0.4;
+        top:                                    0;
+        right:                                  0;
+        bottom:                                 0;
+        left:                                   0;
     }
 }

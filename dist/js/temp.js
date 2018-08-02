@@ -19,7 +19,7 @@ function toggleActiveClass(e) {
     [].forEach.call(elems, function (el) {
         el.classList.remove("selected");
     });
-    e.target.className = "selected";
+    e.target.classList.add("selected");
 }
 
 // Show Form

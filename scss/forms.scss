@@ -127,6 +127,7 @@ label {
     font-size:                                              .8rem;
     margin-bottom:                                          .15rem;
     display:                                                block;
+    white-space:                                            nowrap;
 }
 
 // Override Bootstrap Input Styles
@@ -234,9 +235,10 @@ button {
         }
         .multi-select-header {
             background:                                     $stuhub-dark url($dropdown-chevron) no-repeat 8px 3px;
+            background-size:                                .63rem;
             color:                                          $white;
             border-radius:                                  3px;
-            font-size:                                      0.75rem;
+            font-size:                                      .7rem;
             padding:                                        3px 10px 3px 25px;
             cursor:pointer;
             .count {
