@@ -1,4 +1,6 @@
-﻿// Custom Checkbox & Radio Styles ----- MUST NEST INPUT WITHIN LABELS AND ADD THE CLASS .container TO THE LABEL!!!!!!!!!!!
+﻿// TO AID READABILTY AND HELP PREVENT DUPLICATED STYLES, PLEASE MAINTAIN THE CURRENT TWO COLUMN INDENTATION.
+
+// Custom Checkbox & Radio Styles ----- MUST NEST INPUT WITHIN LABELS AND ADD THE CLASS .container TO THE LABEL!!!!!!!!!!!
 label.container:hover input[type=checkbox] ~ .checkmark {
     background-color:                                       $grey-lighten-2;
 }

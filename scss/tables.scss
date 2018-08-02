@@ -1,5 +1,6 @@
-﻿// Custom Tables
+﻿// TO AID READABILTY AND HELP PREVENT DUPLICATED STYLES, PLEASE MAINTAIN THE CURRENT TWO COLUMN INDENTATION.
 
+// Customise default table font styles and layout
 table {
     thead {
         td, th {
@@ -20,8 +21,9 @@ table {
     }
 }
 
-// Artists Page ONLY
-.table-fixed {
+// Fixed Table for Artists and Artists/Projects Pages ONLY
+.table-fixed-artists-page,
+.table-fixed-projects-page {
     margin-bottom:                                          0;
     td:nth-child(1), th:nth-child(1)                        { width:35%}
     td:nth-child(2), th:nth-child(2)                        { width:20%}
@@ -51,8 +53,9 @@ table {
         }
     }
 }
-// End Artists Page ONLY
+// End Fixed Table for Artists and Artists/Projects Pages ONLY
 
+// Customise Bootstrap .table-striped
 .table-striped {
     width:100%;
     td:first-child, th:first-child {
@@ -169,6 +172,7 @@ table {
     }
 }
 
+// Customise Bootstrap .table-sm
 .table-sm {
     border-collapse:                                        collapse;
     thead {

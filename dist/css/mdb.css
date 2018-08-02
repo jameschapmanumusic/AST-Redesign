@@ -2398,7 +2398,6 @@ h6 {
   .add-remove-group span:last-child::after {
     content: " "; }
 
-/* Customize ANY Bootstrap Specific Styles */
 html {
   height: 100%; }
   html body {
@@ -2709,35 +2708,55 @@ table tbody td {
   -o-text-overflow: ellipsis;
   text-overflow: ellipsis; }
 
-.table-fixed {
+.table-fixed-artists-page,
+.table-fixed-projects-page {
   margin-bottom: 0; }
-  .table-fixed td:nth-child(1), .table-fixed th:nth-child(1) {
+  .table-fixed-artists-page td:nth-child(1), .table-fixed-artists-page th:nth-child(1),
+  .table-fixed-projects-page td:nth-child(1),
+  .table-fixed-projects-page th:nth-child(1) {
     width: 35%; }
-  .table-fixed td:nth-child(2), .table-fixed th:nth-child(2) {
+  .table-fixed-artists-page td:nth-child(2), .table-fixed-artists-page th:nth-child(2),
+  .table-fixed-projects-page td:nth-child(2),
+  .table-fixed-projects-page th:nth-child(2) {
     width: 20%; }
-  .table-fixed td:nth-child(3), .table-fixed th:nth-child(3) {
+  .table-fixed-artists-page td:nth-child(3), .table-fixed-artists-page th:nth-child(3),
+  .table-fixed-projects-page td:nth-child(3),
+  .table-fixed-projects-page th:nth-child(3) {
     width: 15%;
     text-align: center; }
-  .table-fixed td:nth-child(4), .table-fixed th:nth-child(4) {
+  .table-fixed-artists-page td:nth-child(4), .table-fixed-artists-page th:nth-child(4),
+  .table-fixed-projects-page td:nth-child(4),
+  .table-fixed-projects-page th:nth-child(4) {
     width: 15%;
     text-align: center; }
-  .table-fixed td:nth-child(5), .table-fixed th:nth-child(5) {
+  .table-fixed-artists-page td:nth-child(5), .table-fixed-artists-page th:nth-child(5),
+  .table-fixed-projects-page td:nth-child(5),
+  .table-fixed-projects-page th:nth-child(5) {
     width: 15%;
     text-align: center; }
-  .table-fixed thead, .table-fixed tr {
+  .table-fixed-artists-page thead, .table-fixed-artists-page tr,
+  .table-fixed-projects-page thead,
+  .table-fixed-projects-page tr {
     width: 100%; }
-    .table-fixed thead td, .table-fixed thead th, .table-fixed tr td, .table-fixed tr th {
+    .table-fixed-artists-page thead td, .table-fixed-artists-page thead th, .table-fixed-artists-page tr td, .table-fixed-artists-page tr th,
+    .table-fixed-projects-page thead td,
+    .table-fixed-projects-page thead th,
+    .table-fixed-projects-page tr td,
+    .table-fixed-projects-page tr th {
       width: 20%;
       float: left;
       white-space: nowrap; }
-  .table-fixed tbody {
+  .table-fixed-artists-page tbody,
+  .table-fixed-projects-page tbody {
     overflow-x: auto;
     height: 470px;
     float: left;
     width: 100%; }
-    .table-fixed tbody tr {
+    .table-fixed-artists-page tbody tr,
+    .table-fixed-projects-page tbody tr {
       display: block; }
-      .table-fixed tbody tr td {
+      .table-fixed-artists-page tbody tr td,
+      .table-fixed-projects-page tbody tr td {
         display: table-cell;
         width: 20%;
         float: left; }
