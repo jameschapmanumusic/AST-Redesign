@@ -7,6 +7,17 @@ table {
             font-weight:                                    300;
             font-size:                                      0.9rem;
             padding:                                        .3rem 1rem .3rem 0;
+            white-space:                                    nowrap;
+            input[type=text] {
+                float:                                      left;
+                margin:                                     -4px 0 0 0;
+                height:                                     25px;
+                background-color:                           transparent;
+                box-shadow:                                 none;
+                border:                                     1px dashed #ddd!important;
+                font-weight:                                200;
+                padding:                                    4px 10px 6px 10px!important;
+            }
         }
     }
     tbody {
