@@ -11,6 +11,8 @@
     <link href="css/mdb.min.css" rel="stylesheet">
 </head>
 <body>
+<span class="device-info"></span>
+    
     <!-- Top Level Page Header with UMG Branding -->
     <nav class="navbar navbar-expand-lg navbar-dark stuhub-navbar fixed-top">
         <ul class="site-navigation">
@@ -64,10 +66,16 @@
             <h2>Aminé</h2>
             <!-- Tools -->
             <section class="tools" id="wiz" onclick="toggleActiveClass(event)">
+                <div class="tools-item btn-wrapper">
+                    <button id="toggleModal" class="btn-white" type="submit">Create Song</button>
+                </div>
+                <div class="tools-item">
+                    <a id="rotate" class="upload"></a>
+                </div>
                 <div class="tools-item">
                     <a class="call-to-action">
-                        Contributors
-                        <div class="badge">2</div>
+                        Docs
+                        <div class="badge">0</div>
                         <div class="info-popup-position-bottom-left">
                             <div class="info-popup-header">
                                 Some Title
@@ -110,8 +118,8 @@
                 </div>
                 <div class="tools-item">
                     <a class="call-to-action">
-                        Documents
-                        <div class="badge">0</div>
+                        Contributors
+                        <div class="badge">2</div>
                         <div class="info-popup-position-bottom-left">
                             <div class="info-popup-header">
                                 Some Title
@@ -130,106 +138,94 @@
                         </div>
                     </a>
                 </div>
-                <div class="tools-item">
-                    <a id="rotate" class="upload"></a>
-                </div>
-                <div class="tools-item wiz">
-                    <!-- Create wizard -->
-                    <section class="wizard">
-                        <div>
-                            <button id="toggleModal" class="btn-white" type="submit">Create Project</button>
-                            <div class="tint"></div>
-                            <div class="wiz-content">
-                                <form>
-                                    <header class="wiz-header">
-                                        <a class="">Create Song</a>
-                                        <a class="active">Create Session</a>
-                                        <a class="">Create Contributors</a>
-                                    </header>
-                                    <div class="wiz-body">
-                                        <!--
-                            A NOTE ON BOOTSTRAP COLUMNS AND HOW THEY SHOULD BE IMPLEMENTED...
+                <div class="tint"></div>
+                <div class="wiz-content">
+                    <form>
+                        <header class="wiz-header">
+                            <a class="">Create Song</a>
+                            <a class="active">Create Session</a>
+                            <a class="">Create Contributors</a>
+                        </header>
+                        <div class="wiz-body">
+                            <!--
+                A NOTE ON BOOTSTRAP COLUMNS AND HOW THEY SHOULD BE IMPLEMENTED...
 
-                            1) FOR EVERY NEW ROW, ADD A NEW DIV WITH THE CLASS NAME 'row'
-                            2) ENCAPSULATE ALL INPUTS AND THEIR ASSOCIATED LABELS IN A DIV WITH CLASS NAME FORM-GROUP.
-                            3) FOR THE LAYOUT TO APPEAR CORRRECTLY AND FOR MEDIA QUERIES TO KICK IN, YOU MUST DIVIDE UP FORM-GROUPS INTO DIVISIONS OF 12
-                            WITH THE CLASS NAME 'col-md-?'. FOR EXAMPLE, IF YOU WANT 2 ROWS IN YOUR FORM, THE FIRST ROW WITH ONE FORM-GROUP AND THE SECOND
-                            WITH 3 FORM-GROUPS, THEN THE FIRST FORM-GROUP CLASS TO BE ADDED WOULD BE 'col-md-12' AND THE SECOND ROW'S FORM-GROUP'S WOULD EACH
-                            HAVE THE CLASS NAME 'col-md-4'.
-                            -->
+                1) FOR EVERY NEW ROW, ADD A NEW DIV WITH THE CLASS NAME 'row'
+                2) ENCAPSULATE ALL INPUTS AND THEIR ASSOCIATED LABELS IN A DIV WITH CLASS NAME FORM-GROUP.
+                3) FOR THE LAYOUT TO APPEAR CORRRECTLY AND FOR MEDIA QUERIES TO KICK IN, YOU MUST DIVIDE UP FORM-GROUPS INTO DIVISIONS OF 12
+                WITH THE CLASS NAME 'col-md-?'. FOR EXAMPLE, IF YOU WANT 2 ROWS IN YOUR FORM, THE FIRST ROW WITH ONE FORM-GROUP AND THE SECOND
+                WITH 3 FORM-GROUPS, THEN THE FIRST FORM-GROUP CLASS TO BE ADDED WOULD BE 'col-md-12' AND THE SECOND ROW'S FORM-GROUP'S WOULD EACH
+                HAVE THE CLASS NAME 'col-md-4'.
+                -->
+                            <h4>Songs</h4>
+                            <nav>
+                                <ul>
+                                    <li>
+                                        <label class="container">
+                                            <strong>Caroline</strong>
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="container">
+                                            <strong>Some Other Song</strong>
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="container">
+                                            <strong>And Yet Another Song</strong>
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="container">
+                                            <strong>Not again! Yes Another Song But This Tine Rediculously Long!</strong>
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </nav>
 
-                                        <h4>Songs</h4>
-
-                                        <nav>
-                                            <ul>
-                                                <li>
-                                                    <label class="container">
-                                                        <strong>Caroline</strong>
-                                                        <input type="checkbox">
-                                                        <span class="checkmark"></span>
-                                                    </label>
-                                                </li>
-                                                <li>
-                                                    <label class="container">
-                                                        <strong>Some Other Song</strong>
-                                                        <input type="checkbox">
-                                                        <span class="checkmark"></span>
-                                                    </label>
-                                                </li>
-                                                <li>
-                                                    <label class="container">
-                                                        <strong>And Yet Another Song</strong>
-                                                        <input type="checkbox">
-                                                        <span class="checkmark"></span>
-                                                    </label>
-                                                </li>
-                                                <li>
-                                                    <label class="container">
-                                                        <strong>Not again! Yes Another Song But This Tine Rediculously Long!</strong>
-                                                        <input type="checkbox">
-                                                        <span class="checkmark"></span>
-                                                    </label>
-                                                </li>
-                                            </ul>
-                                        </nav>
-
-                                        <section>
-                                            <div class="form-row">
-                                                <div class="form-group col-md-12">
-                                                    <label for="artistName">Artist</label>
-                                                    <input type="text" placeholder="Enter Name" autofocus />
-                                                </div>
-                                            </div>
-                                            <div class="form-row">
-                                                <div class="form-group col-md-4">
-                                                    <label for="talentId">Item 1</label>
-                                                    <input id="emailHelp" type="text" placeholder="Enter R2 Talent Id" aria-describedby="emailHelp">
-                                                </div>
-                                                <div class="form-group col-md-4">
-                                                    <label for="talentId">Item 2</label>
-                                                    <input id="emailHelp" type="text" placeholder="Enter R2 Talent Id" aria-describedby="emailHelp">
-                                                </div>
-                                                <div class="form-group col-md-4">
-                                                    <label for="talentId">Item 3</label>
-                                                    <input id="emailHelp" type="text" placeholder="Enter R2 Talent Id" aria-describedby="emailHelp">
-                                                    <!--<a class="call-to-action">Add</a>-->
-                                                </div>
-                                            </div>
-                                        </section>
-
-                                        <aside class="button-group border-left-dashed">
-                                            <button class="btn-save" type="submit">Save</button>
-                                            <button class="btn-cancel" type="submit">Cancel</button>
-                                            <button class="btn-reset" type="submit">Reset</button>
-                                        </aside>
-
+                            <section>
+                                <div class="form-row">
+                                    <div class="form-group col-md-12">
+                                        <label for="artistName">Artist</label>
+                                        <input type="text" placeholder="Enter Name" autofocus />
                                     </div>
-                                </form>
-                            </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group col-md-4">
+                                        <label for="talentId">Item 1</label>
+                                        <input id="emailHelp" type="text" placeholder="Enter R2 Talent Id" aria-describedby="emailHelp">
+                                    </div>
+                                    <div class="form-group col-md-4">
+                                        <label for="talentId">Item 2</label>
+                                        <input id="emailHelp" type="text" placeholder="Enter R2 Talent Id" aria-describedby="emailHelp">
+                                    </div>
+                                    <div class="form-group col-md-4">
+                                        <label for="talentId">Item 3</label>
+                                        <input id="emailHelp" type="text" placeholder="Enter R2 Talent Id" aria-describedby="emailHelp">
+                                        <!--<a class="call-to-action">Add</a>-->
+                                    </div>
+                                </div>
+                            </section>
+
+                            <aside class="button-group border-left-dashed">
+                                <button class="btn-save" type="submit">Save</button>
+                                <button class="btn-cancel" type="submit">Cancel</button>
+                                <button class="btn-reset" type="submit">Reset</button>
+                            </aside>
+
                         </div>
-                    </section>
+                    </form>
                 </div>
             </section>
+            <!-- End Tools -->
         </header>
         <!-- Contextual Navigation -->
         <nav class="contextual-navigation">

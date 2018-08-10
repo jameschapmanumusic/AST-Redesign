@@ -6,7 +6,7 @@
     right:                                      50px;
     .tools-item {
         display:                                inline-block;
-        float:                                  left;
+        float:                                  right;
         margin:                                 0 0 0 20px;
         .upload {
             background:                         url($upload) no-repeat center center;
@@ -35,11 +35,7 @@
             }
         }
     }
-}
-
-// Bespoke Wizard
-.wizard {
-    button {
+    .btn-wrapper {
         position:                               relative; 
         z-index:                                4;
         float:                                  right;
@@ -50,26 +46,23 @@
     .tint, .wiz-content {
         display:                                none;
     }
-
 }
 
+
 .show-wizard {
-    .tools-item {
-        display:                                none;
+    .btn-wrapper {
+        background-image:                       url($dk-blue-triangle-top);
+        background-repeat:                      no-repeat;
+        background-position:                    center bottom;
+        background-size:                        15px;
+        padding-bottom:                         12px;
     }
-    .wiz, .tint, .wiz-content {
+    .tint, .wiz-content {
         display:                                block!important;
     }
     .wiz-content {
-        background-image:                       url($dk-blue-triangle-right);
-        background-repeat:                      no-repeat;
-        background-position:                    right 11px;
-        background-size:                        10px;
         position:                               relative;
-        padding-right:                          9px;
-        margin-right:                           2px;
         z-index:                                3;
-        float:                                  right;
         .wiz-header {
             height:                             40px;
             padding:                            8px 20px 0 20px;
