@@ -35,7 +35,7 @@ function cancelForm() {
 }
 
 // MK - toggle row open and closed
-$(".main-table-section .table-striped tbody tr.details-row td:first-child, .main-table-section .table-striped tbody tr.recordings-row td:first-child").each(function () {
+$(".main-table-section .table-striped tbody tr.toggle-row td:first-child").each(function () {
     var $thisRow = $(this);
     $thisRow.click(function () {
         $thisRow.parent().toggleClass("row-open");
