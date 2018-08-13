@@ -66,8 +66,9 @@ table {
 }
 // End Fixed Table for Artists and Artists/Projects Pages ONLY
 
-// Customise Bootstrap .table-striped
-.table-striped {
+// TABLE STRIPED
+// -------------------------------------------------------- Nested Table: level 1
+table.table-striped {
     width:100%;
     td:first-child, th:first-child {
         padding-left:                                       40px;
@@ -108,12 +109,48 @@ table {
         tr.expanded-row {
             display:                                        none;
             position:                                       relative;
-            td:first-child {
-                background:                                 none;
+            td {
+                // Nested Row Open - 2nd level down
+                .row-open {
+                    td {
+                        font-weight:                        200;
+                        font-size:                          1.1rem;
+                        background-color:                   $grey-lighten-5!important;
+                    }
+                    td:first-child {
+                        border-left:                        1px dashed $grey-lighten-1;
+                    }
+                    td:last-child {
+                        border-right:                       1px dashed $grey-lighten-1;
+                    }
+                }
             }
             td.container-cell {
                 position:                                   relative;
                 overflow:                                   visible;
+                thead {
+                    th:last-child, td:last-child {
+                        border-right:                       1px solid $stuhub-navy;
+                    }
+                }
+                // Nested container-cell override - 2nd level down
+                td.container-cell {
+                    padding:                                0;
+                    border-left:                            1px dashed $grey-lighten-1;
+                    border-right:                           1px dashed $grey-lighten-1;
+                    background-color:                       $grey-lighten-5;
+                    thead {
+                        th:last-child, td:last-child {
+                            border-right:                   none;
+                        }
+                    }
+                }
+                // Add a bottom border to the last row cells
+                tr:last-child {
+                     td.container-cell {
+                        border-bottom:                      1px dashed $grey-lighten-1;
+                    }
+                }
                 form {
                     width:                                  97%;
                     margin:                                 15px 0;
@@ -125,29 +162,7 @@ table {
                 #uploads {
                     min-height:                             80px;
                 }
-                table.table-striped {
-                    margin:                                 15px 0;
-                    width:                                  97%;
-                    td:first-child, th:first-child {
-                        padding-left:                       20px;
-                        background-image:                   none;
-                    }
-                    td:last-child, th:last-child {
-                        padding-right:                      20px;
-                        background-image:                   none;
-                    }
-                    tbody {
-                        tr:last-child {
-                            td {
-                                border-bottom:              none;
-                            }
-                        }
-                        td {
-                            background-color:               $white;
-                            padding:                        .6rem 1rem .6rem 0;
-                        }
-                    }
-                }
+                // Uploads
                 .uploads-drawer {
                     top:                                    -41px;
                     bottom:                                 0;
@@ -177,6 +192,47 @@ table {
                             }
                         }
                     }
+                }
+            }
+        }
+    }
+    // ---------------------------------------------------- Nested Table: level 2
+    table {                                                 
+        margin:                                             15px 0;
+        width:                                              97%;
+        td:first-child, th:first-child {
+            padding-left:                                   15px;
+        }
+        tr:last-child {
+            td {
+                border-bottom:                              none;
+            }
+        }
+        td {
+            background-color:                               $white;
+        }
+        // ------------------------------------------------ Nested Table: level 3
+        table {                                             
+            width:                                          95.5%;
+            margin:                                         1.5rem 0 2.5rem 4.5%;
+            td:first-child, th:first-child {
+                padding-right:                               0;
+            }
+            td, th {
+                padding:                                    .1rem 1rem .1rem 0;
+            }
+            thead {
+                th, td {
+                    background-color:                       $grey-lighten-5;
+                    color:                                  $stuhub-navy;
+                    font-size:                              .8rem;
+                }
+            }
+            tbody {
+                td {
+                    background-color:                       $grey-lighten-5;
+                    font-weight:                            200;
+                    color:                                  $grey-darken-1;
                 }
             }
         }

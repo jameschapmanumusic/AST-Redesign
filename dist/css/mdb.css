@@ -2462,16 +2462,18 @@ ul {
     padding: 0; }
 
 .device-info {
-  width: 130px;
-  height: 50px;
-  position: absolute;
-  top: 50px;
-  right: 60px;
-  z-index: 999;
+  position: fixed;
+  top: 0;
+  right: 89px;
+  z-index: 9999;
   text-align: right;
-  font-size: 0.8rem;
+  font-size: .9rem;
   font-weight: 500;
-  color: #bdbdbd; }
+  color: #00ffd2;
+  background: #333;
+  height: 44px;
+  line-height: 46px;
+  padding: 0 0 0 20px; }
 
 @media (max-width: 575.98px) {
   .device-info::after {
@@ -2954,62 +2956,65 @@ table tbody td {
         width: 20%;
         float: left; }
 
-.table-striped {
+table.table-striped {
   width: 100%; }
-  .table-striped td:first-child, .table-striped th:first-child {
+  table.table-striped td:first-child, table.table-striped th:first-child {
     padding-left: 40px; }
-  .table-striped td:last-child, .table-striped th:last-child {
+  table.table-striped td:last-child, table.table-striped th:last-child {
     padding-right: 40px; }
-  .table-striped thead th, .table-striped thead td {
+  table.table-striped thead th, table.table-striped thead td {
     background-color: #314861;
     color: #fff; }
-  .table-striped tbody td {
+  table.table-striped tbody td {
     border-bottom: 1px dashed #bdbdbd; }
-  .table-striped tbody tr.row-open td {
+  table.table-striped tbody tr.row-open td {
     border-bottom: none;
     background-color: #fff; }
-  .table-striped tbody tr.row-open td:nth-child(3),
-  .table-striped tbody tr.row-open td:nth-child(4) {
+  table.table-striped tbody tr.row-open td:nth-child(3),
+  table.table-striped tbody tr.row-open td:nth-child(4) {
     font-weight: 200;
     font-size: 1.4rem;
     padding: .1rem 1rem .1rem 0; }
-  .table-striped tbody tr.row-open td .toggle-open {
+  table.table-striped tbody tr.row-open td .toggle-open {
     -webkit-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
     transform: rotate(90deg); }
-  .table-striped tbody tr.row-open + .expanded-row {
+  table.table-striped tbody tr.row-open + .expanded-row {
     display: table-row; }
-  .table-striped tbody tr.expanded-row {
+  table.table-striped tbody tr.expanded-row {
     display: none;
     position: relative; }
-    .table-striped tbody tr.expanded-row td:first-child {
-      background: none; }
-    .table-striped tbody tr.expanded-row td.container-cell {
+    table.table-striped tbody tr.expanded-row td .row-open td {
+      font-weight: 200;
+      font-size: 1.1rem;
+      background-color: #fafafa !important; }
+    table.table-striped tbody tr.expanded-row td .row-open td:first-child {
+      border-left: 1px dashed #bdbdbd; }
+    table.table-striped tbody tr.expanded-row td .row-open td:last-child {
+      border-right: 1px dashed #bdbdbd; }
+    table.table-striped tbody tr.expanded-row td.container-cell {
       position: relative;
       overflow: visible; }
-      .table-striped tbody tr.expanded-row td.container-cell form {
+      table.table-striped tbody tr.expanded-row td.container-cell thead th:last-child, table.table-striped tbody tr.expanded-row td.container-cell thead td:last-child {
+        border-right: 1px solid #314861; }
+      table.table-striped tbody tr.expanded-row td.container-cell td.container-cell {
+        padding: 0;
+        border-left: 1px dashed #bdbdbd;
+        border-right: 1px dashed #bdbdbd;
+        background-color: #fafafa; }
+        table.table-striped tbody tr.expanded-row td.container-cell td.container-cell thead th:last-child, table.table-striped tbody tr.expanded-row td.container-cell td.container-cell thead td:last-child {
+          border-right: none; }
+      table.table-striped tbody tr.expanded-row td.container-cell tr:last-child td.container-cell {
+        border-bottom: 1px dashed #bdbdbd; }
+      table.table-striped tbody tr.expanded-row td.container-cell form {
         width: 97%;
         margin: 15px 0; }
-        .table-striped tbody tr.expanded-row td.container-cell form .add-remove-group {
+        table.table-striped tbody tr.expanded-row td.container-cell form .add-remove-group {
           border-bottom: 1px dashed #bdbdbd;
           padding-bottom: 5px; }
-      .table-striped tbody tr.expanded-row td.container-cell #uploads {
+      table.table-striped tbody tr.expanded-row td.container-cell #uploads {
         min-height: 80px; }
-      .table-striped tbody tr.expanded-row td.container-cell table.table-striped {
-        margin: 15px 0;
-        width: 97%; }
-        .table-striped tbody tr.expanded-row td.container-cell table.table-striped td:first-child, .table-striped tbody tr.expanded-row td.container-cell table.table-striped th:first-child {
-          padding-left: 20px;
-          background-image: none; }
-        .table-striped tbody tr.expanded-row td.container-cell table.table-striped td:last-child, .table-striped tbody tr.expanded-row td.container-cell table.table-striped th:last-child {
-          padding-right: 20px;
-          background-image: none; }
-        .table-striped tbody tr.expanded-row td.container-cell table.table-striped tbody tr:last-child td {
-          border-bottom: none; }
-        .table-striped tbody tr.expanded-row td.container-cell table.table-striped tbody td {
-          background-color: #fff;
-          padding: .6rem 1rem .6rem 0; }
-      .table-striped tbody tr.expanded-row td.container-cell .uploads-drawer {
+      table.table-striped tbody tr.expanded-row td.container-cell .uploads-drawer {
         top: -41px;
         bottom: 0;
         left: -20px;
@@ -3020,18 +3025,42 @@ table tbody td {
         opacity: 1;
         width: 100%;
         position: absolute; }
-        .table-striped tbody tr.expanded-row td.container-cell .uploads-drawer h5 {
+        table.table-striped tbody tr.expanded-row td.container-cell .uploads-drawer h5 {
           margin: 0 1rem 1rem 0; }
-        .table-striped tbody tr.expanded-row td.container-cell .uploads-drawer .uploads-wrapper {
+        table.table-striped tbody tr.expanded-row td.container-cell .uploads-drawer .uploads-wrapper {
           margin-right: 0;
           overflow: unset; }
-        .table-striped tbody tr.expanded-row td.container-cell .uploads-drawer table td, .table-striped tbody tr.expanded-row td.container-cell .uploads-drawer table th {
+        table.table-striped tbody tr.expanded-row td.container-cell .uploads-drawer table td, table.table-striped tbody tr.expanded-row td.container-cell .uploads-drawer table th {
           background-color: #fff; }
-        .table-striped tbody tr.expanded-row td.container-cell .uploads-drawer table tbody {
+        table.table-striped tbody tr.expanded-row td.container-cell .uploads-drawer table tbody {
           right: 0;
           top: 75px; }
-          .table-striped tbody tr.expanded-row td.container-cell .uploads-drawer table tbody td {
+          table.table-striped tbody tr.expanded-row td.container-cell .uploads-drawer table tbody td {
             border-bottom: none; }
+  table.table-striped table {
+    margin: 15px 0;
+    width: 97%; }
+    table.table-striped table td:first-child, table.table-striped table th:first-child {
+      padding-left: 15px; }
+    table.table-striped table tr:last-child td {
+      border-bottom: none; }
+    table.table-striped table td {
+      background-color: #fff; }
+    table.table-striped table table {
+      width: 95.5%;
+      margin: 1.5rem 0 2.5rem 4.5%; }
+      table.table-striped table table td:first-child, table.table-striped table table th:first-child {
+        padding-right: 0; }
+      table.table-striped table table td, table.table-striped table table th {
+        padding: .1rem 1rem .1rem 0; }
+      table.table-striped table table thead th, table.table-striped table table thead td {
+        background-color: #fafafa;
+        color: #314861;
+        font-size: .8rem; }
+      table.table-striped table table tbody td {
+        background-color: #fafafa;
+        font-weight: 200;
+        color: #757575; }
 
 .table-sm {
   border-collapse: collapse; }

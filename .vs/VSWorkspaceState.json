@@ -3,8 +3,9 @@
     "",
     "\\dist",
     "\\dist\\js",
-    "\\scss"
+    "\\scss",
+    "\\scss\\core"
   ],
-  "SelectedNode": "\\scss\\tables.scss",
+  "SelectedNode": "\\dist\\project.html",
   "PreviewInSolutionExplorer": false
 }
