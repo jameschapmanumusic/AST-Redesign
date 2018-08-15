@@ -109,43 +109,9 @@ table.table-striped {
         tr.expanded-row {
             display:                                        none;
             position:                                       relative;
-            td {
-                // Nested Row Open - 2nd level down
-                .row-open {
-                    td {
-                        font-weight:                        200;
-                        font-size:                          1.1rem;
-                        background-color:                   $grey-lighten-5!important;
-                    }
-                    td:first-child {
-                        border-left:                        1px dashed $grey-lighten-1;
-                    }
-                    td:last-child {
-                        border-right:                       1px dashed $grey-lighten-1;
-                    }
-                }
-            }
             td.container-cell {
                 position:                                   relative;
                 overflow:                                   visible;
-                thead {
-                    th:last-child, td:last-child {
-                        border-right:                       1px solid $stuhub-navy;
-                    }
-                }
-                // Nested container-cell override - 2nd level down
-                td.container-cell {
-                    padding:                                0;
-                    border-left:                            1px dashed $grey-lighten-1;
-                    border-right:                           1px dashed $grey-lighten-1;
-                    background-color:                       $grey-lighten-5;
-                    thead {
-                        th:last-child, td:last-child {
-                            border-right:                   none;
-                        }
-                    }
-                }
-                // Add a bottom border to the last row cells
                 tr:last-child {
                      td.container-cell {
                         border-bottom:                      1px dashed $grey-lighten-1;
@@ -200,39 +166,70 @@ table.table-striped {
     table {                                                 
         margin:                                             15px 0;
         width:                                              97%;
-        td:first-child, th:first-child {
-            padding-left:                                   15px;
-        }
-        tr:last-child {
+        tr:nth-last-child(2) {
             td {
                 border-bottom:                              none;
             }
         }
+        td:first-child, th:first-child {
+            padding-left:                                   15px;
+        }
+        td:last-child, th:last-child {
+            text-align:right;
+        }
         td {
             background-color:                               $white;
         }
+        // Nested Row Open
+        .row-open {
+            td {
+                font-weight:                                200;
+                font-size:                                  1.1rem;
+            }
+        }
+        // Nested container-cell
+        td.container-cell {
+            padding:                                        0;
+            thead {
+                th:last-child, td:last-child {
+                    border-right:                           none;
+                }
+            }
+        }
         // ------------------------------------------------ Nested Table: level 3
         table {                                             
-            width:                                          95.5%;
-            margin:                                         1.5rem 0 2.5rem 4.5%;
+            width:                                          90%;
+            margin:                                         1.5rem auto 2.5rem auto;
             td:first-child, th:first-child {
-                padding-right:                               0;
+                padding-left:                               0;
+            }
+            td:last-child, th:last-child {
+                padding-right:                              0;
+                text-align:                                 right;
             }
             td, th {
-                padding:                                    .1rem 1rem .1rem 0;
+                padding:                                    .3rem 0;
             }
             thead {
                 th, td {
-                    background-color:                       $grey-lighten-5;
+                    background-color:                       $white;
                     color:                                  $stuhub-navy;
                     font-size:                              .8rem;
+                    padding-left:                           0;
+                    border-bottom:                          1px solid $stuhub-navy;
                 }
             }
             tbody {
+                tr:last-child {
+                    td {
+                        border-bottom:                      none;
+                    }
+                }
                 td {
-                    background-color:                       $grey-lighten-5;
+                    background-color:                       $white;
                     font-weight:                            200;
                     color:                                  $grey-darken-1;
+                    border-top:                             1px dotted $grey-lighten-1;
                 }
             }
         }
