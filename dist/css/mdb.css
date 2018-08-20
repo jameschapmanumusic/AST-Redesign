@@ -1872,8 +1872,7 @@ ul.tool-set {
       margin: -2px 0 -7px 0; }
 
 td {
-  position: relative;
-  text-align: center; }
+  position: relative; }
   td .status {
     width: 1.4rem;
     height: 1.4rem;
@@ -1889,7 +1888,7 @@ td {
     display: inline-block;
     position: absolute;
     top: .4rem;
-    left: 25%; }
+    left: 14%; }
   td .verified {
     border-color: #9ccc65; }
   td .approved {
