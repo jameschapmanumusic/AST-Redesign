@@ -91,6 +91,7 @@ table.table-striped {
                 border-bottom:                              none;
                 background-color:                           $white;
             }
+            // Change to larger font size when row is expanded
             td:nth-child(3), 
             td:nth-child(4) {
                 font-weight:                                200;
@@ -98,14 +99,17 @@ table.table-striped {
                 padding:                                    .1rem 1rem .1rem 0;
             }
             td {
+                // Rotate the chevron to open position when row is expanded
                 .toggle-open {
                     transform:                              rotate(90deg)
                 }
             }
         }
+        // Set the sibling ".expanded-row" to display as table-row when the ".row-open" class is applied
         tr.row-open + .expanded-row {
             display:                                        table-row;
         }
+        // Expanded row (hidden by default)
         tr.expanded-row {
             display:                                        none;
             position:                                       relative;
@@ -174,17 +178,18 @@ table.table-striped {
         td:first-child, th:first-child {
             padding-left:                                   15px;
         }
-        td:last-child, th:last-child {
-            text-align:right;
-        }
         td {
             background-color:                               $white;
         }
-        // Nested Row Open
+        // 2nd Level Nested ".row-open"
         .row-open {
             td {
                 font-weight:                                200;
-                font-size:                                  1.1rem;
+                font-size:                                  1.1rem!important;
+                // Set status icon new position
+                .status {
+                    top:                                    .7rem;
+                }
             }
         }
         // Nested container-cell
