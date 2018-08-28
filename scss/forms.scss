@@ -108,11 +108,27 @@ a.call-to-action {
 .btn-save, .btn-edit, .btn {
     color:                                                  $white;
     background-color:                                       $stuhub-red;
+    -webkit-transition:                                     1s;
+    transition:                                             1s;
+}
+
+.btn-save:hover, .btn-edit:hover, .btn:hover {
+    background-color:                                       $dark-red;
+    -webkit-transition:                                     1s;
+    transition:                                             1s;
 }
 
 .btn-cancel {
     color:                                                  $white;
     background-color:                                       $stuhub-light-blue;
+    -webkit-transition:                                     1s;
+    transition:                                             1s;
+}
+
+.btn-cancel:hover {
+    background-color:                                       $stuhub-navy;
+    -webkit-transition:                                     1s;
+    transition:                                             1s;
 }
 
 .btn-reset {

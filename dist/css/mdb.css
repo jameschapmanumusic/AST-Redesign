@@ -2002,11 +2002,29 @@ a.call-to-action {
 
 .btn-save, .btn-edit, .btn {
   color: #fff;
-  background-color: #c93500; }
+  background-color: #c93500;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s; }
+
+.btn-save:hover, .btn-edit:hover, .btn:hover {
+  background-color: #7b1d01;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s; }
 
 .btn-cancel {
   color: #fff;
-  background-color: #01adf2; }
+  background-color: #01adf2;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s; }
+
+.btn-cancel:hover {
+  background-color: #314861;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s; }
 
 .btn-reset {
   color: #314861;
