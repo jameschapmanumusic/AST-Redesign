@@ -1814,7 +1814,6 @@ ul.icon-set {
   margin: -1px 0 -4px 0; }
   ul.icon-set li {
     position: relative;
-    float: left;
     margin: 0 .8rem 0 0; }
   ul.icon-set div {
     position: absolute;
@@ -3047,7 +3046,7 @@ table.table-striped {
       table.table-striped tbody tr.expanded-row td.container-cell #uploads {
         min-height: 80px; }
       table.table-striped tbody tr.expanded-row td.container-cell .uploads-drawer {
-        top: -41px;
+        top: -44px;
         bottom: 0;
         left: -20px;
         z-index: 0;
@@ -3060,7 +3059,7 @@ table.table-striped {
         table.table-striped tbody tr.expanded-row td.container-cell .uploads-drawer h5 {
           margin: 0 1rem 1rem 0; }
         table.table-striped tbody tr.expanded-row td.container-cell .uploads-drawer .uploads-wrapper {
-          margin-right: 0;
+          margin: .8rem 0 1rem 1.2rem;
           overflow: unset; }
         table.table-striped tbody tr.expanded-row td.container-cell .uploads-drawer table td, table.table-striped tbody tr.expanded-row td.container-cell .uploads-drawer table th {
           background-color: #fff; }
@@ -3348,7 +3347,7 @@ table.table-striped {
   -webkit-box-shadow: 0 3px 8px rgba(68, 68, 68, 0.15) ;
   box-shadow: 0 3px 8px rgba(68, 68, 68, 0.15) ; }
   .open .uploads-drawer .uploads-wrapper {
-    margin: 15px 40px 10px 20px;
+    margin: .95rem 2.8rem 1rem 1.25rem;
     overflow: hidden; }
     .open .uploads-drawer .uploads-wrapper h5 {
       display: inline-block;
